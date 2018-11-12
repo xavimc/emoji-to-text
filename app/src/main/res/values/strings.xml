@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">EmojiToText</string>
+    <string name="app_translator_edit">😃 Hello! 🤩 This is a test, 🙃 you can try 🤓 all the emojis you want 🤣</string>
+    <string name="app_translator_button">Translate emoji</string>
+
+</resources>
