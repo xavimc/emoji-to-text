@@ -2,6 +2,7 @@
 Convert unicode emojis included in a given text, to their translated emoji description.
 
 This basic app includes the EmojiToText class that you can call as simple as:
+
   String translated_text = EmojiToText.translateEmoji(context, input_text);
 
 We are building the translations for all the emoji, current and to come, but not only emoji to English text, but to all the possible languages. And that's why we created a web portal (IN PROGRESS, WILL UPDATE SOON WITH THE LINK) to help the cooperation in the translation of the emojis to be the reference project when working with emojis.
