@@ -19,10 +19,8 @@
  -->
 <!-- 
     These Emoji symbols are unsupported by TTS.
-    TODO: Remove this file when TTS/TalkBack support these Emoji symbols.
  -->
-<resources
-    >
+<resources>
     <string name="spoken_emoji_00A9" msgid="2859822817116803638">"Signo de copyright"</string>
     <string name="spoken_emoji_00AE" msgid="7708335454134589027">"Signo de marca registrada"</string>
     <string name="spoken_emoji_203C" msgid="153340916701508663">"Signo de exclamación doble"</string>
