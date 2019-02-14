@@ -2259,6 +2259,70 @@
     <string name="spoken_emoji_1F9FC">Soap</string>
     <string name="spoken_emoji_1F9FD">Sponge</string>
 
+    <!-- UNICODE 12.0 EMOJI -->
+    <string name="spoken_emoji_1F971">Yawning Face</string>
+    <string name="spoken_emoji_1F90E">Brown Heart</string>
+    <string name="spoken_emoji_1F90D">White Heart</string>
+    <string name="spoken_emoji_1F90F">Pinching Hand</string>
+    <string name="spoken_emoji_1F9BE">Mechanical Arm</string>
+    <string name="spoken_emoji_1F9BF">Mechanical Leg</string>
+    <string name="spoken_emoji_1F9BB">Ear With Hearing Aid</string>
+    <string name="spoken_emoji_1F9CF">Deaf Person</string>
+    <string name="spoken_emoji_1F9CD">Person Standing</string>
+    <string name="spoken_emoji_1F9CE">Person Kneeling</string>
+    <string name="spoken_emoji_1F9A7">Orangutan</string>
+    <string name="spoken_emoji_1F9AE">Guide Dog</string>
+    <string name="spoken_emoji_1F9A5">Sloth</string>
+    <string name="spoken_emoji_1F9A6">Otter</string>
+    <string name="spoken_emoji_1F9A8">Skunk</string>
+    <string name="spoken_emoji_1F9A9">Flamingo</string>
+    <string name="spoken_emoji_1F9C4">Garlic</string>
+    <string name="spoken_emoji_1F9C5">Onion</string>
+    <string name="spoken_emoji_1F9C7">Waffle</string>
+    <string name="spoken_emoji_1F9C6">Falafel</string>
+    <string name="spoken_emoji_1F9C8">Butter</string>
+    <string name="spoken_emoji_1F9AA">Oyster</string>
+    <string name="spoken_emoji_1F9C3">Beverage Box</string>
+    <string name="spoken_emoji_1F9C9">Mate drink</string>
+    <string name="spoken_emoji_1F9CA">Ice Cube</string>
+    <string name="spoken_emoji_1F6D5">Hindu Temple</string>
+    <string name="spoken_emoji_1F9BD">Manual Wheelchair</string>
+    <string name="spoken_emoji_1F9BC">Motorized Wheelchair</string>
+    <string name="spoken_emoji_1F6FA">Auto Rickshaw</string>
+    <string name="spoken_emoji_1FA82">Parachute</string>
+    <string name="spoken_emoji_1FA90">Ringed Planet</string>
+    <string name="spoken_emoji_1F93F">Diving Mask</string>
+    <string name="spoken_emoji_1FA80">Yo-Yo</string>
+    <string name="spoken_emoji_1FA81">Kite</string>
+    <string name="spoken_emoji_1F9BA">Safety Vest</string>
+    <string name="spoken_emoji_1F97B">Sari</string>
+    <string name="spoken_emoji_1FA71">One-Piece Swimsuit</string>
+    <string name="spoken_emoji_1FA72">Briefs</string>
+    <string name="spoken_emoji_1FA73">Shorts</string>
+    <string name="spoken_emoji_1FA70">Ballet Shoes</string>
+    <string name="spoken_emoji_1FA95">Banjo</string>
+    <string name="spoken_emoji_1FA94">Diya Lamp</string>
+    <string name="spoken_emoji_1FA93">Axe</string>
+    <string name="spoken_emoji_1F9AF">Probing Cane</string>
+    <string name="spoken_emoji_1FA78">Drop of Blood</string>
+    <string name="spoken_emoji_1FA79">Adhesive Bandage</string>
+    <string name="spoken_emoji_1FA7A">Stethoscope</string>
+    <string name="spoken_emoji_1FA91">Chair</string>
+    <string name="spoken_emoji_1FA92">Razor</string>
+    <string name="spoken_emoji_1F7E0">Orange Circle</string>
+    <string name="spoken_emoji_1F7E1">Yellow Circle</string>
+    <string name="spoken_emoji_1F7E2">Green Circle</string>
+    <string name="spoken_emoji_1F7E3">Purple Circle</string>
+    <string name="spoken_emoji_1F7E4">Brown Circle</string>
+    <string name="spoken_emoji_1F7E5">Red Square</string>
+    <string name="spoken_emoji_1F7E7">Orange Square</string>
+    <string name="spoken_emoji_1F7E8">Yellow Square</string>
+    <string name="spoken_emoji_1F7E9">Green Square</string>
+    <string name="spoken_emoji_1F7E6">Blue Square</string>
+    <string name="spoken_emoji_1F7EA">Purple Square</string>
+    <string name="spoken_emoji_1F7EB">Brown Square</string>
+
+
     <!-- Numbers inside square (keycap) not used in code yet, needs 2 char mapping... -->
     <!-- Spoken description for Unicode code point sequence U+0023 U+20E3: "#⃣" KEYCAP NUMBER SIGN -->
     <string name="spoken_emoji_0023_20E3">Keycap number sign</string>
