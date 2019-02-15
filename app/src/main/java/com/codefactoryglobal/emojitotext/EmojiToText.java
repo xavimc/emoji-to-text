@@ -306,7 +306,7 @@ public class EmojiToText {
     };
 
 
-    private static final SparseIntArray sEmojisMap = new SparseIntArray(1220);
+    private static final SparseIntArray sEmojisMap = new SparseIntArray(1281);
     static {
         // People
         sEmojisMap.put(0x1f604, R.string.spoken_emoji_1F604);
@@ -1527,6 +1527,69 @@ public class EmojiToText {
         sEmojisMap.put(0x1F9FB, R.string.spoken_emoji_1F9FB);
         sEmojisMap.put(0x1F9FC, R.string.spoken_emoji_1F9FC);
         sEmojisMap.put(0x1F9FD, R.string.spoken_emoji_1F9FD);
+
+        // Unicode 12.0 emojis
+        sEmojisMap.put(0x1F971, R.string.spoken_emoji_1F971);
+        sEmojisMap.put(0x1F90E, R.string.spoken_emoji_1F90E);
+        sEmojisMap.put(0x1F90D, R.string.spoken_emoji_1F90D);
+        sEmojisMap.put(0x1F90F, R.string.spoken_emoji_1F90F);
+        sEmojisMap.put(0x1F9BE, R.string.spoken_emoji_1F9BE);
+        sEmojisMap.put(0x1F9BF, R.string.spoken_emoji_1F9BF);
+        sEmojisMap.put(0x1F9BB, R.string.spoken_emoji_1F9BB);
+        sEmojisMap.put(0x1F9CF, R.string.spoken_emoji_1F9CF);
+        sEmojisMap.put(0x1F9CD, R.string.spoken_emoji_1F9CD);
+        sEmojisMap.put(0x1F9CE, R.string.spoken_emoji_1F9CE);
+        sEmojisMap.put(0x1F9A7, R.string.spoken_emoji_1F9A7);
+        sEmojisMap.put(0x1F9AE, R.string.spoken_emoji_1F9AE);
+        sEmojisMap.put(0x1F9A5, R.string.spoken_emoji_1F9A5);
+        sEmojisMap.put(0x1F9A6, R.string.spoken_emoji_1F9A6);
+        sEmojisMap.put(0x1F9A8, R.string.spoken_emoji_1F9A8);
+        sEmojisMap.put(0x1F9A9, R.string.spoken_emoji_1F9A9);
+        sEmojisMap.put(0x1F9C4, R.string.spoken_emoji_1F9C4);
+        sEmojisMap.put(0x1F9C5, R.string.spoken_emoji_1F9C5);
+        sEmojisMap.put(0x1F9C7, R.string.spoken_emoji_1F9C7);
+        sEmojisMap.put(0x1F9C6, R.string.spoken_emoji_1F9C6);
+        sEmojisMap.put(0x1F9C8, R.string.spoken_emoji_1F9C8);
+        sEmojisMap.put(0x1F9AA, R.string.spoken_emoji_1F9AA);
+        sEmojisMap.put(0x1F9C3, R.string.spoken_emoji_1F9C3);
+        sEmojisMap.put(0x1F9C9, R.string.spoken_emoji_1F9C9);
+        sEmojisMap.put(0x1F9CA, R.string.spoken_emoji_1F9CA);
+        sEmojisMap.put(0x1F6D5, R.string.spoken_emoji_1F6D5);
+        sEmojisMap.put(0x1F9BD, R.string.spoken_emoji_1F9BD);
+        sEmojisMap.put(0x1F9BC, R.string.spoken_emoji_1F9BC);
+        sEmojisMap.put(0x1F6FA, R.string.spoken_emoji_1F6FA);
+        sEmojisMap.put(0x1FA82, R.string.spoken_emoji_1FA82);
+        sEmojisMap.put(0x1FA90, R.string.spoken_emoji_1FA90);
+        sEmojisMap.put(0x1F93F, R.string.spoken_emoji_1F93F);
+        sEmojisMap.put(0x1FA80, R.string.spoken_emoji_1FA80);
+        sEmojisMap.put(0x1FA81, R.string.spoken_emoji_1FA81);
+        sEmojisMap.put(0x1F9BA, R.string.spoken_emoji_1F9BA);
+        sEmojisMap.put(0x1F97B, R.string.spoken_emoji_1F97B);
+        sEmojisMap.put(0x1FA71, R.string.spoken_emoji_1FA71);
+        sEmojisMap.put(0x1FA72, R.string.spoken_emoji_1FA72);
+        sEmojisMap.put(0x1FA73, R.string.spoken_emoji_1FA73);
+        sEmojisMap.put(0x1FA70, R.string.spoken_emoji_1FA70);
+        sEmojisMap.put(0x1FA95, R.string.spoken_emoji_1FA95);
+        sEmojisMap.put(0x1FA94, R.string.spoken_emoji_1FA94);
+        sEmojisMap.put(0x1FA93, R.string.spoken_emoji_1FA93);
+        sEmojisMap.put(0x1F9AF, R.string.spoken_emoji_1F9AF);
+        sEmojisMap.put(0x1FA78, R.string.spoken_emoji_1FA78);
+        sEmojisMap.put(0x1FA79, R.string.spoken_emoji_1FA79);
+        sEmojisMap.put(0x1FA7A, R.string.spoken_emoji_1FA7A);
+        sEmojisMap.put(0x1FA91, R.string.spoken_emoji_1FA91);
+        sEmojisMap.put(0x1FA92, R.string.spoken_emoji_1FA92);
+        sEmojisMap.put(0x1F7E0, R.string.spoken_emoji_1F7E0);
+        sEmojisMap.put(0x1F7E1, R.string.spoken_emoji_1F7E1);
+        sEmojisMap.put(0x1F7E2, R.string.spoken_emoji_1F7E2);
+        sEmojisMap.put(0x1F7E3, R.string.spoken_emoji_1F7E3);
+        sEmojisMap.put(0x1F7E4, R.string.spoken_emoji_1F7E4);
+        sEmojisMap.put(0x1F7E5, R.string.spoken_emoji_1F7E5);
+        sEmojisMap.put(0x1F7E7, R.string.spoken_emoji_1F7E7);
+        sEmojisMap.put(0x1F7E8, R.string.spoken_emoji_1F7E8);
+        sEmojisMap.put(0x1F7E9, R.string.spoken_emoji_1F7E9);
+        sEmojisMap.put(0x1F7E6, R.string.spoken_emoji_1F7E6);
+        sEmojisMap.put(0x1F7EA, R.string.spoken_emoji_1F7EA);
+        sEmojisMap.put(0x1F7EB, R.string.spoken_emoji_1F7EB);
 
         // Emoji component hair
         sEmojisMap.put(0x1F9B0, R.string.spoken_emoji_1F9B0);
