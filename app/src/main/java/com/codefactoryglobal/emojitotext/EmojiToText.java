@@ -1,7 +1,7 @@
 /*
  **
  ** Copyright 2014 Hieu Rocker
- **           2018 Codefactory
+ **           2019 Codefactory
  **
  ** Licensed under the Apache License, Version 2.0 (the "License");
  ** you may not use this file except in compliance with the License.
@@ -30,7 +30,6 @@ public class EmojiToText {
     private static final int double_codepoint_first = 0;
     private static final int double_codepoint_second = 1;
     private static final int double_codepoint_stringID = 2;
-    private static final int max_char_code = 65535;
 
     private static final int[][] sDoubleEmojiArray =  {
             {0x1F1E6,0x1F1E8, R.string.spoken_emoji_1F1E6_1F1E8},
@@ -1603,16 +1602,20 @@ public class EmojiToText {
     }
 
 
+    // TODO Improve map and matrix to support multi codepoint emojis
+    // (there are 2-7 codepoint strings not used, since cldr import)
+    // Maybe unique tree state machine to manage all possibilities?
+
     public static String translateEmoji(Context ctx, String input) {
         StringBuilder translatedStr = new StringBuilder();
-        for (int i=0; i<input.length(); i++) {
-            int codePoint = Character.codePointAt(input, i);
+        for (int i = 0; i < input.length(); ++i) {
+            int codePoint = input.codePointAt(i);
             int resId = sEmojisMap.get(codePoint, -1);
             if (resId != -1) {
                 translatedStr.append(ctx.getResources().getString(resId));
                 translatedStr.append(" ");
-                if (codePoint > max_char_code)
-                    i++;
+                int charsToSkip = Character.charCount(codePoint) - 1;
+                i += charsToSkip;
                 continue;
             } else if (isDoubleCodepointEmoji(codePoint)) {
                 int nextCodePoint = getNextCodePoint(input, i, codePoint);
@@ -1624,10 +1627,12 @@ public class EmojiToText {
                             double_found = true;
                             translatedStr.append(ctx.getResources().getString(sDoubleEmojiArray[x][double_codepoint_stringID]));
                             translatedStr.append(" ");
-                            if (codePoint > max_char_code)
-                                i++;
-                            if (nextCodePoint > max_char_code)
-                                i = i+2;
+
+                            int charsToSkip = Character.charCount(codePoint) - 1;
+                            i += charsToSkip;
+                            charsToSkip = Character.charCount(nextCodePoint);
+                            i += charsToSkip;
+
                             break;
                         }
                     }
@@ -1637,11 +1642,9 @@ public class EmojiToText {
                 }
             }
             // No emoji found
-            translatedStr.append(input.substring(i, i+1));
-            if (codePoint > max_char_code) {
-                i++;
-                translatedStr.append(input.substring(i, i+1));
-            }
+            int charsToIgnore = Character.charCount(codePoint);
+            translatedStr.append(input.substring(i, i+charsToIgnore));
+            i += charsToIgnore - 1;
         }
         return translatedStr.toString();
     }
@@ -1658,7 +1661,8 @@ public class EmojiToText {
     private static int getNextCodePoint(String input, int i, int codePoint) {
         int nextCodePoint = -1;
         try {
-            nextCodePoint = Character.codePointAt(input, codePoint > max_char_code ? i + 2 : i + 1);
+            int charsToSkip = Character.charCount(codePoint);
+            nextCodePoint = Character.codePointAt(input, i + charsToSkip);
         } catch (Exception e) {}
         return nextCodePoint;
     }
