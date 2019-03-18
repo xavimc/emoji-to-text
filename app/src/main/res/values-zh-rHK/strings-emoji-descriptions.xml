@@ -1,850 +1,1697 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- 
-/*
-**
-** Copyright 2014, The Android Open Source Project
-**
-** Licensed under the Apache License, Version 2.0 (the "License");
-** you may not use this file except in compliance with the License.
-** You may obtain a copy of the License at
-**
-**     http://www.apache.org/licenses/LICENSE-2.0
-**
-** Unless required by applicable law or agreed to in writing, software
-** distributed under the License is distributed on an "AS IS" BASIS,
-** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-** See the License for the specific language governing permissions and
-** limitations under the License.
-*/
- -->
-
-<!-- 
-    These Emoji symbols are unsupported by TTS.
- -->
-
-<resources
-    >
-    <string name="spoken_emoji_00A9" msgid="2859822817116803638">版權符號</string>
-    <string name="spoken_emoji_00AE" msgid="7708335454134589027">註冊符號</string>
-    <string name="spoken_emoji_203C" msgid="153340916701508663">雙感嘆號</string>
-    <string name="spoken_emoji_2049" msgid="4877256448299555371">感嘆和問號</string>
-    <string name="spoken_emoji_2122" msgid="9188440722954720429">商標符號</string>
-    <string name="spoken_emoji_2139" msgid="9114342638917304327">資料來源</string>
-    <string name="spoken_emoji_2194" msgid="8055202727034946680">向左向右箭嘴</string>
-    <string name="spoken_emoji_2195" msgid="8028122253301087407">向上向下箭嘴</string>
-    <string name="spoken_emoji_2196" msgid="4019164898967854363">西北方箭嘴</string>
-    <string name="spoken_emoji_2197" msgid="4255723717709017801">東北方箭嘴</string>
-    <string name="spoken_emoji_2198" msgid="1452063451313622090">東南方箭嘴</string>
-    <string name="spoken_emoji_2199" msgid="6942722693368807849">西南方箭嘴</string>
-    <string name="spoken_emoji_21A9" msgid="5204750172335111188">有鉤向左箭嘴</string>
-    <string name="spoken_emoji_21AA" msgid="3950259884359247006">有鉤向右箭嘴</string>
-    <string name="spoken_emoji_231A" msgid="6751448803233874993">手錶</string>
-    <string name="spoken_emoji_231B" msgid="5956428809948426182">沙漏</string>
-    <string name="spoken_emoji_23E9" msgid="4022497733535162237">黑色向右雙重三角形</string>
-    <string name="spoken_emoji_23EA" msgid="2251396938087774944">黑色向左雙重三角形</string>
-    <string name="spoken_emoji_23EB" msgid="3746885195641491865">黑色向上雙重三角形</string>
-    <string name="spoken_emoji_23EC" msgid="7852372752901163416">黑色向下雙重三角形</string>
-    <string name="spoken_emoji_23F0" msgid="8474219588750627870">鬧鐘</string>
-    <string name="spoken_emoji_23F3" msgid="166900119581024371">流動的沙漏</string>
-    <string name="spoken_emoji_24C2" msgid="3948348737566038470">圓圈中的大寫字母 M</string>
-    <string name="spoken_emoji_25AA" msgid="7865181015100227349">小型黑色正方形</string>
-    <string name="spoken_emoji_25AB" msgid="6446532820937381457">小型白色正方形</string>
-    <string name="spoken_emoji_25B6" msgid="2423897708496040947">黑色向右三角形</string>
-    <string name="spoken_emoji_25C0" msgid="3595083440074484934">黑色向左三角形</string>
-    <string name="spoken_emoji_25FB" msgid="4838691986881215419">中型白色正方形</string>
-    <string name="spoken_emoji_25FC" msgid="7008859564991191050">中型黑色正方形</string>
-    <string name="spoken_emoji_25FD" msgid="7673439755069217479">中小型白色正方形</string>
-    <string name="spoken_emoji_25FE" msgid="6782214109919768923">中小型黑色正方形</string>
-    <string name="spoken_emoji_2600" msgid="2272722634618990413">有光芒的太陽</string>
-    <string name="spoken_emoji_2601" msgid="6205136889311537150">雲朵</string>
-    <string name="spoken_emoji_260E" msgid="8670395193046424238">黑色電話</string>
-    <string name="spoken_emoji_2611" msgid="4530550203347054611">有勾選記號的投票箱</string>
-    <string name="spoken_emoji_2614" msgid="1612791247861229500">有雨滴的傘</string>
-    <string name="spoken_emoji_2615" msgid="3320562382424018588">熱飲</string>
-    <string name="spoken_emoji_261D" msgid="4690554173549768467">指向上的白色食指</string>
-    <string name="spoken_emoji_263A" msgid="3170094381521989300">白色笑臉</string>
-    <string name="spoken_emoji_2648" msgid="4621241062667020673">白羊座</string>
-    <string name="spoken_emoji_2649" msgid="7694461245947059086">金牛座</string>
-    <string name="spoken_emoji_264A" msgid="1258074605878705030">雙子座</string>
-    <string name="spoken_emoji_264B" msgid="4409219914377810956">巨蟹座</string>
-    <string name="spoken_emoji_264C" msgid="6520255367817054163">獅子座</string>
-    <string name="spoken_emoji_264D" msgid="1504758945499854018">處女座</string>
-    <string name="spoken_emoji_264E" msgid="2354847104530633519">天秤座</string>
-    <string name="spoken_emoji_264F" msgid="5822933280406416112">天蠍座</string>
-    <string name="spoken_emoji_2650" msgid="4832481156714796163">射手座</string>
-    <string name="spoken_emoji_2651" msgid="840953134601595090">摩羯座</string>
-    <string name="spoken_emoji_2652" msgid="3586925968718775281">水瓶座</string>
-    <string name="spoken_emoji_2653" msgid="8420547731496254492">雙魚座</string>
-    <string name="spoken_emoji_2660" msgid="4541170554542412536">黑色葵扇紙牌</string>
-    <string name="spoken_emoji_2663" msgid="3669352721942285724">黑色梅花紙牌</string>
-    <string name="spoken_emoji_2665" msgid="6347941599683765843">黑色紅心紙牌</string>
-    <string name="spoken_emoji_2666" msgid="8296769213401115999">黑色階磚紙牌</string>
-    <string name="spoken_emoji_2668" msgid="7063148281053820386">溫泉</string>
-    <string name="spoken_emoji_267B" msgid="21716857176812762">黑色的國際通用資源回收符號</string>
-    <string name="spoken_emoji_267F" msgid="8833496533226475443">輪椅符號</string>
-    <string name="spoken_emoji_2693" msgid="7443148847598433088">錨</string>
-    <string name="spoken_emoji_26A0" msgid="6272635532992727510">警告標誌</string>
-    <string name="spoken_emoji_26A1" msgid="5604749644693339145">高電壓標誌</string>
-    <string name="spoken_emoji_26AA" msgid="8005748091690377153">中型白圓點</string>
-    <string name="spoken_emoji_26AB" msgid="1655910278422753244">中型黑圓點</string>
-    <string name="spoken_emoji_26BD" msgid="1545218197938889737">足球</string>
-    <string name="spoken_emoji_26BE" msgid="8959760533076498209">棒球</string>
-    <string name="spoken_emoji_26C4" msgid="3045791757044255626">四周沒有下雪的雪人</string>
-    <string name="spoken_emoji_26C5" msgid="5580129409712578639">雲遮日</string>
-    <string name="spoken_emoji_26CE" msgid="8963656417276062998">蛇夫座</string>
-    <string name="spoken_emoji_26D4" msgid="2231451988209604130">禁止進入</string>
-    <string name="spoken_emoji_26EA" msgid="7513319636103804907">教堂</string>
-    <string name="spoken_emoji_26F2" msgid="7134115206158891037">噴泉</string>
-    <string name="spoken_emoji_26F3" msgid="4912302210162075465">插在洞中的旗子</string>
-    <string name="spoken_emoji_26F5" msgid="4766328116769075217">帆船</string>
-    <string name="spoken_emoji_26FA" msgid="5888017494809199037">帳篷</string>
-    <string name="spoken_emoji_26FD" msgid="2417060622927453534">燃料泵</string>
-    <string name="spoken_emoji_2702" msgid="4005741160717451912">黑剪刀</string>
-    <string name="spoken_emoji_2705" msgid="164605766946697759">白色加粗的剔號</string>
-    <string name="spoken_emoji_2708" msgid="7153840886849268988">飛機</string>
-    <string name="spoken_emoji_2709" msgid="2217319160724311369">信封</string>
-    <string name="spoken_emoji_270A" msgid="508347232762319473">高舉拳頭</string>
-    <string name="spoken_emoji_270B" msgid="6640562128327753423">舉起的手</string>
-    <string name="spoken_emoji_270C" msgid="1344288035704944581">勝利手勢</string>
-    <string name="spoken_emoji_270F" msgid="6108251586067318718">鉛筆</string>
-    <string name="spoken_emoji_2712" msgid="6320544535087710482">黑色筆尖</string>
-    <string name="spoken_emoji_2714" msgid="1968242800064001654">加粗的剔號</string>
-    <string name="spoken_emoji_2716" msgid="511941294762977228">加粗的乘法符號</string>
-    <string name="spoken_emoji_2728" msgid="5650330815808691881">三個火花</string>
-    <string name="spoken_emoji_2733" msgid="8915809595141157327">八角星號</string>
-    <string name="spoken_emoji_2734" msgid="4846583547980754332">黑色八角星形</string>
-    <string name="spoken_emoji_2744" msgid="4350636647760161042">雪花</string>
-    <string name="spoken_emoji_2747" msgid="3718282973916474455">火花</string>
-    <string name="spoken_emoji_274C" msgid="2752145886733295314">打叉符號</string>
-    <string name="spoken_emoji_274E" msgid="4262918689871098338">反白方框交叉符號</string>
-    <string name="spoken_emoji_2753" msgid="6935897159942119808">黑色問號裝飾</string>
-    <string name="spoken_emoji_2754" msgid="7277504915105532954">白色問號裝飾</string>
-    <string name="spoken_emoji_2755" msgid="6853076969826960210">白色感嘆號裝飾</string>
-    <string name="spoken_emoji_2757" msgid="3707907828776912174">加粗的感嘆號符號</string>
-    <string name="spoken_emoji_2764" msgid="4214257843609432167">粗黑的愛心</string>
-    <string name="spoken_emoji_2795" msgid="6563954833786162168">加粗的加號</string>
-    <string name="spoken_emoji_2796" msgid="5990926508250772777">加粗的減號</string>
-    <string name="spoken_emoji_2797" msgid="24694184172879174">加粗的除號</string>
-    <string name="spoken_emoji_27A1" msgid="3513434778263100580">黑色向右箭嘴</string>
-    <string name="spoken_emoji_27B0" msgid="203395646864662198">捲曲循環線</string>
-    <string name="spoken_emoji_27BF" msgid="4940514642375640510">雙捲曲循環線</string>
-    <string name="spoken_emoji_2934" msgid="9062130477982973457">先向右再往上彎曲的箭嘴</string>
-    <string name="spoken_emoji_2935" msgid="6198710960720232074">先向右再往下彎曲的箭嘴</string>
-    <string name="spoken_emoji_2B05" msgid="4813405635410707690">黑色向左箭嘴</string>
-    <string name="spoken_emoji_2B06" msgid="1223172079106250748">黑色向上箭嘴</string>
-    <string name="spoken_emoji_2B07" msgid="1599124424746596150">黑色向下箭嘴</string>
-    <string name="spoken_emoji_2B1B" msgid="3461247311988501626">大型黑色正方形</string>
-    <string name="spoken_emoji_2B1C" msgid="5793146430145248915">大型白色正方形</string>
-    <string name="spoken_emoji_2B50" msgid="3850845519526950524">中型白色星星</string>
-    <string name="spoken_emoji_2B55" msgid="9137882158811541824">加粗的大圓形</string>
-    <string name="spoken_emoji_3030" msgid="4609172241893565639">波折線</string>
-    <string name="spoken_emoji_303D" msgid="2545833934975907505">專輯交替標記</string>
-    <string name="spoken_emoji_3297" msgid="928912923628973800">圓形的表意文字「祝賀」</string>
-    <string name="spoken_emoji_3299" msgid="3930347573693668426">圓形的表意文字「秘密」</string>
-    <string name="spoken_emoji_1F004" msgid="1705216181345894600">麻雀牌紅中</string>
-    <string name="spoken_emoji_1F0CF" msgid="7601493592085987866">黑色鬼牌</string>
-    <string name="spoken_emoji_1F170" msgid="3817698686602826773">A 型血</string>
-    <string name="spoken_emoji_1F171" msgid="3684218589626650242">B 型血</string>
-    <string name="spoken_emoji_1F17E" msgid="2978809190364779029">O 型血</string>
-    <string name="spoken_emoji_1F17F" msgid="463634348668462040">停車場</string>
-    <string name="spoken_emoji_1F18E" msgid="1650705325221496768">AB 型血</string>
-    <string name="spoken_emoji_1F191" msgid="5386969264431429221">方框 CL</string>
-    <string name="spoken_emoji_1F192" msgid="8324226436829162496">方框 COOL</string>
-    <string name="spoken_emoji_1F193" msgid="4731758603321515364">方框 FREE</string>
-    <string name="spoken_emoji_1F194" msgid="4903128609556175887">方框 ID</string>
-    <string name="spoken_emoji_1F195" msgid="1433142500411060924">方框 NEW</string>
-    <string name="spoken_emoji_1F196" msgid="8825160701159634202">方框 NG</string>
-    <string name="spoken_emoji_1F197" msgid="7841079241554176535">方框 OK</string>
-    <string name="spoken_emoji_1F198" msgid="7020298909426960622">方框 SOS</string>
-    <string name="spoken_emoji_1F199" msgid="5971252667136235630">方框 UP 與感嘆號</string>
-    <string name="spoken_emoji_1F19A" msgid="4557270135899843959">方框 VS</string>
-    <string name="spoken_emoji_1F201" msgid="7000490044681139002">方框片假名「這裡」</string>
-    <string name="spoken_emoji_1F202" msgid="8560906958695043947">方框片假名「服務」</string>
-    <string name="spoken_emoji_1F21A" msgid="1496435317324514033">方框表意文字「免費」</string>
-    <string name="spoken_emoji_1F22F" msgid="609797148862445402">方框表意文字「預留座位」</string>
-    <string name="spoken_emoji_1F232" msgid="8125716331632035820">方框表意文字「禁止」</string>
-    <string name="spoken_emoji_1F233" msgid="8749401090457355028">方框表意文字「空位」</string>
-    <string name="spoken_emoji_1F234" msgid="3546951604285970768">方框表意文字「同意」</string>
-    <string name="spoken_emoji_1F235" msgid="5320186982841793711">方框表意文字「已滿」</string>
-    <string name="spoken_emoji_1F236" msgid="879755752069393034">方框表意文字「收費」</string>
-    <string name="spoken_emoji_1F237" msgid="6741807001205851437">方框表意文字「每月」</string>
-    <string name="spoken_emoji_1F238" msgid="5504414186438196912">方框表意文字「申請」</string>
-    <string name="spoken_emoji_1F239" msgid="1634067311597618959">方框表意文字「折扣」</string>
-    <string name="spoken_emoji_1F23A" msgid="3107862957630169536">方框表意文字「營業中」</string>
-    <string name="spoken_emoji_1F250" msgid="6586943922806727907">圓圈表意文字「特惠」</string>
-    <string name="spoken_emoji_1F251" msgid="9099032855993346948">圓圈表意文字「接受」</string>
-    <string name="spoken_emoji_1F300" msgid="4720098285295840383">氣旋</string>
-    <string name="spoken_emoji_1F301" msgid="3601962477653752974">有霧</string>
-    <string name="spoken_emoji_1F302" msgid="3404357123421753593">未打開的雨傘</string>
-    <string name="spoken_emoji_1F303" msgid="3899301321538188206">有星空的夜晚</string>
-    <string name="spoken_emoji_1F304" msgid="2767148930689050040">山頂日出</string>
-    <string name="spoken_emoji_1F305" msgid="9165812924292061196">日出</string>
-    <string name="spoken_emoji_1F306" msgid="5889294736109193104">暮光傾城</string>
-    <string name="spoken_emoji_1F307" msgid="2714290867291163713">夕陽下的城市森林</string>
-    <string name="spoken_emoji_1F308" msgid="688704703985173377">彩虹</string>
-    <string name="spoken_emoji_1F309" msgid="6217981957992313528">橋下夜色</string>
-    <string name="spoken_emoji_1F30A" msgid="4329309263152110893">水波</string>
-    <string name="spoken_emoji_1F30B" msgid="5729430693700923112">火山</string>
-    <string name="spoken_emoji_1F30C" msgid="2961230863217543082">銀河</string>
-    <string name="spoken_emoji_1F30D" msgid="1113905673331547953">地球 (歐洲到非洲)</string>
-    <string name="spoken_emoji_1F30E" msgid="5278512600749223671">地球 (美洲)</string>
-    <string name="spoken_emoji_1F30F" msgid="5718144880978707493">地球 (亞洲到澳洲)</string>
-    <string name="spoken_emoji_1F310" msgid="2959618582975247601">有經線的地球</string>
-    <string name="spoken_emoji_1F311" msgid="623906380914895542">新月符號</string>
-    <string name="spoken_emoji_1F312" msgid="4458575672576125401">眉月符號</string>
-    <string name="spoken_emoji_1F313" msgid="7599181787989497294">上弦月符號</string>
-    <string name="spoken_emoji_1F314" msgid="4898293184964365413">盈凸月符號</string>
-    <string name="spoken_emoji_1F315" msgid="3218117051779496309">滿月符號</string>
-    <string name="spoken_emoji_1F316" msgid="2061317145777689569">虧凸月符號</string>
-    <string name="spoken_emoji_1F317" msgid="2721090687319539049">下弦月符號</string>
-    <string name="spoken_emoji_1F318" msgid="3814091755648887570">殘月符號</string>
-    <string name="spoken_emoji_1F319" msgid="4074299824890459465">新月</string>
-    <string name="spoken_emoji_1F31A" msgid="3092285278116977103">有臉孔的新月</string>
-    <string name="spoken_emoji_1F31B" msgid="2658562138386927881">有臉孔的上弦月</string>
-    <string name="spoken_emoji_1F31C" msgid="7914768515547867384">有臉孔的下弦月</string>
-    <string name="spoken_emoji_1F31D" msgid="1925730459848297182">有臉孔的滿月</string>
-    <string name="spoken_emoji_1F31E" msgid="8022112382524084418">有臉孔的太陽</string>
-    <string name="spoken_emoji_1F31F" msgid="1051661214137766369">閃耀的星星</string>
-    <string name="spoken_emoji_1F320" msgid="5450591979068216115">流星</string>
-    <string name="spoken_emoji_1F330" msgid="3115760035618051575">栗子</string>
-    <string name="spoken_emoji_1F331" msgid="5658888205290008691">幼苗</string>
-    <string name="spoken_emoji_1F332" msgid="2935650450421165938">長青樹</string>
-    <string name="spoken_emoji_1F333" msgid="5898847427062482675">落葉樹</string>
-    <string name="spoken_emoji_1F334" msgid="6183375224678417894">棕櫚樹</string>
-    <string name="spoken_emoji_1F335" msgid="5352418412103584941">仙人掌</string>
-    <string name="spoken_emoji_1F337" msgid="3839107352363566289">鬱金香</string>
-    <string name="spoken_emoji_1F338" msgid="6389970364260468490">櫻花</string>
-    <string name="spoken_emoji_1F339" msgid="9128891447985256151">玫瑰</string>
-    <string name="spoken_emoji_1F33A" msgid="2025828400095233078">大紅花</string>
-    <string name="spoken_emoji_1F33B" msgid="8163868254348448552">向日葵</string>
-    <string name="spoken_emoji_1F33C" msgid="6850371206262335812">花朵</string>
-    <string name="spoken_emoji_1F33D" msgid="9033484052864509610">玉米穗</string>
-    <string name="spoken_emoji_1F33E" msgid="2540173396638444120">稻穗</string>
-    <string name="spoken_emoji_1F33F" msgid="4384823344364908558">香草</string>
-    <string name="spoken_emoji_1F340" msgid="3494255459156499305">四葉草</string>
-    <string name="spoken_emoji_1F341" msgid="4581959481754990158">楓葉</string>
-    <string name="spoken_emoji_1F342" msgid="3119068426871821222">落葉</string>
-    <string name="spoken_emoji_1F343" msgid="2663317495805149004">隨風飛舞的葉子</string>
-    <string name="spoken_emoji_1F344" msgid="2738517881678722159">蘑菇</string>
-    <string name="spoken_emoji_1F345" msgid="6135288642349085554">番茄</string>
-    <string name="spoken_emoji_1F346" msgid="2075395322785406367">茄子</string>
-    <string name="spoken_emoji_1F347" msgid="7753453754963890571">葡萄</string>
-    <string name="spoken_emoji_1F348" msgid="1247076837284932788">蜜瓜</string>
-    <string name="spoken_emoji_1F349" msgid="5563054555180611086">西瓜</string>
-    <string name="spoken_emoji_1F34A" msgid="4688661208570160524">橘子</string>
-    <string name="spoken_emoji_1F34B" msgid="4335318423164185706">檸檬</string>
-    <string name="spoken_emoji_1F34C" msgid="3712827239858159474">香蕉</string>
-    <string name="spoken_emoji_1F34D" msgid="7712521967162622936">菠蘿</string>
-    <string name="spoken_emoji_1F34E" msgid="1859466882598614228">紅蘋果</string>
-    <string name="spoken_emoji_1F34F" msgid="8251711032295005633">青蘋果</string>
-    <string name="spoken_emoji_1F350" msgid="625802980159197701">梨</string>
-    <string name="spoken_emoji_1F351" msgid="4269460120610911895">桃</string>
-    <string name="spoken_emoji_1F352" msgid="965600953360182635">車厘子</string>
-    <string name="spoken_emoji_1F353" msgid="7068623879906925592">士多啤梨</string>
-    <string name="spoken_emoji_1F354" msgid="45162285238888494">漢堡包</string>
-    <string name="spoken_emoji_1F355" msgid="9157587635526433283">一片薄餅</string>
-    <string name="spoken_emoji_1F356" msgid="2667196119149852244">連骨的肉</string>
-    <string name="spoken_emoji_1F357" msgid="8022817413851052256">家禽腿肉</string>
-    <string name="spoken_emoji_1F358" msgid="3042693264748036476">米餅</string>
-    <string name="spoken_emoji_1F359" msgid="3988148661730121958">飯糰</string>
-    <string name="spoken_emoji_1F35A" msgid="1763824172198327268">煮熟的飯</string>
-    <string name="spoken_emoji_1F35B" msgid="62530406745717835">咖哩飯</string>
-    <string name="spoken_emoji_1F35C" msgid="7537756539198945509">冒著熱氣的碗</string>
-    <string name="spoken_emoji_1F35D" msgid="8173523083861875196">意粉</string>
-    <string name="spoken_emoji_1F35E" msgid="2935428307894662571">麵包</string>
-    <string name="spoken_emoji_1F35F" msgid="4840297386785728443">薯條</string>
-    <string name="spoken_emoji_1F360" msgid="4094659855684686801">烤蕃薯</string>
-    <string name="spoken_emoji_1F361" msgid="6475486395784096109">糯米丸子</string>
-    <string name="spoken_emoji_1F362" msgid="5004692577661076275">關東煮</string>
-    <string name="spoken_emoji_1F363" msgid="1606603765717743806">壽司</string>
-    <string name="spoken_emoji_1F364" msgid="6550457766169570811">炸蝦</string>
-    <string name="spoken_emoji_1F365" msgid="4963815540953316307">魚餅</string>
-    <string name="spoken_emoji_1F366" msgid="7862401745277049404">軟雪糕</string>
-    <string name="spoken_emoji_1F367" msgid="7447972978281980414">刨冰</string>
-    <string name="spoken_emoji_1F368" msgid="7790003146142724913">雪糕</string>
-    <string name="spoken_emoji_1F369" msgid="7383712944084857350">冬甩</string>
-    <string name="spoken_emoji_1F36A" msgid="2726271795913042295">曲奇</string>
-    <string name="spoken_emoji_1F36B" msgid="6342163604299875931">朱古力條</string>
-    <string name="spoken_emoji_1F36C" msgid="2168934753998218790">糖果</string>
-    <string name="spoken_emoji_1F36D" msgid="3671507903799975792">波板糖</string>
-    <string name="spoken_emoji_1F36E" msgid="4630541402785165902">奶黄/吉士</string>
-    <string name="spoken_emoji_1F36F" msgid="5577915387425169439">蜜糖罐</string>
-    <string name="spoken_emoji_1F370" msgid="7243244547866114951">酥餅</string>
-    <string name="spoken_emoji_1F371" msgid="6731527040552916358">便當</string>
-    <string name="spoken_emoji_1F372" msgid="1635035323832181733">鍋物</string>
-    <string name="spoken_emoji_1F373" msgid="7799289534289221045">烹飪</string>
-    <string name="spoken_emoji_1F374" msgid="5973820884987069131">刀叉</string>
-    <string name="spoken_emoji_1F375" msgid="1074832087699617700">無柄茶杯</string>
-    <string name="spoken_emoji_1F376" msgid="6499274685584852067">清酒瓶與杯</string>
-    <string name="spoken_emoji_1F377" msgid="1762398562314172075">酒杯</string>
-    <string name="spoken_emoji_1F378" msgid="5528234560590117516">雞尾酒杯</string>
-    <string name="spoken_emoji_1F379" msgid="790581290787943325">熱帶飲料</string>
-    <string name="spoken_emoji_1F37A" msgid="391966822450619516">啤酒杯</string>
-    <string name="spoken_emoji_1F37B" msgid="9015043286465670662">乾杯</string>
-    <string name="spoken_emoji_1F37C" msgid="2532113819464508894">奶瓶</string>
-    <string name="spoken_emoji_1F380" msgid="3487363857092458827">絲帶</string>
-    <string name="spoken_emoji_1F381" msgid="614180683680675444">包裝好的禮物</string>
-    <string name="spoken_emoji_1F382" msgid="4720497171946687501">生日蛋糕</string>
-    <string name="spoken_emoji_1F383" msgid="3536505941578757623">南瓜燈</string>
-    <string name="spoken_emoji_1F384" msgid="1797870204479059004">聖誕樹</string>
-    <string name="spoken_emoji_1F385" msgid="1754174063483626367">聖誕老人</string>
-    <string name="spoken_emoji_1F386" msgid="2130445450758114746">煙花</string>
-    <string name="spoken_emoji_1F387" msgid="3403182563117999933">仙女棒</string>
-    <string name="spoken_emoji_1F388" msgid="2903047203723251804">汽球</string>
-    <string name="spoken_emoji_1F389" msgid="2352830665883549388">單線拉炮</string>
-    <string name="spoken_emoji_1F38A" msgid="6280428984773641322">五彩碎紙球</string>
-    <string name="spoken_emoji_1F38B" msgid="4902225837479015489">七夕許願樹</string>
-    <string name="spoken_emoji_1F38C" msgid="7623268024030989365">交叉的旗子</string>
-    <string name="spoken_emoji_1F38D" msgid="8237542796124408528">松果裝飾品</string>
-    <string name="spoken_emoji_1F38E" msgid="5373397476238212371">日本娃娃</string>
-    <string name="spoken_emoji_1F38F" msgid="8754091376829552844">鯉魚旗</string>
-    <string name="spoken_emoji_1F390" msgid="8903307048095431374">風鈴</string>
-    <string name="spoken_emoji_1F391" msgid="2134952069191911841">賞月</string>
-    <string name="spoken_emoji_1F392" msgid="6380405493914304737">書包</string>
-    <string name="spoken_emoji_1F393" msgid="6947890064872470996">學士帽</string>
-    <string name="spoken_emoji_1F3A0" msgid="3572095190082826057">旋轉木馬</string>
-    <string name="spoken_emoji_1F3A1" msgid="4300565511681058798">摩天輪</string>
-    <string name="spoken_emoji_1F3A2" msgid="15486093912232140">過山車</string>
-    <string name="spoken_emoji_1F3A3" msgid="921739319504942924">釣竿與魚</string>
-    <string name="spoken_emoji_1F3A4" msgid="7497596355346856950">咪高峰</string>
-    <string name="spoken_emoji_1F3A5" msgid="4290497821228183002">電影攝影機</string>
-    <string name="spoken_emoji_1F3A6" msgid="26019057872319055">戲院</string>
-    <string name="spoken_emoji_1F3A7" msgid="837856608794094105">耳機</string>
-    <string name="spoken_emoji_1F3A8" msgid="2332260356509244587">調色盤</string>
-    <string name="spoken_emoji_1F3A9" msgid="9045869366525115256">大禮帽</string>
-    <string name="spoken_emoji_1F3AA" msgid="5728760354237132">馬戲團帳篷</string>
-    <string name="spoken_emoji_1F3AB" msgid="1657997517193216284">門票</string>
-    <string name="spoken_emoji_1F3AC" msgid="4317366554314492152">場記牌</string>
-    <string name="spoken_emoji_1F3AD" msgid="607157286336130470">表演藝術</string>
-    <string name="spoken_emoji_1F3AE" msgid="2902308174671548150">電子遊戲</string>
-    <string name="spoken_emoji_1F3AF" msgid="5420539221790296407">正中紅心</string>
-    <string name="spoken_emoji_1F3B0" msgid="7440244806527891956">老虎機</string>
-    <string name="spoken_emoji_1F3B1" msgid="545544382391379234">桌球</string>
-    <string name="spoken_emoji_1F3B2" msgid="8302262034774787493">遊戲骰子</string>
-    <string name="spoken_emoji_1F3B3" msgid="5180870610771027520">保齡球</string>
-    <string name="spoken_emoji_1F3B4" msgid="4723852033266071564">花牌</string>
-    <string name="spoken_emoji_1F3B5" msgid="1998470239850548554">音符</string>
-    <string name="spoken_emoji_1F3B6" msgid="3827730457113941705">許多音符</string>
-    <string name="spoken_emoji_1F3B7" msgid="5503403099445042180">色士風</string>
-    <string name="spoken_emoji_1F3B8" msgid="3985658156795011430">結他</string>
-    <string name="spoken_emoji_1F3B9" msgid="5596295757967881451">鍵盤琴</string>
-    <string name="spoken_emoji_1F3BA" msgid="4284064120340683558">小號</string>
-    <string name="spoken_emoji_1F3BB" msgid="2856598510069988745">小提琴</string>
-    <string name="spoken_emoji_1F3BC" msgid="1608424748821446230">樂譜</string>
-    <string name="spoken_emoji_1F3BD" msgid="5490786111375627777">有飾帶的運動衣</string>
-    <string name="spoken_emoji_1F3BE" msgid="1851613105691627931">網球拍與球</string>
-    <string name="spoken_emoji_1F3BF" msgid="6862405997423247921">滑雪與滑雪靴</string>
-    <string name="spoken_emoji_1F3C0" msgid="7421420756115104085">籃球與球框</string>
-    <string name="spoken_emoji_1F3C1" msgid="6926537251677319922">賽車方格旗</string>
-    <string name="spoken_emoji_1F3C2" msgid="5708596929237987082">滑雪的人</string>
-    <string name="spoken_emoji_1F3C3" msgid="5850982999510115824">跑步者</string>
-    <string name="spoken_emoji_1F3C4" msgid="8468355585994639838">衝浪者</string>
-    <string name="spoken_emoji_1F3C6" msgid="9094474706847545409">獎盃</string>
-    <string name="spoken_emoji_1F3C7" msgid="8172206200368370116">賽馬</string>
-    <string name="spoken_emoji_1F3C8" msgid="5619171461277597709">美式足球</string>
-    <string name="spoken_emoji_1F3C9" msgid="6371294008765871043">橄欖球</string>
-    <string name="spoken_emoji_1F3CA" msgid="130977831787806932">游泳者</string>
-    <string name="spoken_emoji_1F3E0" msgid="6277213201655811842">住宅建築</string>
-    <string name="spoken_emoji_1F3E1" msgid="233476176077538885">有庭院的房子</string>
-    <string name="spoken_emoji_1F3E2" msgid="919736380093964570">辦公大樓</string>
-    <string name="spoken_emoji_1F3E3" msgid="6177606081825094184">日本郵局</string>
-    <string name="spoken_emoji_1F3E4" msgid="717377871070970293">歐洲郵局</string>
-    <string name="spoken_emoji_1F3E5" msgid="1350532500431776780">醫院</string>
-    <string name="spoken_emoji_1F3E6" msgid="342132788513806214">銀行</string>
-    <string name="spoken_emoji_1F3E7" msgid="6322352038284944265">自動提款機</string>
-    <string name="spoken_emoji_1F3E8" msgid="5864918444350599907">酒店</string>
-    <string name="spoken_emoji_1F3E9" msgid="7830416185375326938">汽車旅館</string>
-    <string name="spoken_emoji_1F3EA" msgid="5081084413084360479">便利店</string>
-    <string name="spoken_emoji_1F3EB" msgid="7010966528205150525">學校</string>
-    <string name="spoken_emoji_1F3EC" msgid="4845978861878295154">百貨公司</string>
-    <string name="spoken_emoji_1F3ED" msgid="3980316226665215370">工廠</string>
-    <string name="spoken_emoji_1F3EE" msgid="1253964276770550248">居酒屋燈籠</string>
-    <string name="spoken_emoji_1F3EF" msgid="1128975573507389883">日本城堡</string>
-    <string name="spoken_emoji_1F3F0" msgid="1544632297502291578">歐式城堡</string>
-    <string name="spoken_emoji_1F400" msgid="2063034795679578294">大型家鼠</string>
-    <string name="spoken_emoji_1F401" msgid="6736421616217369594">老鼠</string>
-    <string name="spoken_emoji_1F402" msgid="7276670995895485604">牛</string>
-    <string name="spoken_emoji_1F403" msgid="8045709541897118928">水牛</string>
-    <string name="spoken_emoji_1F404" msgid="5240777285676662335">母牛</string>
-    <string name="spoken_emoji_1F406" msgid="5163461930159540018">豹</string>
-    <string name="spoken_emoji_1F407" msgid="6905370221172708160">兔子</string>
-    <string name="spoken_emoji_1F408" msgid="1362164550508207284">貓</string>
-    <string name="spoken_emoji_1F409" msgid="8476130983168866013">龍</string>
-    <string name="spoken_emoji_1F40A" msgid="1149626786411545043">鱷魚</string>
-    <string name="spoken_emoji_1F40B" msgid="5199104921208397643">鯨魚</string>
-    <string name="spoken_emoji_1F40C" msgid="2704006052881702675">蝸牛</string>
-    <string name="spoken_emoji_1F40D" msgid="8648186663643157522">蛇</string>
-    <string name="spoken_emoji_1F40E" msgid="7219137467573327268">馬</string>
-    <string name="spoken_emoji_1F40F" msgid="7834336676729040395">公羊</string>
-    <string name="spoken_emoji_1F410" msgid="8686765722255775031">山羊</string>
-    <string name="spoken_emoji_1F411" msgid="3585715397876383525">綿羊</string>
-    <string name="spoken_emoji_1F412" msgid="4924794582980077838">猴子</string>
-    <string name="spoken_emoji_1F413" msgid="1460475310405677377">公雞</string>
-    <string name="spoken_emoji_1F414" msgid="5857296282631892219">雞</string>
-    <string name="spoken_emoji_1F415" msgid="5920041074892949527">狗</string>
-    <string name="spoken_emoji_1F416" msgid="4362403392912540286">豬</string>
-    <string name="spoken_emoji_1F417" msgid="6836978415840795128">野豬</string>
-    <string name="spoken_emoji_1F418" msgid="7926161463897783691">大象</string>
-    <string name="spoken_emoji_1F419" msgid="1055233959755784186">章魚</string>
-    <string name="spoken_emoji_1F41A" msgid="5195666556511558060">貝殼</string>
-    <string name="spoken_emoji_1F41B" msgid="7652480167465557832">蟲子</string>
-    <string name="spoken_emoji_1F41C" msgid="1123461148697574239">螞蟻</string>
-    <string name="spoken_emoji_1F41D" msgid="718579308764058851">蜜蜂</string>
-    <string name="spoken_emoji_1F41E" msgid="6766305509608115467">甲蟲</string>
-    <string name="spoken_emoji_1F41F" msgid="1207261298343160838">魚</string>
-    <string name="spoken_emoji_1F420" msgid="1041145003133609221">熱帶魚</string>
-    <string name="spoken_emoji_1F421" msgid="1748378324417438751">河豚</string>
-    <string name="spoken_emoji_1F422" msgid="4106724877523329148">烏龜</string>
-    <string name="spoken_emoji_1F423" msgid="4077407945958691907">剛孵化的小雞</string>
-    <string name="spoken_emoji_1F424" msgid="6911326019270172283">小雞</string>
-    <string name="spoken_emoji_1F425" msgid="5466514196557885577">正面的小雞</string>
-    <string name="spoken_emoji_1F426" msgid="2163979138772892755">鳥</string>
-    <string name="spoken_emoji_1F427" msgid="3585670324511212961">企鵝</string>
-    <string name="spoken_emoji_1F428" msgid="7955440808647898579">無尾熊</string>
-    <string name="spoken_emoji_1F429" msgid="5028269352809819035">捲毛狗</string>
-    <string name="spoken_emoji_1F42A" msgid="4681926706404032484">單峰駱駝</string>
-    <string name="spoken_emoji_1F42B" msgid="2725166074981558322">雙峰駱駝</string>
-    <string name="spoken_emoji_1F42C" msgid="6764791873413727085">海豚</string>
-    <string name="spoken_emoji_1F42D" msgid="1033643138546864251">老鼠臉</string>
-    <string name="spoken_emoji_1F42E" msgid="8099223337120508820">牛臉</string>
-    <string name="spoken_emoji_1F42F" msgid="2104743989330781572">老虎臉</string>
-    <string name="spoken_emoji_1F430" msgid="525492897063150160">兔子臉</string>
-    <string name="spoken_emoji_1F431" msgid="6051358666235016851">貓臉</string>
-    <string name="spoken_emoji_1F432" msgid="7698001871193018305">龍臉</string>
-    <string name="spoken_emoji_1F433" msgid="3762356053512899326">噴水鯨魚</string>
-    <string name="spoken_emoji_1F434" msgid="3619943222159943226">馬臉</string>
-    <string name="spoken_emoji_1F435" msgid="59199202683252958">猴子臉</string>
-    <string name="spoken_emoji_1F436" msgid="340544719369009828">狗臉</string>
-    <string name="spoken_emoji_1F437" msgid="1219818379784982585">豬臉</string>
-    <string name="spoken_emoji_1F438" msgid="9128124743321008210">青蛙臉</string>
-    <string name="spoken_emoji_1F439" msgid="1424161319554642266">倉鼠臉</string>
-    <string name="spoken_emoji_1F43A" msgid="6727645488430385584">狼臉</string>
-    <string name="spoken_emoji_1F43B" msgid="5397170068392865167">熊臉</string>
-    <string name="spoken_emoji_1F43C" msgid="2715995734367032431">熊貓臉</string>
-    <string name="spoken_emoji_1F43D" msgid="6005480717951776597">豬鼻</string>
-    <string name="spoken_emoji_1F43E" msgid="8917626103219080547">動物足印</string>
-    <string name="spoken_emoji_1F440" msgid="7144338258163384433">眼睛</string>
-    <string name="spoken_emoji_1F442" msgid="1905515392292676124">耳朵</string>
-    <string name="spoken_emoji_1F443" msgid="1491504447758933115">鼻子</string>
-    <string name="spoken_emoji_1F444" msgid="3654613047946080332">嘴巴</string>
-    <string name="spoken_emoji_1F445" msgid="7024905244040509204">舌頭</string>
-    <string name="spoken_emoji_1F446" msgid="2150365643636471745">白色食指向上反手</string>
-    <string name="spoken_emoji_1F447" msgid="8794022344940891388">白色食指向下反手</string>
-    <string name="spoken_emoji_1F448" msgid="3261812959215550650">白色食指向左反手</string>
-    <string name="spoken_emoji_1F449" msgid="4764447975177805991">白色食指向右反手</string>
-    <string name="spoken_emoji_1F44A" msgid="7197417095486424841">握拳符號</string>
-    <string name="spoken_emoji_1F44B" msgid="1975968945250833117">揮手符號</string>
-    <string name="spoken_emoji_1F44C" msgid="3185919567897876562">OK 手勢符號</string>
-    <string name="spoken_emoji_1F44D" msgid="6182553970602667815">豎起拇指符號</string>
-    <string name="spoken_emoji_1F44E" msgid="8030851867365111809">拇指朝下符號</string>
-    <string name="spoken_emoji_1F44F" msgid="5148753662268213389">鼓掌符號</string>
-    <string name="spoken_emoji_1F450" msgid="1012021072085157054">張開雙手符號</string>
-    <string name="spoken_emoji_1F451" msgid="8257466714629051320">皇冠</string>
-    <string name="spoken_emoji_1F452" msgid="4567394011149905466">女裝帽</string>
-    <string name="spoken_emoji_1F453" msgid="5978410551173163010">眼鏡</string>
-    <string name="spoken_emoji_1F454" msgid="348469036193323252">領帶</string>
-    <string name="spoken_emoji_1F455" msgid="5665118831861433578">T 恤</string>
-    <string name="spoken_emoji_1F456" msgid="1890991330923356408">牛仔褲</string>
-    <string name="spoken_emoji_1F457" msgid="3904310482655702620">連身裙</string>
-    <string name="spoken_emoji_1F458" msgid="5704243858031107692">和服</string>
-    <string name="spoken_emoji_1F459" msgid="3553148747050035251">比基尼</string>
-    <string name="spoken_emoji_1F45A" msgid="1389654639484716101">女裝</string>
-    <string name="spoken_emoji_1F45B" msgid="1113293170254222904">皮包</string>
-    <string name="spoken_emoji_1F45C" msgid="3410257778598006936">手提包</string>
-    <string name="spoken_emoji_1F45D" msgid="812176504300064819">小袋子</string>
-    <string name="spoken_emoji_1F45E" msgid="2901741399934723562">男裝鞋</string>
-    <string name="spoken_emoji_1F45F" msgid="6828566359287798863">運動鞋</string>
-    <string name="spoken_emoji_1F460" msgid="305863879170420855">高跟鞋</string>
-    <string name="spoken_emoji_1F461" msgid="5160493217831417630">女裝涼鞋</string>
-    <string name="spoken_emoji_1F462" msgid="1722897795554863734">女裝長靴</string>
-    <string name="spoken_emoji_1F463" msgid="5850772903593010699">腳印</string>
-    <string name="spoken_emoji_1F464" msgid="1228335905487734913">半身剪影</string>
-    <string name="spoken_emoji_1F465" msgid="4461307702499679879">多個半身剪影</string>
-    <string name="spoken_emoji_1F466" msgid="1938873085514108889">男孩</string>
-    <string name="spoken_emoji_1F467" msgid="8237080594860144998">女孩</string>
-    <string name="spoken_emoji_1F468" msgid="6081300722526675382">男人</string>
-    <string name="spoken_emoji_1F469" msgid="1090140923076108158">女人</string>
-    <string name="spoken_emoji_1F46A" msgid="5063570981942606595">家庭</string>
-    <string name="spoken_emoji_1F46B" msgid="6795882374287327952">手牽手的男女</string>
-    <string name="spoken_emoji_1F46C" msgid="6844464165783964495">手牽手的男人</string>
-    <string name="spoken_emoji_1F46D" msgid="2316773068014053180">手牽手的女人</string>
-    <string name="spoken_emoji_1F46E" msgid="5897625605860822401">警察</string>
-    <string name="spoken_emoji_1F46F" msgid="7716871657717641490">兔女郎</string>
-    <string name="spoken_emoji_1F470" msgid="6409995400510338892">戴著面紗的新娘</string>
-    <string name="spoken_emoji_1F471" msgid="3058247860441670806">金髮的人</string>
-    <string name="spoken_emoji_1F472" msgid="3928854667819339142">戴瓜皮帽的男人</string>
-    <string name="spoken_emoji_1F473" msgid="5921952095808988381">戴著頭巾的男性</string>
-    <string name="spoken_emoji_1F474" msgid="1082237499496725183">男性長者</string>
-    <string name="spoken_emoji_1F475" msgid="7280323988642212761">女性長者</string>
-    <string name="spoken_emoji_1F476" msgid="4713322657821088296">嬰兒</string>
-    <string name="spoken_emoji_1F477" msgid="2197036131029221370">建築工人</string>
-    <string name="spoken_emoji_1F478" msgid="7245521193493488875">公主</string>
-    <string name="spoken_emoji_1F479" msgid="6876475321015553972">日本魔鬼</string>
-    <string name="spoken_emoji_1F47A" msgid="3900813633102703571">日本天狗</string>
-    <string name="spoken_emoji_1F47B" msgid="2608250873194079390">鬼魂</string>
-    <string name="spoken_emoji_1F47C" msgid="3838699131276537421">嬰兒天使</string>
-    <string name="spoken_emoji_1F47D" msgid="2874077455888369538">外星人</string>
-    <string name="spoken_emoji_1F47E" msgid="3642607168625579507">外星怪獸</string>
-    <string name="spoken_emoji_1F47F" msgid="441605977269926252">小惡魔</string>
-    <string name="spoken_emoji_1F480" msgid="3696253485164878739">骷髏頭</string>
-    <string name="spoken_emoji_1F481" msgid="320408708521966893">服務台人員</string>
-    <string name="spoken_emoji_1F482" msgid="3424354860245608949">衛兵</string>
-    <string name="spoken_emoji_1F483" msgid="3221113594843849083">舞者</string>
-    <string name="spoken_emoji_1F484" msgid="7348014979080444885">唇膏</string>
-    <string name="spoken_emoji_1F485" msgid="6133507975565116339">指甲油</string>
-    <string name="spoken_emoji_1F486" msgid="9085459968247394155">臉部按摩</string>
-    <string name="spoken_emoji_1F487" msgid="1479113637259592150">理髮</string>
-    <string name="spoken_emoji_1F488" msgid="6922559285234100252">理髮店招牌</string>
-    <string name="spoken_emoji_1F489" msgid="8114863680950147305">注射器</string>
-    <string name="spoken_emoji_1F48A" msgid="8526843630145963032">藥丸</string>
-    <string name="spoken_emoji_1F48B" msgid="2538528967897640292">唇印</string>
-    <string name="spoken_emoji_1F48C" msgid="1681173271652890232">情書</string>
-    <string name="spoken_emoji_1F48D" msgid="8259886164999042373">戒指</string>
-    <string name="spoken_emoji_1F48E" msgid="8777981696011111101">寶石</string>
-    <string name="spoken_emoji_1F48F" msgid="741593675183677907">親吻</string>
-    <string name="spoken_emoji_1F490" msgid="4482549128959806736">花束</string>
-    <string name="spoken_emoji_1F491" msgid="2305245307882441500">情侶加上愛心</string>
-    <string name="spoken_emoji_1F492" msgid="3884119934804475732">婚禮</string>
-    <string name="spoken_emoji_1F493" msgid="1208828371565525121">跳動的心</string>
-    <string name="spoken_emoji_1F494" msgid="6198876398509338718">破碎的心</string>
-    <string name="spoken_emoji_1F495" msgid="9206202744967130919">兩顆心</string>
-    <string name="spoken_emoji_1F496" msgid="5436953041732207775">閃耀的心</string>
-    <string name="spoken_emoji_1F497" msgid="7285142863951448473">日益增大的心</string>
-    <string name="spoken_emoji_1F498" msgid="7940131245037575715">一箭穿心</string>
-    <string name="spoken_emoji_1F499" msgid="4453235040265550009">藍色的心</string>
-    <string name="spoken_emoji_1F49A" msgid="6262178648366971405">綠色的心</string>
-    <string name="spoken_emoji_1F49B" msgid="8085384999750714368">黃色的心</string>
-    <string name="spoken_emoji_1F49C" msgid="453829540120898698">紫色的心</string>
-    <string name="spoken_emoji_1F49D" msgid="3460534750224161888">有彩帶的心</string>
-    <string name="spoken_emoji_1F49E" msgid="4490636226072523867">旋轉的心</string>
-    <string name="spoken_emoji_1F49F" msgid="2059319756421226336">心形裝飾品</string>
-    <string name="spoken_emoji_1F4A0" msgid="1954850380550212038">中間有一點的鑽石圖案</string>
-    <string name="spoken_emoji_1F4A1" msgid="403137413540909021">電燈泡</string>
-    <string name="spoken_emoji_1F4A2" msgid="2604192053295622063">生氣符號</string>
-    <string name="spoken_emoji_1F4A3" msgid="6378351742957821735">炸彈</string>
-    <string name="spoken_emoji_1F4A4" msgid="7217736258870346625">睡覺中符號</string>
-    <string name="spoken_emoji_1F4A5" msgid="5401995723541239858">衝突符號</string>
-    <string name="spoken_emoji_1F4A6" msgid="3837802182716483848">噴汗符號</string>
-    <string name="spoken_emoji_1F4A7" msgid="5718438987757885141">小水滴</string>
-    <string name="spoken_emoji_1F4A8" msgid="4472108229720006377">衝刺符號</string>
-    <string name="spoken_emoji_1F4A9" msgid="1240958472788430032">一坨便便</string>
-    <string name="spoken_emoji_1F4AA" msgid="8427525538635146416">展示二頭肌</string>
-    <string name="spoken_emoji_1F4AB" msgid="5484114759939427459">暈眩符號</string>
-    <string name="spoken_emoji_1F4AC" msgid="5571196638219612682">對話框</string>
-    <string name="spoken_emoji_1F4AD" msgid="353174619257798652">思考框</string>
-    <string name="spoken_emoji_1F4AE" msgid="1223142786927162641">白色的花</string>
-    <string name="spoken_emoji_1F4AF" msgid="3526278354452138397">一百分符號</string>
-    <string name="spoken_emoji_1F4B0" msgid="4124102195175124156">錢包</string>
-    <string name="spoken_emoji_1F4B1" msgid="8339494003418572905">貨幣換算</string>
-    <string name="spoken_emoji_1F4B2" msgid="3179159430187243132">粗黑貨幣符號</string>
-    <string name="spoken_emoji_1F4B3" msgid="5375412518221759596">信用卡</string>
-    <string name="spoken_emoji_1F4B4" msgid="1068592463669453204">有日圓記號的鈔票</string>
-    <string name="spoken_emoji_1F4B5" msgid="1426708699891832564">有美元記號的鈔票</string>
-    <string name="spoken_emoji_1F4B6" msgid="8289249930736444837">有歐元記號的鈔票</string>
-    <string name="spoken_emoji_1F4B7" msgid="5245100496860739429">有英鎊記號的鈔票</string>
-    <string name="spoken_emoji_1F4B8" msgid="4401099580477164440">有翅膀的貨幣</string>
-    <string name="spoken_emoji_1F4B9" msgid="647509393536679903">有日圓記號且走勢向上的圖表</string>
-    <string name="spoken_emoji_1F4BA" msgid="1269737854891046321">座位</string>
-    <string name="spoken_emoji_1F4BB" msgid="6252883563347816451">個人電腦</string>
-    <string name="spoken_emoji_1F4BC" msgid="6182597732218446206">公事包</string>
-    <string name="spoken_emoji_1F4BD" msgid="5820961044768829176">迷你光碟</string>
-    <string name="spoken_emoji_1F4BE" msgid="4754542485835379808">磁碟</string>
-    <string name="spoken_emoji_1F4BF" msgid="2237481756984721795">光碟</string>
-    <string name="spoken_emoji_1F4C0" msgid="491582501089694461">DVD</string>
-    <string name="spoken_emoji_1F4C1" msgid="6645461382494158111">檔案資料夾</string>
-    <string name="spoken_emoji_1F4C2" msgid="8095638715523765338">開啟文件夾</string>
-    <string name="spoken_emoji_1F4C3" msgid="3727274466173970142">捲曲的頁面</string>
-    <string name="spoken_emoji_1F4C4" msgid="4382570710795501612">頁面朝上</string>
-    <string name="spoken_emoji_1F4C5" msgid="8693944622627762487">日曆</string>
-    <string name="spoken_emoji_1F4C6" msgid="8469908708708424640">撕頁式日曆</string>
-    <string name="spoken_emoji_1F4C7" msgid="2665313547987324495">卡片索引</string>
-    <string name="spoken_emoji_1F4C8" msgid="8007686702282833600">走勢向上的圖表</string>
-    <string name="spoken_emoji_1F4C9" msgid="2271951411192893684">走勢向下的圖表</string>
-    <string name="spoken_emoji_1F4CA" msgid="3525692829622381444">棒型圖</string>
-    <string name="spoken_emoji_1F4CB" msgid="977639227554095521">剪貼簿</string>
-    <string name="spoken_emoji_1F4CC" msgid="156107396088741574">圖釘</string>
-    <string name="spoken_emoji_1F4CD" msgid="4266572175361190231">圓頂圖釘</string>
-    <string name="spoken_emoji_1F4CE" msgid="6294288509864968290">萬字夾</string>
-    <string name="spoken_emoji_1F4CF" msgid="149679400831136810">直尺</string>
-    <string name="spoken_emoji_1F4D0" msgid="8130339336619202915">三角尺</string>
-    <string name="spoken_emoji_1F4D1" msgid="5852176364856284968">便利貼書籤</string>
-    <string name="spoken_emoji_1F4D2" msgid="2276810154105920052">總帳</string>
-    <string name="spoken_emoji_1F4D3" msgid="5873386492793610808">筆記本</string>
-    <string name="spoken_emoji_1F4D4" msgid="4754469936418776360">有裝飾封面的筆記本</string>
-    <string name="spoken_emoji_1F4D5" msgid="4642713351802778905">合起來的書</string>
-    <string name="spoken_emoji_1F4D6" msgid="6987347918381807186">打開的書</string>
-    <string name="spoken_emoji_1F4D7" msgid="7813394163241379223">綠色的書</string>
-    <string name="spoken_emoji_1F4D8" msgid="7189799718984979521">藍色的書</string>
-    <string name="spoken_emoji_1F4D9" msgid="3874664073186440225">橙色的書</string>
-    <string name="spoken_emoji_1F4DA" msgid="872212072924287762">圖書</string>
-    <string name="spoken_emoji_1F4DB" msgid="2015183603583392969">名牌</string>
-    <string name="spoken_emoji_1F4DC" msgid="5075845110932456783">捲軸</string>
-    <string name="spoken_emoji_1F4DD" msgid="2494006707147586786">備忘標籤</string>
-    <string name="spoken_emoji_1F4DE" msgid="7883008605002117671">電話聽筒</string>
-    <string name="spoken_emoji_1F4DF" msgid="3538610110623780465">傳呼機</string>
-    <string name="spoken_emoji_1F4E0" msgid="2960778342609543077">傳真機</string>
-    <string name="spoken_emoji_1F4E1" msgid="6269733703719242108">衛星天線</string>
-    <string name="spoken_emoji_1F4E2" msgid="1987535386302883116">大型擴音器</string>
-    <string name="spoken_emoji_1F4E3" msgid="5588916572878599224">傳聲筒加油棒</string>
-    <string name="spoken_emoji_1F4E4" msgid="2063561529097749707">送件匣</string>
-    <string name="spoken_emoji_1F4E5" msgid="3232462702926143576">收件匣</string>
-    <string name="spoken_emoji_1F4E6" msgid="3399454337197561635">包裹</string>
-    <string name="spoken_emoji_1F4E7" msgid="5557136988503873238">電郵符號</string>
-    <string name="spoken_emoji_1F4E8" msgid="30698793974124123">寄來的信封</string>
-    <string name="spoken_emoji_1F4E9" msgid="5947550337678643166">上方有向下箭嘴的信封</string>
-    <string name="spoken_emoji_1F4EA" msgid="772614045207213751">關閉而旗幟倒下的信箱</string>
-    <string name="spoken_emoji_1F4EB" msgid="6491414165464146137">關閉而旗幟拉起的信箱</string>
-    <string name="spoken_emoji_1F4EC" msgid="7369517138779988438">開啟而旗幟拉起的信箱</string>
-    <string name="spoken_emoji_1F4ED" msgid="5657520436285454241">開啟而旗幟倒下的信箱</string>
-    <string name="spoken_emoji_1F4EE" msgid="8464138906243608614">郵筒</string>
-    <string name="spoken_emoji_1F4EF" msgid="8801427577198798226">急件喇叭</string>
-    <string name="spoken_emoji_1F4F0" msgid="6330208624731662525">報紙</string>
-    <string name="spoken_emoji_1F4F1" msgid="3966503935581675695">手機</string>
-    <string name="spoken_emoji_1F4F2" msgid="1057540341746100087">左方有向右箭嘴的手機</string>
-    <string name="spoken_emoji_1F4F3" msgid="5003984447315754658">振動模式</string>
-    <string name="spoken_emoji_1F4F4" msgid="5549847566968306253">手機關機</string>
-    <string name="spoken_emoji_1F4F5" msgid="3660199448671699238">禁止使用手機</string>
-    <string name="spoken_emoji_1F4F6" msgid="2676974903233268860">含訊號格的天線</string>
-    <string name="spoken_emoji_1F4F7" msgid="2643891943105989039">相機</string>
-    <string name="spoken_emoji_1F4F9" msgid="4475626303058218048">攝影機</string>
-    <string name="spoken_emoji_1F4FA" msgid="1079796186652960775">電視</string>
-    <string name="spoken_emoji_1F4FB" msgid="3848729587403760645">無線電</string>
-    <string name="spoken_emoji_1F4FC" msgid="8370432508874310054">錄影帶</string>
-    <string name="spoken_emoji_1F500" msgid="2389947994502144547">扭轉向右的兩個箭嘴</string>
-    <string name="spoken_emoji_1F501" msgid="2132188352433347009">順時針向右和向左繞成開放式圓圈的箭嘴</string>
-    <string name="spoken_emoji_1F502" msgid="2361976580513178391">順時針向右和向左繞成開放式圓圈的箭嘴，上面有在圓圈內的 1 字</string>
-    <string name="spoken_emoji_1F503" msgid="8936283551917858793">順時針向下和向上繞成開放式圓圈的箭嘴</string>
-    <string name="spoken_emoji_1F504" msgid="708290317843535943">逆時針向下和向上繞成開放式圓圈的箭嘴</string>
-    <string name="spoken_emoji_1F505" msgid="6348909939004951860">低亮度符號</string>
-    <string name="spoken_emoji_1F506" msgid="4449609297521280173">高亮度符號</string>
-    <string name="spoken_emoji_1F507" msgid="7136386694923708448">加上刪除斜線的揚聲器</string>
-    <string name="spoken_emoji_1F508" msgid="5063567689831527865">揚聲器</string>
-    <string name="spoken_emoji_1F509" msgid="3948050077992370791">有一個聲波符號的揚聲器</string>
-    <string name="spoken_emoji_1F50A" msgid="5818194948677277197">有三個聲波符號的揚聲器</string>
-    <string name="spoken_emoji_1F50B" msgid="8083470451266295876">電池</string>
-    <string name="spoken_emoji_1F50C" msgid="7793219132036431680">電源插頭</string>
-    <string name="spoken_emoji_1F50D" msgid="8140244710637926780">向左的放大鏡</string>
-    <string name="spoken_emoji_1F50E" msgid="4751821352839693365">向右的放大鏡</string>
-    <string name="spoken_emoji_1F50F" msgid="915079280472199605">墨水筆和鎖</string>
-    <string name="spoken_emoji_1F510" msgid="7658381761691758318">鎖與鑰匙</string>
-    <string name="spoken_emoji_1F511" msgid="262319867774655688">鑰匙</string>
-    <string name="spoken_emoji_1F512" msgid="5628688337255115175">鎖</string>
-    <string name="spoken_emoji_1F513" msgid="8579201846619420981">打開了的鎖</string>
-    <string name="spoken_emoji_1F514" msgid="7027268683047322521">鈴噹</string>
-    <string name="spoken_emoji_1F515" msgid="8903179856036069242">加上刪除斜線的鈴鐺</string>
-    <string name="spoken_emoji_1F516" msgid="108097933937925381">書籤</string>
-    <string name="spoken_emoji_1F517" msgid="2450846665734313397">連結符號</string>
-    <string name="spoken_emoji_1F518" msgid="7028220286841437832">圓形按鈕</string>
-    <string name="spoken_emoji_1F519" msgid="8211189165075445687">上方有向左箭嘴的「BACK」</string>
-    <string name="spoken_emoji_1F51A" msgid="823966751787338892">上方有向左箭嘴的「END」</string>
-    <string name="spoken_emoji_1F51B" msgid="5920570742107943382">上方有向左、向右箭嘴的「ON」和感嘆號</string>
-    <string name="spoken_emoji_1F51C" msgid="110609810659826676">上方有向右箭嘴的「SOON」</string>
-    <string name="spoken_emoji_1F51D" msgid="4087697222026095447">上方有向上箭嘴的「TOP」</string>
-    <string name="spoken_emoji_1F51E" msgid="8512873526157201775">18 禁符號</string>
-    <string name="spoken_emoji_1F51F" msgid="8673370823728653973">鍵帽 10</string>
-    <string name="spoken_emoji_1F520" msgid="7335109890337048900">大寫拉丁字母輸入符號</string>
-    <string name="spoken_emoji_1F521" msgid="2693185864450925778">小寫拉丁字母輸入符號</string>
-    <string name="spoken_emoji_1F522" msgid="8419130286280673347">數字輸入符號</string>
-    <string name="spoken_emoji_1F523" msgid="3318053476401719421">符號輸入符號</string>
-    <string name="spoken_emoji_1F524" msgid="1625073997522316331">拉丁字母輸入符號</string>
-    <string name="spoken_emoji_1F525" msgid="4083884189172963790">火</string>
-    <string name="spoken_emoji_1F526" msgid="2035494936742643580">電筒</string>
-    <string name="spoken_emoji_1F527" msgid="134257142354034271">士巴拿</string>
-    <string name="spoken_emoji_1F528" msgid="700627429570609375">鐵鎚</string>
-    <string name="spoken_emoji_1F529" msgid="7480548235904988573">螺帽與螺栓</string>
-    <string name="spoken_emoji_1F52A" msgid="7613580031502317893">日式廚刀</string>
-    <string name="spoken_emoji_1F52B" msgid="4554906608328118613">手槍</string>
-    <string name="spoken_emoji_1F52C" msgid="1330294501371770790">顯微鏡</string>
-    <string name="spoken_emoji_1F52D" msgid="7549551775445177140">望遠鏡</string>
-    <string name="spoken_emoji_1F52E" msgid="4457099417872625141">水晶球</string>
-    <string name="spoken_emoji_1F52F" msgid="8899031001317442792">中間有一點的六星形</string>
-    <string name="spoken_emoji_1F530" msgid="3572898444281774023">日本的新手符號</string>
-    <string name="spoken_emoji_1F531" msgid="5225633376450025396">三叉戟圖騰</string>
-    <string name="spoken_emoji_1F532" msgid="9169568490485180779">黑色方形按鈕</string>
-    <string name="spoken_emoji_1F533" msgid="6554193837201918598">白色方形按鈕</string>
-    <string name="spoken_emoji_1F534" msgid="8339298801331865340">大型紅色圓圈</string>
-    <string name="spoken_emoji_1F535" msgid="1227403104835533512">大型藍色圓圈</string>
-    <string name="spoken_emoji_1F536" msgid="5477372445510469331">大型橙色菱形</string>
-    <string name="spoken_emoji_1F537" msgid="3158915214347274626">大型藍色菱形</string>
-    <string name="spoken_emoji_1F538" msgid="4300084249474451991">小型橙色菱形</string>
-    <string name="spoken_emoji_1F539" msgid="6535159756325742275">小型藍色菱形</string>
-    <string name="spoken_emoji_1F53A" msgid="3728196273988781389">往上的紅色三角形</string>
-    <string name="spoken_emoji_1F53B" msgid="7182097039614128707">往下的紅色三角形</string>
-    <string name="spoken_emoji_1F53C" msgid="4077022046319615029">往上的小型紅色三角形</string>
-    <string name="spoken_emoji_1F53D" msgid="3939112784894620713">往下的小型紅色三角形</string>
-    <string name="spoken_emoji_1F550" msgid="7761392621689986218">顯示為一點的時鐘鐘面</string>
-    <string name="spoken_emoji_1F551" msgid="2699448504113431716">顯示為兩點的時鐘鐘面</string>
-    <string name="spoken_emoji_1F552" msgid="5872107867411853750">顯示為三點的時鐘鐘面</string>
-    <string name="spoken_emoji_1F553" msgid="8490966286158640743">顯示為四點的時鐘鐘面</string>
-    <string name="spoken_emoji_1F554" msgid="7662585417832909280">顯示為五點的時鐘鐘面</string>
-    <string name="spoken_emoji_1F555" msgid="5564698204520412009">顯示為六點的時鐘鐘面</string>
-    <string name="spoken_emoji_1F556" msgid="7325712194836512205">顯示為七點的時鐘鐘面</string>
-    <string name="spoken_emoji_1F557" msgid="4398343183682848693">顯示為八點的時鐘鐘面</string>
-    <string name="spoken_emoji_1F558" msgid="3110507820404018172">顯示為九點的時鐘鐘面</string>
-    <string name="spoken_emoji_1F559" msgid="2972160366448337839">顯示為十點的時鐘鐘面</string>
-    <string name="spoken_emoji_1F55A" msgid="5568112876681714834">顯示為十一點的時鐘鐘面</string>
-    <string name="spoken_emoji_1F55B" msgid="6731739890330659276">顯示為十二點的時鐘鐘面</string>
-    <string name="spoken_emoji_1F55C" msgid="7838853679879115890">顯示為一點辦的時鐘鐘面</string>
-    <string name="spoken_emoji_1F55D" msgid="3518832144255922544">顯示為兩點半的時鐘鐘面</string>
-    <string name="spoken_emoji_1F55E" msgid="3092760695634993002">顯示為三點半的時鐘鐘面</string>
-    <string name="spoken_emoji_1F55F" msgid="2326720311892906763">顯示為四點半的時鐘鐘面</string>
-    <string name="spoken_emoji_1F560" msgid="5771339179963924448">顯示為五點半的時鐘鐘面</string>
-    <string name="spoken_emoji_1F561" msgid="3139944777062475382">顯示為六點半的時鐘鐘面</string>
-    <string name="spoken_emoji_1F562" msgid="8273944611162457084">顯示為七點半的時鐘鐘面</string>
-    <string name="spoken_emoji_1F563" msgid="8643976903718136299">顯示為八點半的時鐘鐘面</string>
-    <string name="spoken_emoji_1F564" msgid="3511070239796141638">顯示為九點半的時鐘鐘面</string>
-    <string name="spoken_emoji_1F565" msgid="4567451985272963088">顯示為十點半的時鐘鐘面</string>
-    <string name="spoken_emoji_1F566" msgid="2790552288169929810">顯示為十一點半的時鐘鐘面</string>
-    <string name="spoken_emoji_1F567" msgid="9026037362100689337">顯示為十二點半的時鐘鐘面</string>
-    <string name="spoken_emoji_1F5FB" msgid="9037503671676124015">富士山</string>
-    <string name="spoken_emoji_1F5FC" msgid="1409415995817242150">東京鐵塔</string>
-    <string name="spoken_emoji_1F5FD" msgid="2562726956654429582">自由女神像</string>
-    <string name="spoken_emoji_1F5FE" msgid="1184469756905210580">日本的剪影</string>
-    <string name="spoken_emoji_1F5FF" msgid="6003594799354942297">澀谷仿摩艾石像</string>
-    <string name="spoken_emoji_1F600" msgid="7601109464776835283">露齒而笑的笑臉</string>
-    <string name="spoken_emoji_1F601" msgid="746026523967444503">帶著微笑眼睛且露齒而笑的笑臉</string>
-    <string name="spoken_emoji_1F602" msgid="8354558091785198246">流下開心淚水的笑臉</string>
-    <string name="spoken_emoji_1F603" msgid="3861022912544159823">張嘴的笑臉</string>
-    <string name="spoken_emoji_1F604" msgid="5119021072966343531">張嘴且帶著笑意的笑臉</string>
-    <string name="spoken_emoji_1F605" msgid="6140813923973561735">張嘴且冒著冷汗的笑臉</string>
-    <string name="spoken_emoji_1F606" msgid="3549936813966832799">張嘴閉眼的笑臉</string>
-    <string name="spoken_emoji_1F607" msgid="2826424078212384817">頭頂光環的笑臉</string>
-    <string name="spoken_emoji_1F608" msgid="7343559595089811640">頭上長角的笑臉</string>
-    <string name="spoken_emoji_1F609" msgid="5481030187207504405">眨眼睛的表情</string>
-    <string name="spoken_emoji_1F60A" msgid="5023337769148679767">眼帶笑意的笑臉</string>
-    <string name="spoken_emoji_1F60B" msgid="3005248217216195694">嚐到美食的表情</string>
-    <string name="spoken_emoji_1F60C" msgid="349384012958268496">安心的表情</string>
-    <string name="spoken_emoji_1F60D" msgid="7921853137164938391">眼睛呈現心形的笑臉</string>
-    <string name="spoken_emoji_1F60E" msgid="441718886380605643">戴著太陽眼鏡的笑臉</string>
-    <string name="spoken_emoji_1F60F" msgid="2674453144890180538">嘻笑的臉</string>
-    <string name="spoken_emoji_1F610" msgid="3225675825334102369">無表情</string>
-    <string name="spoken_emoji_1F611" msgid="7199179827619679668">面無表情的臉</string>
-    <string name="spoken_emoji_1F612" msgid="985081329745137998">不帶一絲愉悅的表情</string>
-    <string name="spoken_emoji_1F613" msgid="5548607684830303562">冒冷汗的表情</string>
-    <string name="spoken_emoji_1F614" msgid="3196305665259916390">沈思的表情</string>
-    <string name="spoken_emoji_1F615" msgid="3051674239303969101">困惑的表情</string>
-    <string name="spoken_emoji_1F616" msgid="8124887056243813089">狼狽的表情</string>
-    <string name="spoken_emoji_1F617" msgid="7052733625511122870">親吻的表情</string>
-    <string name="spoken_emoji_1F618" msgid="408207170572303753">送出飛吻的表情</string>
-    <string name="spoken_emoji_1F619" msgid="8645430335143153645">笑咪咪親吻的表情</string>
-    <string name="spoken_emoji_1F61A" msgid="2882157190974340247">閉眼親吻的表情</string>
-    <string name="spoken_emoji_1F61B" msgid="3765927202787211499">伸舌的表情</string>
-    <string name="spoken_emoji_1F61C" msgid="198943912107589389">伸舌眨眼的表情</string>
-    <string name="spoken_emoji_1F61D" msgid="7643546385877816182">伸舌閉眼的表情</string>
-    <string name="spoken_emoji_1F61E" msgid="1528732952202098364">失望的表情</string>
-    <string name="spoken_emoji_1F61F" msgid="1853664164636082404">擔心的表情</string>
-    <string name="spoken_emoji_1F620" msgid="6051942001307375830">生氣的表情</string>
-    <string name="spoken_emoji_1F621" msgid="2114711878097257704">面露不悅的表情</string>
-    <string name="spoken_emoji_1F622" msgid="29291014645931822">嚎啕大哭</string>
-    <string name="spoken_emoji_1F623" msgid="7803959833595184773">固執己見的表情</string>
-    <string name="spoken_emoji_1F624" msgid="8637637647725752799">洋洋得意的表情</string>
-    <string name="spoken_emoji_1F625" msgid="6153625183493635030">失望卻又安心的表情</string>
-    <string name="spoken_emoji_1F626" msgid="6179485689935562950">皺眉張嘴的表情</string>
-    <string name="spoken_emoji_1F627" msgid="8566204052903012809">苦惱的表情</string>
-    <string name="spoken_emoji_1F628" msgid="8875777401624904224">害怕的表情</string>
-    <string name="spoken_emoji_1F629" msgid="1411538490319190118">精疲力竭的表情</string>
-    <string name="spoken_emoji_1F62A" msgid="4726686726690289969">想睡的表情</string>
-    <string name="spoken_emoji_1F62B" msgid="3221980473921623613">疲倦的表情</string>
-    <string name="spoken_emoji_1F62C" msgid="4616356691941225182">做鬼臉</string>
-    <string name="spoken_emoji_1F62D" msgid="4283677508698812232">大聲哭泣的表情</string>
-    <string name="spoken_emoji_1F62E" msgid="726083405284353894">張嘴的表情</string>
-    <string name="spoken_emoji_1F62F" msgid="7746620088234710962">噤聲的表情</string>
-    <string name="spoken_emoji_1F630" msgid="3298804852155581163">張嘴且冒著冷汗的表情</string>
-    <string name="spoken_emoji_1F631" msgid="1603391150954646779">因害怕而尖叫的表情</string>
-    <string name="spoken_emoji_1F632" msgid="4846193232203976013">驚訝的表情</string>
-    <string name="spoken_emoji_1F633" msgid="4023593836629700443">興奮的表情</string>
-    <string name="spoken_emoji_1F634" msgid="3155265083246248129">熟睡的表情</string>
-    <string name="spoken_emoji_1F635" msgid="4616691133452764482">頭暈目眩的表情</string>
-    <string name="spoken_emoji_1F636" msgid="947000211822375683">沒有嘴巴的臉</string>
-    <string name="spoken_emoji_1F637" msgid="1269551267347165774">帶著口罩的臉</string>
-    <string name="spoken_emoji_1F638" msgid="3410766467496872301">眼睛微笑且露齒而笑的貓臉</string>
-    <string name="spoken_emoji_1F639" msgid="1833417519781022031">喜極而泣的貓臉</string>
-    <string name="spoken_emoji_1F63A" msgid="8566294484007152613">露齒而笑的貓臉</string>
-    <string name="spoken_emoji_1F63B" msgid="74417995938927571">微笑時眼睛呈心形的貓臉</string>
-    <string name="spoken_emoji_1F63C" msgid="6472812005729468870">帶著諷刺微笑的貓臉</string>
-    <string name="spoken_emoji_1F63D" msgid="1638398369553349509">閉著眼睛親吻的貓臉</string>
-    <string name="spoken_emoji_1F63E" msgid="6788969063020278986">生氣的貓臉</string>
-    <string name="spoken_emoji_1F63F" msgid="1207234562459550185">正在哭泣的貓臉</string>
-    <string name="spoken_emoji_1F640" msgid="6023054549904329638">精疲力竭的貓臉</string>
-    <string name="spoken_emoji_1F645" msgid="5202090629227587076">帶有「不好」手勢的臉</string>
-    <string name="spoken_emoji_1F646" msgid="6734425134415138134">帶有 OK 手勢的臉</string>
-    <string name="spoken_emoji_1F647" msgid="1090285518444205483">深深鞠躬的人</string>
-    <string name="spoken_emoji_1F648" msgid="8978535230610522356">非禮勿視的猴子</string>
-    <string name="spoken_emoji_1F649" msgid="8486145279809495102">非禮勿聽的猴子</string>
-    <string name="spoken_emoji_1F64A" msgid="1237524974033228660">非禮勿言的猴子</string>
-    <string name="spoken_emoji_1F64B" msgid="4251150782016370475">快樂且高舉單手的人</string>
-    <string name="spoken_emoji_1F64C" msgid="5446231430684558344">高舉雙手慶祝的人</string>
-    <string name="spoken_emoji_1F64D" msgid="4646485595309482342">皺眉的人</string>
-    <string name="spoken_emoji_1F64E" msgid="3376579939836656097">面露不悅的人</string>
-    <string name="spoken_emoji_1F64F" msgid="1044439574356230711">雙手交叉的人</string>
-    <string name="spoken_emoji_1F680" msgid="513263736012689059">火箭</string>
-    <string name="spoken_emoji_1F681" msgid="9201341783850525339">直升機</string>
-    <string name="spoken_emoji_1F682" msgid="8046933583867498698">蒸汽火車頭</string>
-    <string name="spoken_emoji_1F683" msgid="8772750354339223092">火車車廂</string>
-    <string name="spoken_emoji_1F684" msgid="346396777356203608">高鐵列車</string>
-    <string name="spoken_emoji_1F685" msgid="1237059817190832730">子彈火車</string>
-    <string name="spoken_emoji_1F686" msgid="3525197227223620343">火車</string>
-    <string name="spoken_emoji_1F687" msgid="5110143437960392837">地鐵</string>
-    <string name="spoken_emoji_1F688" msgid="4702085029871797965">輕鐵</string>
-    <string name="spoken_emoji_1F689" msgid="2375851019798817094">車站</string>
-    <string name="spoken_emoji_1F68A" msgid="6368370859718717198">電車</string>
-    <string name="spoken_emoji_1F68B" msgid="2920160427117436633">電車車廂</string>
-    <string name="spoken_emoji_1F68C" msgid="1061520934758810864">巴士</string>
-    <string name="spoken_emoji_1F68D" msgid="2890059031360969304">迎面駛來的巴士</string>
-    <string name="spoken_emoji_1F68E" msgid="6234042976027309654">無軌電車</string>
-    <string name="spoken_emoji_1F68F" msgid="5871099334672012107">巴士站</string>
-    <string name="spoken_emoji_1F690" msgid="8080964620200195262">小巴</string>
-    <string name="spoken_emoji_1F691" msgid="999173032408730501">救護車</string>
-    <string name="spoken_emoji_1F692" msgid="1712863785341849487">消防車</string>
-    <string name="spoken_emoji_1F693" msgid="7987109037389768934">警車</string>
-    <string name="spoken_emoji_1F694" msgid="6061658916653884608">迎面駛來的警車</string>
-    <string name="spoken_emoji_1F695" msgid="6913445460364247283">的士</string>
-    <string name="spoken_emoji_1F696" msgid="6391604457418285404">迎面駛來的的士</string>
-    <string name="spoken_emoji_1F697" msgid="7978399334396733790">汽車</string>
-    <string name="spoken_emoji_1F698" msgid="7006050861129732018">迎面駛來的汽車</string>
-    <string name="spoken_emoji_1F699" msgid="630317052666590607">露營車</string>
-    <string name="spoken_emoji_1F69A" msgid="4739797891735823577">運輸貨車</string>
-    <string name="spoken_emoji_1F69B" msgid="4715997280786620649">拖斗貨車</string>
-    <string name="spoken_emoji_1F69C" msgid="5557395610750818161">拖拉機</string>
-    <string name="spoken_emoji_1F69D" msgid="5467164189942951047">單軌鐵路</string>
-    <string name="spoken_emoji_1F69E" msgid="169238196389832234">山區火車</string>
-    <string name="spoken_emoji_1F69F" msgid="7508128757012845102">懸掛式鐵路</string>
-    <string name="spoken_emoji_1F6A0" msgid="8733056213790160147">山區纜車</string>
-    <string name="spoken_emoji_1F6A1" msgid="4666516337749347253">架空纜車</string>
-    <string name="spoken_emoji_1F6A2" msgid="4511220588943129583">船隻</string>
-    <string name="spoken_emoji_1F6A3" msgid="8412962252222205387">划艇</string>
-    <string name="spoken_emoji_1F6A4" msgid="8867571300266339211">快艇</string>
-    <string name="spoken_emoji_1F6A5" msgid="7650260812741963884">橫向紅綠燈</string>
-    <string name="spoken_emoji_1F6A6" msgid="485575967773793454">垂直式紅綠燈</string>
-    <string name="spoken_emoji_1F6A7" msgid="6411048933816976794">施工標誌</string>
-    <string name="spoken_emoji_1F6A8" msgid="6345717218374788364">旋轉的警車警示燈</string>
-    <string name="spoken_emoji_1F6A9" msgid="6586380356807600412">郵筒上的三角旗</string>
-    <string name="spoken_emoji_1F6AA" msgid="8954448167261738885">門</string>
-    <string name="spoken_emoji_1F6AB" msgid="5313946262888343544">禁止進入標誌</string>
-    <string name="spoken_emoji_1F6AC" msgid="6946858177965948288">吸煙區符號</string>
-    <string name="spoken_emoji_1F6AD" msgid="6320088669185507241">禁煙符號</string>
-    <string name="spoken_emoji_1F6AE" msgid="1062469925352817189">正確丟棄垃圾標誌</string>
-    <string name="spoken_emoji_1F6AF" msgid="2286668056123642208">請勿亂丟垃圾標誌</string>
-    <string name="spoken_emoji_1F6B0" msgid="179424763882990952">飲用水標誌</string>
-    <string name="spoken_emoji_1F6B1" msgid="5585212805429161877">非飲用水標誌</string>
-    <string name="spoken_emoji_1F6B2" msgid="1771885082068421875">單車</string>
-    <string name="spoken_emoji_1F6B3" msgid="8033779581263314408">禁止單車</string>
-    <string name="spoken_emoji_1F6B4" msgid="1999538449018476947">單車騎士</string>
-    <string name="spoken_emoji_1F6B5" msgid="340846352660993117">越野單車騎士</string>
-    <string name="spoken_emoji_1F6B6" msgid="4351024386495098336">行人</string>
-    <string name="spoken_emoji_1F6B7" msgid="4564800655866838802">禁止行人通過</string>
-    <string name="spoken_emoji_1F6B8" msgid="3020531906940267349">注意兒童穿越馬路</string>
-    <string name="spoken_emoji_1F6B9" msgid="1207095844125041251">男性符號</string>
-    <string name="spoken_emoji_1F6BA" msgid="2346879310071017531">女性符號</string>
-    <string name="spoken_emoji_1F6BB" msgid="2370172469642078526">廁所</string>
-    <string name="spoken_emoji_1F6BC" msgid="5558827593563530851">嬰兒符號</string>
-    <string name="spoken_emoji_1F6BD" msgid="9213590243049835957">廁所</string>
-    <string name="spoken_emoji_1F6BE" msgid="394016533781742491">盥洗室</string>
-    <string name="spoken_emoji_1F6BF" msgid="906336365928291207">淋浴間</string>
-    <string name="spoken_emoji_1F6C0" msgid="4592099854378821599">浸浴</string>
-    <string name="spoken_emoji_1F6C1" msgid="2845056048320031158">浴缸</string>
-    <string name="spoken_emoji_1F6C2" msgid="8117262514698011877">護照檢查處</string>
-    <string name="spoken_emoji_1F6C3" msgid="1176342001834630675">海關</string>
-    <string name="spoken_emoji_1F6C4" msgid="1477622834179978886">行李領取處</string>
-    <string name="spoken_emoji_1F6C5" msgid="2495834050856617451">行李寄存處</string>
-</resources>
+<?xml version="1.0" encoding="utf-8"?> 
+<!-- Copyright © 1991-2018 Unicode, Inc. 
+For terms of use, see http://www.unicode.org/copyright.html 
+Unicode and the Unicode Logo are registered trademarks of Unicode, Inc. in the U.S. and other countries. 
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/) 
+ 
+ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/ for derived annotations.  
+-->
+<resources> 
+	<string name="spoken_emoji_1f3fd">中等皮膚</string>
+	<string name="spoken_emoji_1f3fe">中深皮膚</string>
+	<string name="spoken_emoji_1f601">含笑嘅眼睛同笑嘻嘻嘅表情</string>
+	<string name="spoken_emoji_1f602">喜極而泣嘅表情</string>
+	<string name="spoken_emoji_1f923">笑到轆地</string>
+	<string name="spoken_emoji_1f603">開眼嘅笑臉</string>
+	<string name="spoken_emoji_1f604">含笑同笑嘻嘻嘅表情</string>
+	<string name="spoken_emoji_1f605">冒汗同笑嘻嘻嘅表情</string>
+	<string name="spoken_emoji_1f609">眨眼笑嘅表情</string>
+	<string name="spoken_emoji_1f60a">瞇眼微笑嘅表情</string>
+	<string name="spoken_emoji_1f60b">舔舌頭嘅表情</string>
+	<string name="spoken_emoji_1f60e">戴太陽眼鏡嘅笑面</string>
+	<string name="spoken_emoji_1f60d">心心眼嘅表情</string>
+	<string name="spoken_emoji_1f618">飛吻嘅表情</string>
+	<string name="spoken_emoji_1f970">三個心心嘅笑臉</string>
+	<string name="spoken_emoji_1f617">送吻嘅表情</string>
+	<string name="spoken_emoji_1f619">笑眼送吻嘅表情</string>
+	<string name="spoken_emoji_1f61a">合埋眼親吻嘅表情</string>
+	<string name="spoken_emoji_263a">笑面</string>
+	<string name="spoken_emoji_1f642">稍為微笑嘅表情</string>
+	<string name="spoken_emoji_1f917">開心擁抱嘅表情</string>
+	<string name="spoken_emoji_1f929">星星眼</string>
+	<string name="spoken_emoji_1f914">思考中嘅表情</string>
+	<string name="spoken_emoji_1f928">單邊戚眉嘅表情</string>
+	<string name="spoken_emoji_1f610">無話好說</string>
+	<string name="spoken_emoji_1f636">無言嘅表情</string>
+	<string name="spoken_emoji_1f644">反白眼嘅表情</string>
+	<string name="spoken_emoji_1f623">疲倦嘅表情</string>
+	<string name="spoken_emoji_1f625">失望但解脱嘅表情</string>
+	<string name="spoken_emoji_1f62e">擘大口嘅表情</string>
+	<string name="spoken_emoji_1f910">拉鍊嘴嘅表情</string>
+	<string name="spoken_emoji_1f62f">驚訝嘅表情</string>
+	<string name="spoken_emoji_1f622">喊緊</string>
+	<string name="spoken_emoji_1f62d">放聲大哭</string>
+	<string name="spoken_emoji_1f626">皺眉掰大口</string>
+	<string name="spoken_emoji_1f627">苦埋口面</string>
+	<string name="spoken_emoji_1f628">驚恐</string>
+	<string name="spoken_emoji_1f629">面露疲憊</string>
+	<string name="spoken_emoji_1f92f">頭都爆</string>
+	<string name="spoken_emoji_1f62c">依起棚牙</string>
+	<string name="spoken_emoji_1f975">熱嘅樣</string>
+	<string name="spoken_emoji_1f976">凍嘅樣</string>
+	<string name="spoken_emoji_1f633">臉紅</string>
+	<string name="spoken_emoji_1f92a">鬼臉</string>
+	<string name="spoken_emoji_1f620">憤怒</string>
+	<string name="spoken_emoji_1f92c">嘴巴上有符號嘅表情</string>
+	<string name="spoken_emoji_1f922">想嘔</string>
+	<string name="spoken_emoji_1f92e">嘔吐</string>
+	<string name="spoken_emoji_1f927">打乞嚏</string>
+	<string name="spoken_emoji_1f607">頭上有個圈嘅笑面</string>
+	<string name="spoken_emoji_1f920">牛仔樣</string>
+	<string name="spoken_emoji_1f97a">請求嘅樣</string>
+	<string name="spoken_emoji_1f92d">手遮住嘴</string>
+	<string name="spoken_emoji_1f9d0">戴單片眼鏡</string>
+	<string name="spoken_emoji_1f913">書呆子</string>
+	<string name="spoken_emoji_1f916">機械人</string>
+	<string name="spoken_emoji_1f4a9">屎</string>
+	<string name="spoken_emoji_1f63a">開心貓樣</string>
+	<string name="spoken_emoji_1f638">露齒而笑嘅貓樣</string>
+	<string name="spoken_emoji_1f63d">送吻嘅貓樣</string>
+	<string name="spoken_emoji_1f63f">喊緊嘅貓樣</string>
+	<string name="spoken_emoji_1f648">非禮勿視馬騮</string>
+	<string name="spoken_emoji_1f476">嬰兒</string>
+	<string name="spoken_emoji_1f471">金髮嘅人</string>
+	<string name="spoken_emoji_1f471_2642">金髮男人</string>
+	<string name="spoken_emoji_1f9d4">留鬚嘅人</string>
+	<string name="spoken_emoji_1f471_2640">金髮女人</string>
+	<string name="spoken_emoji_1f474">老人</string>
+	<string name="spoken_emoji_1f475">老婦</string>
+	<string name="spoken_emoji_1f468_2695">男醫護人員</string>
+	<string name="spoken_emoji_1f469_2695">女醫護人員</string>
+	<string name="spoken_emoji_1f468_1f393">男學生</string>
+	<string name="spoken_emoji_1f469_1f393">女學生</string>
+	<string name="spoken_emoji_1f468_1f33e">男農夫</string>
+	<string name="spoken_emoji_1f469_1f33e">女農夫</string>
+	<string name="spoken_emoji_1f468_1f3ed">男工廠工人</string>
+	<string name="spoken_emoji_1f469_1f3ed">女工廠工人</string>
+	<string name="spoken_emoji_1f468_1f4bc">男職員</string>
+	<string name="spoken_emoji_1f469_1f4bc">女職員</string>
+	<string name="spoken_emoji_1f468_1f4bb">男技術人員</string>
+	<string name="spoken_emoji_1f469_1f4bb">女技術人員</string>
+	<string name="spoken_emoji_1f468_1f3a8">男畫家</string>
+	<string name="spoken_emoji_1f469_1f3a8">女畫家</string>
+	<string name="spoken_emoji_1f468_2708">男機師</string>
+	<string name="spoken_emoji_1f469_2708">女機師</string>
+	<string name="spoken_emoji_1f482">守衛</string>
+	<string name="spoken_emoji_1f482_2642">男守衛</string>
+	<string name="spoken_emoji_1f482_2640">女守衛</string>
+	<string name="spoken_emoji_1f473">戴頭巾嘅人</string>
+	<string name="spoken_emoji_1f473_2642">戴頭巾嘅男人</string>
+	<string name="spoken_emoji_1f473_2640">戴頭巾嘅女人</string>
+	<string name="spoken_emoji_1f472">戴中式帽嘅男人</string>
+	<string name="spoken_emoji_1f9d5">包頭巾嘅女人</string>
+	<string name="spoken_emoji_1f935">着禮服嘅男人</string>
+	<string name="spoken_emoji_1f47c">天使嬰兒</string>
+	<string name="spoken_emoji_1f936">聖誕婆婆</string>
+	<string name="spoken_emoji_1f9b8">超人</string>
+	<string name="spoken_emoji_1f9b8_2642">男超人</string>
+	<string name="spoken_emoji_1f9d9">巫師</string>
+	<string name="spoken_emoji_1f9d9_2642">男巫師</string>
+	<string name="spoken_emoji_1f9da">仙子</string>
+	<string name="spoken_emoji_1f9da_2640">女仙子</string>
+	<string name="spoken_emoji_1f9da_2642">男仙子</string>
+	<string name="spoken_emoji_1f9dd">精靈</string>
+	<string name="spoken_emoji_1f9de">燈神</string>
+	<string name="spoken_emoji_1f9de_2640">女燈神</string>
+	<string name="spoken_emoji_1f9de_2642">男燈神</string>
+	<string name="spoken_emoji_1f9df">喪屍</string>
+	<string name="spoken_emoji_1f9df_2640">女喪屍</string>
+	<string name="spoken_emoji_1f9df_2642">男喪屍</string>
+	<string name="spoken_emoji_1f64d">皺眉嘅人</string>
+	<string name="spoken_emoji_1f64d_2642">男子皺眉</string>
+	<string name="spoken_emoji_1f64d_2640">女子皺眉</string>
+	<string name="spoken_emoji_1f64e">撅嘴嘅人</string>
+	<string name="spoken_emoji_1f64e_2642">男子噘嘴</string>
+	<string name="spoken_emoji_1f64e_2640">女子噘嘴</string>
+	<string name="spoken_emoji_1f645">用手臂做出交叉手勢嘅人</string>
+	<string name="spoken_emoji_1f645_2642">用手臂做出交叉手勢嘅男人</string>
+	<string name="spoken_emoji_1f645_2640">用手臂做出交叉手勢嘅女人</string>
+	<string name="spoken_emoji_1f646">用手勢表示 OK 嘅人</string>
+	<string name="spoken_emoji_1f646_2642">用手勢表示 OK 嘅男人</string>
+	<string name="spoken_emoji_1f646_2640">用手勢表示 OK 嘅女人</string>
+	<string name="spoken_emoji_1f481">攤開手嘅人</string>
+	<string name="spoken_emoji_1f481_2642">男子抬手</string>
+	<string name="spoken_emoji_1f481_2640">攤開手嘅女人</string>
+	<string name="spoken_emoji_1f64b">舉起一隻手</string>
+	<string name="spoken_emoji_1f64b_2642">開心｜舉起一隻手｜男人｜哈囉｜hi</string>
+	<string name="spoken_emoji_1f64b_2640">開心嘅女人舉起一隻手</string>
+	<string name="spoken_emoji_1f647_2642">鞠躬嘅男人</string>
+	<string name="spoken_emoji_1f647_2640">鞠躬嘅女人</string>
+	<string name="spoken_emoji_1f926">遮住塊面</string>
+	<string name="spoken_emoji_1f926_2642">遮住面嘅男人</string>
+	<string name="spoken_emoji_1f926_2640">遮住面嘅女人</string>
+	<string name="spoken_emoji_1f937">聳肩嘅人</string>
+	<string name="spoken_emoji_1f937_2642">聳肩嘅男人</string>
+	<string name="spoken_emoji_1f937_2640">聳肩嘅女人</string>
+	<string name="spoken_emoji_1f486">接受頭部按摩嘅人</string>
+	<string name="spoken_emoji_1f486_2642">接受頭部按摩嘅男人</string>
+	<string name="spoken_emoji_1f486_2640">接受頭部按摩嘅女人</string>
+	<string name="spoken_emoji_1f487">剪頭髮</string>
+	<string name="spoken_emoji_1f487_2642">剪緊頭髮嘅男人</string>
+	<string name="spoken_emoji_1f487_2640">剪緊頭髮嘅女人</string>
+	<string name="spoken_emoji_1f6b6_2642">行路嘅男人</string>
+	<string name="spoken_emoji_1f6b6_2640">行路嘅女人</string>
+	<string name="spoken_emoji_1f3c3">跑步嘅人</string>
+	<string name="spoken_emoji_1f3c3_2642">男跑手</string>
+	<string name="spoken_emoji_1f3c3_2640">跑步嘅女人</string>
+	<string name="spoken_emoji_1f483">跳舞嘅女人</string>
+	<string name="spoken_emoji_1f57a">跳舞嘅男人</string>
+	<string name="spoken_emoji_1f46f_2642">戴兔耳仔嘅男人</string>
+	<string name="spoken_emoji_1f46f_2640">戴兔耳仔嘅女人</string>
+	<string name="spoken_emoji_1f9d6">焗桑拿嘅人</string>
+	<string name="spoken_emoji_1f9d6_2640">焗桑拿嘅女人</string>
+	<string name="spoken_emoji_1f9d6_2642">焗桑拿嘅男人</string>
+	<string name="spoken_emoji_1f9d7">攀岩嘅人</string>
+	<string name="spoken_emoji_1f9d7_2640">攀岩嘅女人</string>
+	<string name="spoken_emoji_1f9d7_2642">攀岩嘅男人</string>
+	<string name="spoken_emoji_1f9d8">盤腿坐嘅人</string>
+	<string name="spoken_emoji_1f9d8_2640">盤腿坐嘅女人</string>
+	<string name="spoken_emoji_1f9d8_2642">盤腿坐嘅男人</string>
+	<string name="spoken_emoji_1f6c0">浸浴嘅人</string>
+	<string name="spoken_emoji_1f6cc">瞓覺</string>
+	<string name="spoken_emoji_1f574">着住西裝飄浮嘅男人</string>
+	<string name="spoken_emoji_1f5e3">講緊嘢嘅人頭剪影</string>
+	<string name="spoken_emoji_1f464">人形剪影</string>
+	<string name="spoken_emoji_1f465">雙人剪影</string>
+	<string name="spoken_emoji_1f93a">劍擊運動員</string>
+	<string name="spoken_emoji_1f3c7">騎馬</string>
+	<string name="spoken_emoji_1f3c2">玩滑雪板</string>
+	<string name="spoken_emoji_1f3cc">打高爾夫球</string>
+	<string name="spoken_emoji_1f3cc_2642">打高爾夫球嘅男人</string>
+	<string name="spoken_emoji_1f3cc_2640">打高爾夫球嘅女人</string>
+	<string name="spoken_emoji_1f3c4">滑浪</string>
+	<string name="spoken_emoji_1f3c4_2642">滑浪嘅男人</string>
+	<string name="spoken_emoji_1f3c4_2640">滑浪嘅女人</string>
+	<string name="spoken_emoji_1f6a3">撐艇</string>
+	<string name="spoken_emoji_1f6a3_2642">撐艇嘅男人</string>
+	<string name="spoken_emoji_1f6a3_2640">撐艇嘅女人</string>
+	<string name="spoken_emoji_1f3ca">游水</string>
+	<string name="spoken_emoji_1f3ca_2642">男泳手</string>
+	<string name="spoken_emoji_1f3ca_2640">女泳手</string>
+	<string name="spoken_emoji_26f9">打緊波嘅人</string>
+	<string name="spoken_emoji_26f9_2642">打緊波嘅男人</string>
+	<string name="spoken_emoji_26f9_2640">打緊波嘅女人</string>
+	<string name="spoken_emoji_1f3cb_2642">男舉重員</string>
+	<string name="spoken_emoji_1f3cb_2640">女舉重員</string>
+	<string name="spoken_emoji_1f6b4">踩單車</string>
+	<string name="spoken_emoji_1f6b4_2642">男單車手</string>
+	<string name="spoken_emoji_1f6b4_2640">女單車手</string>
+	<string name="spoken_emoji_1f6b5">踩爬山單車</string>
+	<string name="spoken_emoji_1f6b5_2642">踩爬山單車嘅男人</string>
+	<string name="spoken_emoji_1f6b5_2640">踩爬山單車嘅女人</string>
+	<string name="spoken_emoji_1f3cd">電單車</string>
+	<string name="spoken_emoji_1f938">側手翻</string>
+	<string name="spoken_emoji_1f938_2642">打側手翻嘅男人</string>
+	<string name="spoken_emoji_1f938_2640">打側手翻嘅女人</string>
+	<string name="spoken_emoji_1f93c">摔角選手</string>
+	<string name="spoken_emoji_1f93c_2642">男摔角選手</string>
+	<string name="spoken_emoji_1f93c_2640">女摔角選手</string>
+	<string name="spoken_emoji_1f93d">水球</string>
+	<string name="spoken_emoji_1f93d_2642">打水球嘅男人</string>
+	<string name="spoken_emoji_1f93d_2640">打水球嘅女人</string>
+	<string name="spoken_emoji_1f93e_2642">打手球嘅男人</string>
+	<string name="spoken_emoji_1f93e_2640">打手球嘅女人</string>
+	<string name="spoken_emoji_1f939">耍雜技</string>
+	<string name="spoken_emoji_1f939_2642">耍雜技嘅男人</string>
+	<string name="spoken_emoji_1f939_2640">耍雜技嘅女人</string>
+	<string name="spoken_emoji_1f46b">一男一女拖住手</string>
+	<string name="spoken_emoji_1f46c">兩個男人拖住手</string>
+	<string name="spoken_emoji_1f46d">兩個女人拖住手</string>
+	<string name="spoken_emoji_1f48f">錫緊嘅一男一女</string>
+	<string name="spoken_emoji_1f491">戀愛中</string>
+	<string name="spoken_emoji_270c">V字手勢</string>
+	<string name="spoken_emoji_1f919">call 我</string>
+	<string name="spoken_emoji_1f44e">渣</string>
+	<string name="spoken_emoji_1f91b">拳頭向左</string>
+	<string name="spoken_emoji_1f91c">拳頭向右</string>
+	<string name="spoken_emoji_1f91f">我愛你手勢</string>
+	<string name="spoken_emoji_1f44f">拍手</string>
+	<string name="spoken_emoji_1f64c">舉雙手歡呼</string>
+	<string name="spoken_emoji_1f932">雙手掌心向上</string>
+	<string name="spoken_emoji_1f443">鼻</string>
+	<string name="spoken_emoji_1f9b1">曲髮</string>
+	<string name="spoken_emoji_1f9b3">白頭髮</string>
+	<string name="spoken_emoji_1f498">一箭穿心</string>
+	<string name="spoken_emoji_1f49e">循環心心</string>
+	<string name="spoken_emoji_1f48c">情信</string>
+	<string name="spoken_emoji_1f9e1">橙心</string>
+	<string name="spoken_emoji_1f49f">心形裝飾</string>
+	<string name="spoken_emoji_1f4a4">zzz</string>
+	<string name="spoken_emoji_1f4a8">強風</string>
+	<string name="spoken_emoji_1f4ab">頭暈星星</string>
+	<string name="spoken_emoji_1f454">領呔</string>
+	<string name="spoken_emoji_1f455">T恤</string>
+	<string name="spoken_emoji_1f9e3">頸巾</string>
+	<string name="spoken_emoji_1f9e5">大褸</string>
+	<string name="spoken_emoji_1f457">連身裙</string>
+	<string name="spoken_emoji_1f459">比堅尼</string>
+	<string name="spoken_emoji_1f45b">銀包</string>
+	<string name="spoken_emoji_1f45c">手袋</string>
+	<string name="spoken_emoji_1f45f">波鞋</string>
+	<string name="spoken_emoji_1f460">高踭鞋</string>
+	<string name="spoken_emoji_1f9e2">棒球帽</string>
+	<string name="spoken_emoji_26d1">安全帽</string>
+	<string name="spoken_emoji_1f4ff">頸鏈</string>
+	<string name="spoken_emoji_1f484">唇膏</string>
+	<string name="spoken_emoji_1f435">馬騮面</string>
+	<string name="spoken_emoji_1f412">馬騮</string>
+	<string name="spoken_emoji_1f436">狗樣</string>
+	<string name="spoken_emoji_1f429">貴婦狗</string>
+	<string name="spoken_emoji_1f98a">狐狸樣</string>
+	<string name="spoken_emoji_1f431">貓樣</string>
+	<string name="spoken_emoji_1f981">獅子樣</string>
+	<string name="spoken_emoji_1f42f">老虎樣</string>
+	<string name="spoken_emoji_1f406">豹</string>
+	<string name="spoken_emoji_1f42e">牛樣</string>
+	<string name="spoken_emoji_1f402">牛</string>
+	<string name="spoken_emoji_1f437">豬樣</string>
+	<string name="spoken_emoji_1f43d">豬鼻</string>
+	<string name="spoken_emoji_1f999">草泥馬</string>
+	<string name="spoken_emoji_1f42d">老鼠樣</string>
+	<string name="spoken_emoji_1f439">倉鼠樣</string>
+	<string name="spoken_emoji_1f430">兔仔樣</string>
+	<string name="spoken_emoji_1f43b">熊仔樣</string>
+	<string name="spoken_emoji_1f428">樹熊</string>
+	<string name="spoken_emoji_1f43c">熊貓樣</string>
+	<string name="spoken_emoji_1f423">孵化雞仔</string>
+	<string name="spoken_emoji_1f424">小雞樣</string>
+	<string name="spoken_emoji_1f426">雀仔</string>
+	<string name="spoken_emoji_1f54a">白鴿</string>
+	<string name="spoken_emoji_1f438">青蛙樣</string>
+	<string name="spoken_emoji_1f432">龍樣</string>
+	<string name="spoken_emoji_1f995">恐龍</string>
+	<string name="spoken_emoji_1f40b">座頭鯨</string>
+	<string name="spoken_emoji_1f41a">貝殼</string>
+	<string name="spoken_emoji_1f990">蝦</string>
+	<string name="spoken_emoji_1f41b">毛蟲</string>
+	<string name="spoken_emoji_1f41e">甲蟲</string>
+	<string name="spoken_emoji_1f3f5">玫瑰花飾</string>
+	<string name="spoken_emoji_1f940">枯萎嘅玫瑰</string>
+	<string name="spoken_emoji_1f33a">扶桑花</string>
+	<string name="spoken_emoji_1f33c">花朵</string>
+	<string name="spoken_emoji_1f331">幼苗</string>
+	<string name="spoken_emoji_1f332">常綠樹</string>
+	<string name="spoken_emoji_1f33e">稻穗</string>
+	<string name="spoken_emoji_1f33f">草本植物</string>
+	<string name="spoken_emoji_1f340">四葉草</string>
+	<string name="spoken_emoji_1f343">隨風飄落嘅樹葉</string>
+	<string name="spoken_emoji_1f348">蜜瓜</string>
+	<string name="spoken_emoji_1f34a">橙</string>
+	<string name="spoken_emoji_1f34d">菠蘿</string>
+	<string name="spoken_emoji_1f350">啤梨</string>
+	<string name="spoken_emoji_1f351">桃</string>
+	<string name="spoken_emoji_1f352">車厘子</string>
+	<string name="spoken_emoji_1f353">士多啤梨</string>
+	<string name="spoken_emoji_1f951">牛油果</string>
+	<string name="spoken_emoji_1f954">薯仔</string>
+	<string name="spoken_emoji_1f955">紅蘿蔔</string>
+	<string name="spoken_emoji_1f33d">粟米</string>
+	<string name="spoken_emoji_1f952">青瓜</string>
+	<string name="spoken_emoji_1f96c">綠色蔬菜</string>
+	<string name="spoken_emoji_1f966">西蘭花</string>
+	<string name="spoken_emoji_1f35e">麵包</string>
+	<string name="spoken_emoji_1f950">牛角包</string>
+	<string name="spoken_emoji_1f956">法棍包</string>
+	<string name="spoken_emoji_1f968">蝴蝶圈</string>
+	<string name="spoken_emoji_1f95e">班戟</string>
+	<string name="spoken_emoji_1f9c0">芝士</string>
+	<string name="spoken_emoji_1f356">肉骨</string>
+	<string name="spoken_emoji_1f357">雞髀</string>
+	<string name="spoken_emoji_1f969">肉塊</string>
+	<string name="spoken_emoji_1f953">煙肉</string>
+	<string name="spoken_emoji_1f354">漢堡包</string>
+	<string name="spoken_emoji_1f355">薄餅</string>
+	<string name="spoken_emoji_1f96a">三文治</string>
+	<string name="spoken_emoji_1f32e">墨西哥夾餅</string>
+	<string name="spoken_emoji_1f32f">墨西哥捲餅</string>
+	<string name="spoken_emoji_1f959">有餡三文治</string>
+	<string name="spoken_emoji_1f373">煮飯</string>
+	<string name="spoken_emoji_1f958">一鍋食物</string>
+	<string name="spoken_emoji_1f372">打邊爐</string>
+	<string name="spoken_emoji_1f963">匙羮同碗</string>
+	<string name="spoken_emoji_1f957">生菜沙律</string>
+	<string name="spoken_emoji_1f37f">爆谷</string>
+	<string name="spoken_emoji_1f371">飯盒</string>
+	<string name="spoken_emoji_1f358">米餅</string>
+	<string name="spoken_emoji_1f35a">白飯</string>
+	<string name="spoken_emoji_1f35c">熱氣騰騰嘅碗</string>
+	<string name="spoken_emoji_1f35d">意大利粉</string>
+	<string name="spoken_emoji_1f360">煨蕃薯</string>
+	<string name="spoken_emoji_1f364">炸蝦</string>
+	<string name="spoken_emoji_1f365">鳴門卷</string>
+	<string name="spoken_emoji_1f361">和菓子</string>
+	<string name="spoken_emoji_1f960">幸運曲奇</string>
+	<string name="spoken_emoji_1f961">外賣盒</string>
+	<string name="spoken_emoji_1f366">軟雪糕</string>
+	<string name="spoken_emoji_1f368">雪糕</string>
+	<string name="spoken_emoji_1f369">冬甩</string>
+	<string name="spoken_emoji_1f36a">曲奇</string>
+	<string name="spoken_emoji_1f967">批</string>
+	<string name="spoken_emoji_1f36b">朱古力</string>
+	<string name="spoken_emoji_1f36d">波板糖</string>
+	<string name="spoken_emoji_1f36e">吉士</string>
+	<string name="spoken_emoji_1f36f">蜂蜜壺</string>
+	<string name="spoken_emoji_1f37c">奶樽</string>
+	<string name="spoken_emoji_2615">熱咖啡</string>
+	<string name="spoken_emoji_1f375">冇耳嘅茶杯</string>
+	<string name="spoken_emoji_1f37e">開緊蓋嘅樽</string>
+	<string name="spoken_emoji_1f377">紅酒</string>
+	<string name="spoken_emoji_1f378">雞尾酒杯</string>
+	<string name="spoken_emoji_1f379">熱帶飲品</string>
+	<string name="spoken_emoji_1f37b">乾杯</string>
+	<string name="spoken_emoji_1f942">舉杯慶祝</string>
+	<string name="spoken_emoji_1f943">玻璃杯</string>
+	<string name="spoken_emoji_1f964">有飲管嘅杯</string>
+	<string name="spoken_emoji_1f37d">刀叉同碟</string>
+	<string name="spoken_emoji_1f944">匙羹</string>
+	<string name="spoken_emoji_1f52a">刀</string>
+	<string name="spoken_emoji_1f3fa">雙耳瓶</string>
+	<string name="spoken_emoji_1f30d">顯示歐洲同非洲嘅地球</string>
+	<string name="spoken_emoji_1f30e">顯示美洲嘅地球</string>
+	<string name="spoken_emoji_1f30f">顯示亞洲和澳洲的地球</string>
+	<string name="spoken_emoji_1f310">帶有經緯嘅地球</string>
+	<string name="spoken_emoji_1f5fa">世界</string>
+	<string name="spoken_emoji_1f3dd">荒島</string>
+	<string name="spoken_emoji_1f3df">體育館</string>
+	<string name="spoken_emoji_1f3d7">建築地盤</string>
+	<string name="spoken_emoji_1f9f1">磚頭</string>
+	<string name="spoken_emoji_1f3d8">屋</string>
+	<string name="spoken_emoji_1f3da">荒廢嘅屋</string>
+	<string name="spoken_emoji_1f3e1">有花園嘅屋</string>
+	<string name="spoken_emoji_1f3e8">酒店</string>
+	<string name="spoken_emoji_1f3e9">愛情賓館</string>
+	<string name="spoken_emoji_1f3ea">便利店</string>
+	<string name="spoken_emoji_1f3ef">日本城堡</string>
+	<string name="spoken_emoji_1f3f0">歐洲城堡</string>
+	<string name="spoken_emoji_1f54d">猶太教會</string>
+	<string name="spoken_emoji_1f54b">麥加</string>
+	<string name="spoken_emoji_1f3d9">城市景觀</string>
+	<string name="spoken_emoji_1f304">山頭嘅日出</string>
+	<string name="spoken_emoji_1f305">日出</string>
+	<string name="spoken_emoji_1f309">夜晚嘅橋</string>
+	<string name="spoken_emoji_1f3a2">過山車</string>
+	<string name="spoken_emoji_1f488">髮型屋招牌</string>
+	<string name="spoken_emoji_1f683">鐵路車輛</string>
+	<string name="spoken_emoji_1f684">高速列車</string>
+	<string name="spoken_emoji_1f685">子彈火車</string>
+	<string name="spoken_emoji_1f688">輕軌列車</string>
+	<string name="spoken_emoji_1f68a">電車</string>
+	<string name="spoken_emoji_1f69d">單軌電車</string>
+	<string name="spoken_emoji_1f69e">上山鐵路</string>
+	<string name="spoken_emoji_1f68c">巴士</string>
+	<string name="spoken_emoji_1f68d">接近中嘅巴士</string>
+	<string name="spoken_emoji_1f68e">電動車</string>
+	<string name="spoken_emoji_1f690">小巴</string>
+	<string name="spoken_emoji_1f695">的士</string>
+	<string name="spoken_emoji_1f696">接近中的計程車</string>
+	<string name="spoken_emoji_1f697">車</string>
+	<string name="spoken_emoji_1f698">汽車</string>
+	<string name="spoken_emoji_1f699">吉普車</string>
+	<string name="spoken_emoji_1f69b">貨櫃車</string>
+	<string name="spoken_emoji_1f69c">拖拉機</string>
+	<string name="spoken_emoji_1f6b2">單車</string>
+	<string name="spoken_emoji_1f6f5">綿羊仔</string>
+	<string name="spoken_emoji_1f68f">巴士站</string>
+	<string name="spoken_emoji_26fd">油站</string>
+	<string name="spoken_emoji_1f6f3">客輪</string>
+	<string name="spoken_emoji_1f6e9">小型飛機</string>
+	<string name="spoken_emoji_1f6eb">起飛緊嘅飛機</string>
+	<string name="spoken_emoji_1f6ec">降落緊嘅飛機</string>
+	<string name="spoken_emoji_1f69f">懸浮列車</string>
+	<string name="spoken_emoji_1f6a1">吊車</string>
+	<string name="spoken_emoji_1f6ce">叮叮鐘</string>
+	<string name="spoken_emoji_23f3">流緊沙嘅沙漏</string>
+	<string name="spoken_emoji_23f1">秒錶</string>
+	<string name="spoken_emoji_1f570">壁爐鐘</string>
+	<string name="spoken_emoji_1f312">娥眉月</string>
+	<string name="spoken_emoji_1f318">殘月</string>
+	<string name="spoken_emoji_1f31a">新月嘅面孔</string>
+	<string name="spoken_emoji_1f31b">上弦月嘅面孔</string>
+	<string name="spoken_emoji_1f31c">下弦月嘅面孔</string>
+	<string name="spoken_emoji_1f31d">滿月嘅面孔</string>
+	<string name="spoken_emoji_1f31e">太陽笑面</string>
+	<string name="spoken_emoji_1f31f">閃亮嘅星星</string>
+	<string name="spoken_emoji_26c8">有雷雨嘅雲</string>
+	<string name="spoken_emoji_1f324">太陽喺一嚿細雲後面</string>
+	<string name="spoken_emoji_1f325">太陽喺一大片雲後面</string>
+	<string name="spoken_emoji_1f326">太陽喺雨雲後面</string>
+	<string name="spoken_emoji_1f327">雨雲</string>
+	<string name="spoken_emoji_1f328">落雪嘅雲</string>
+	<string name="spoken_emoji_1f32c">風吹臉</string>
+	<string name="spoken_emoji_1f302">收起嘅遮</string>
+	<string name="spoken_emoji_2602">遮</string>
+	<string name="spoken_emoji_2614">落雨</string>
+	<string name="spoken_emoji_26f1">沙灘遮</string>
+	<string name="spoken_emoji_1f30a">海浪</string>
+	<string name="spoken_emoji_1f386">煙花</string>
+	<string name="spoken_emoji_1f387">燦爛煙花</string>
+	<string name="spoken_emoji_1f9e8">炮仗</string>
+	<string name="spoken_emoji_2728">閃光</string>
+	<string name="spoken_emoji_1f38a">恭賀彩球</string>
+	<string name="spoken_emoji_1f9e7">利是</string>
+	<string name="spoken_emoji_1f3ab">票</string>
+	<string name="spoken_emoji_1f396">勳章</string>
+	<string name="spoken_emoji_1f3c5">體育獎章</string>
+	<string name="spoken_emoji_1f3c9">欖球</string>
+	<string name="spoken_emoji_1f3d3">乒乓球</string>
+	<string name="spoken_emoji_1f945">龍門</string>
+	<string name="spoken_emoji_26f3">哥爾夫球</string>
+	<string name="spoken_emoji_1f3b1">桌球</string>
+	<string name="spoken_emoji_1f3ae">電子遊戲</string>
+	<string name="spoken_emoji_1f579">控制杆</string>
+	<string name="spoken_emoji_1f3b0">老虎機</string>
+	<string name="spoken_emoji_2660">葵扇</string>
+	<string name="spoken_emoji_2666">階磚</string>
+	<string name="spoken_emoji_265f">兵</string>
+	<string name="spoken_emoji_1f3b4">花札紙牌</string>
+	<string name="spoken_emoji_1f3ad">表演藝術</string>
+	<string name="spoken_emoji_1f5bc">相片連相框</string>
+	<string name="spoken_emoji_1f9f6">毛冷</string>
+	<string name="spoken_emoji_1f508">細聲喇叭</string>
+	<string name="spoken_emoji_1f509">聲量中等嘅喇叭</string>
+	<string name="spoken_emoji_1f50a">聲量大嘅喇叭</string>
+	<string name="spoken_emoji_1f4e3">傳聲筒</string>
+	<string name="spoken_emoji_1f4ef">郵政號角</string>
+	<string name="spoken_emoji_1f514">鐘</string>
+	<string name="spoken_emoji_1f515">冇聲嘅鐘</string>
+	<string name="spoken_emoji_1f3b6">三個音符</string>
+	<string name="spoken_emoji_1f399">錄音室咪高風</string>
+	<string name="spoken_emoji_1f39a">滑桿</string>
+	<string name="spoken_emoji_1f3a4">咪高風</string>
+	<string name="spoken_emoji_1f3a7">耳筒</string>
+	<string name="spoken_emoji_1f3b7">色士風</string>
+	<string name="spoken_emoji_1f3b8">結他</string>
+	<string name="spoken_emoji_1f4f1">手提電話</string>
+	<string name="spoken_emoji_1f4f2">個有箭嘴嘅電話</string>
+	<string name="spoken_emoji_1f4de">電話筒</string>
+	<string name="spoken_emoji_1f4df">傳呼機</string>
+	<string name="spoken_emoji_1f50c">插蘇</string>
+	<string name="spoken_emoji_1f4bb">手提電腦</string>
+	<string name="spoken_emoji_1f4be">磁碟</string>
+	<string name="spoken_emoji_1f39e">菲林</string>
+	<string name="spoken_emoji_1f4f8">開咗閃光燈嘅相機</string>
+	<string name="spoken_emoji_1f4f9">錄影機</string>
+	<string name="spoken_emoji_1f50d">向左嘅放大鏡</string>
+	<string name="spoken_emoji_1f50e">向右嘅放大鏡</string>
+	<string name="spoken_emoji_1f4a1">燈膽</string>
+	<string name="spoken_emoji_1f526">電筒</string>
+	<string name="spoken_emoji_1f4d4">彩色封面筆記簿</string>
+	<string name="spoken_emoji_1f4d5">閂埋嘅書</string>
+	<string name="spoken_emoji_1f4d6">打開嘅書</string>
+	<string name="spoken_emoji_1f4d7">綠色簿</string>
+	<string name="spoken_emoji_1f4d8">藍色簿</string>
+	<string name="spoken_emoji_1f4d9">橙色簿</string>
+	<string name="spoken_emoji_1f4da">一疊書</string>
+	<string name="spoken_emoji_1f4d3">筆記簿</string>
+	<string name="spoken_emoji_1f4d2">帳簿</string>
+	<string name="spoken_emoji_1f4c3">彎曲嘅文件</string>
+	<string name="spoken_emoji_1f4c4">文件正面</string>
+	<string name="spoken_emoji_1f5de">捲起嘅報紙</string>
+	<string name="spoken_emoji_1f4d1">書籤頁</string>
+	<string name="spoken_emoji_1f3f7">標籤</string>
+	<string name="spoken_emoji_1f4b0">一袋錢</string>
+	<string name="spoken_emoji_1f4b4">日元紙幣</string>
+	<string name="spoken_emoji_1f4b5">美金紙幣</string>
+	<string name="spoken_emoji_1f4b6">歐元紙幣</string>
+	<string name="spoken_emoji_1f4b7">英鎊紙幣</string>
+	<string name="spoken_emoji_1f4b8">錢飛走</string>
+	<string name="spoken_emoji_1f4b9">有日元標誌嘅向上折線圖</string>
+	<string name="spoken_emoji_1f4b2">錢符號</string>
+	<string name="spoken_emoji_2709">信封</string>
+	<string name="spoken_emoji_1f4e7">電郵</string>
+	<string name="spoken_emoji_1f4e8">來信</string>
+	<string name="spoken_emoji_1f4e9">有箭嘴嘅信封</string>
+	<string name="spoken_emoji_1f4e4">寄件箱</string>
+	<string name="spoken_emoji_1f4e5">收件箱</string>
+	<string name="spoken_emoji_1f4eb">關上嘅郵箱（旗標直立）</string>
+	<string name="spoken_emoji_1f4ea">關上嘅郵箱（旗標平放）</string>
+	<string name="spoken_emoji_1f4ec">開住嘅郵箱（旗標直立）</string>
+	<string name="spoken_emoji_1f4ed">個開住嘅郵箱（旗標平放）</string>
+	<string name="spoken_emoji_1f4ee">郵筒</string>
+	<string name="spoken_emoji_1f58a">原子筆</string>
+	<string name="spoken_emoji_1f4dd">便條</string>
+	<string name="spoken_emoji_1f4c1">文件夾</string>
+	<string name="spoken_emoji_1f4c2">打開嘅文件夾</string>
+	<string name="spoken_emoji_1f5c2">索引分隔卡</string>
+	<string name="spoken_emoji_1f4c5">日曆</string>
+	<string name="spoken_emoji_1f4c6">撕開嘅日曆</string>
+	<string name="spoken_emoji_1f5d2">線圈筆記簿</string>
+	<string name="spoken_emoji_1f4c8">向上折線圖</string>
+	<string name="spoken_emoji_1f4c9">向下折線圖</string>
+	<string name="spoken_emoji_1f4ca">棒形圖</string>
+	<string name="spoken_emoji_1f4cb">剪貼簿</string>
+	<string name="spoken_emoji_1f4cc">大頭釘</string>
+	<string name="spoken_emoji_1f4cd">圓頭大頭釘</string>
+	<string name="spoken_emoji_1f4ce">萬字夾</string>
+	<string name="spoken_emoji_1f587">連住嘅萬字夾</string>
+	<string name="spoken_emoji_1f4cf">間尺</string>
+	<string name="spoken_emoji_2702">骹剪</string>
+	<string name="spoken_emoji_1f5c3">卡片檔案盒</string>
+	<string name="spoken_emoji_1f5d1">垃圾桶</string>
+	<string name="spoken_emoji_1f512">鎖</string>
+	<string name="spoken_emoji_1f5dd">舊鎖匙</string>
+	<string name="spoken_emoji_1f528">鎚仔</string>
+	<string name="spoken_emoji_26cf">十字鋤</string>
+	<string name="spoken_emoji_2692">鎚仔同十字鋤</string>
+	<string name="spoken_emoji_1f6e0">鎚仔同士巴拿</string>
+	<string name="spoken_emoji_1f527">士巴拿</string>
+	<string name="spoken_emoji_1f5dc">車輪夾鎖</string>
+	<string name="spoken_emoji_2696">天秤</string>
+	<string name="spoken_emoji_26d3">鍊</string>
+	<string name="spoken_emoji_1f6cb">梳化和座地燈</string>
+	<string name="spoken_emoji_1f6bd">廁所</string>
+	<string name="spoken_emoji_1f6c1">浴缸</string>
+	<string name="spoken_emoji_1f9f4">潤膚乳樽</string>
+	<string name="spoken_emoji_1f9f7">扣針</string>
+	<string name="spoken_emoji_1f9fa">籃</string>
+	<string name="spoken_emoji_1f9fb">一捲廁紙</string>
+	<string name="spoken_emoji_1f9fc">番梘</string>
+	<string name="spoken_emoji_1f9ef">滅火筒</string>
+	<string name="spoken_emoji_1f6ac">香煙</string>
+	<string name="spoken_emoji_26b0">棺材</string>
+	<string name="spoken_emoji_26b1">骨灰甕</string>
+	<string name="spoken_emoji_1f5ff">復活島石像</string>
+	<string name="spoken_emoji_1f6ae">垃圾桶標誌</string>
+	<string name="spoken_emoji_267f">輪椅符號</string>
+	<string name="spoken_emoji_1f6bc">嬰兒符號</string>
+	<string name="spoken_emoji_1f6be">WC</string>
+	<string name="spoken_emoji_1f6c2">通關檢查</string>
+	<string name="spoken_emoji_1f6ab">禁止標誌</string>
+	<string name="spoken_emoji_1f6b3">禁止單車</string>
+	<string name="spoken_emoji_1f6af">請勿亂丟垃圾</string>
+	<string name="spoken_emoji_1f6b7">行人禁止</string>
+	<string name="spoken_emoji_1f4f5">禁用手提電話</string>
+	<string name="spoken_emoji_1f51e">十八禁</string>
+	<string name="spoken_emoji_2622">輻射</string>
+	<string name="spoken_emoji_2623">生物危害</string>
+	<string name="spoken_emoji_2b06">上箭嘴</string>
+	<string name="spoken_emoji_2197">上右箭嘴</string>
+	<string name="spoken_emoji_27a1">右箭嘴</string>
+	<string name="spoken_emoji_2198">下右箭嘴</string>
+	<string name="spoken_emoji_2b07">下箭嘴</string>
+	<string name="spoken_emoji_2199">下左箭嘴</string>
+	<string name="spoken_emoji_2b05">左箭嘴</string>
+	<string name="spoken_emoji_2196">上左箭嘴</string>
+	<string name="spoken_emoji_2195">上下箭嘴</string>
+	<string name="spoken_emoji_2194">左右箭嘴</string>
+	<string name="spoken_emoji_21a9">向左彎嘅右箭嘴</string>
+	<string name="spoken_emoji_21aa">向右彎嘅左箭嘴</string>
+	<string name="spoken_emoji_2934">向上彎嘅右箭嘴</string>
+	<string name="spoken_emoji_2935">向下彎嘅右箭嘴</string>
+	<string name="spoken_emoji_1f503">順時針方向垂直嘅箭嘴</string>
+	<string name="spoken_emoji_1f504">逆時針箭嘴按鈕</string>
+	<string name="spoken_emoji_1f519">後退箭嘴</string>
+	<string name="spoken_emoji_1f51a">結束箭嘴</string>
+	<string name="spoken_emoji_1f51b">「On!」箭嘴</string>
+	<string name="spoken_emoji_1f51c">soon 標誌的箭嘴</string>
+	<string name="spoken_emoji_1f51d">top 標誌的箭嘴</string>
+	<string name="spoken_emoji_1f6d0">祈禱室符號</string>
+	<string name="spoken_emoji_269b">原子符號</string>
+	<string name="spoken_emoji_2721">六角星</string>
+	<string name="spoken_emoji_2638">法則輪</string>
+	<string name="spoken_emoji_2626">正教會十字</string>
+	<string name="spoken_emoji_262a">星月</string>
+	<string name="spoken_emoji_262e">和平符號</string>
+	<string name="spoken_emoji_1f54e">光明節燈台</string>
+	<string name="spoken_emoji_1f52f">中間帶點的六角星</string>
+	<string name="spoken_emoji_2648">白羊座</string>
+	<string name="spoken_emoji_2651">山羊座</string>
+	<string name="spoken_emoji_1f500">隨機播放按鈕</string>
+	<string name="spoken_emoji_1f501">重播按鈕</string>
+	<string name="spoken_emoji_1f502">重播單曲按鈕</string>
+	<string name="spoken_emoji_25b6">播放按鈕</string>
+	<string name="spoken_emoji_23e9">快速快轉按鈕</string>
+	<string name="spoken_emoji_23ed">下一首按鈕</string>
+	<string name="spoken_emoji_23ef">播放或暫停按鈕</string>
+	<string name="spoken_emoji_25c0">回帶按鈕</string>
+	<string name="spoken_emoji_23ea">快速倒轉按鈕</string>
+	<string name="spoken_emoji_23ee">上一首按鈕</string>
+	<string name="spoken_emoji_1f53c">向上按鈕</string>
+	<string name="spoken_emoji_23eb">向上快捲按鈕</string>
+	<string name="spoken_emoji_1f53d">向下按鈕</string>
+	<string name="spoken_emoji_23ec">向下快捲按鈕</string>
+	<string name="spoken_emoji_23f8">暫停按鈕</string>
+	<string name="spoken_emoji_23f9">停止按鈕</string>
+	<string name="spoken_emoji_23fa">錄製按鈕</string>
+	<string name="spoken_emoji_23cf">退出按鈕</string>
+	<string name="spoken_emoji_1f3a6">戲院</string>
+	<string name="spoken_emoji_1f4f6">手機訊號格</string>
+	<string name="spoken_emoji_1f4f3">震機模式</string>
+	<string name="spoken_emoji_1f4f4">手提電話關閉</string>
+	<string name="spoken_emoji_2695">蛇杖</string>
+	<string name="spoken_emoji_267e">無限</string>
+	<string name="spoken_emoji_1f4db">姓名牌</string>
+	<string name="spoken_emoji_1f530">日本嘅初學者符號</string>
+	<string name="spoken_emoji_2705">白色勾</string>
+	<string name="spoken_emoji_2611">剔選</string>
+	<string name="spoken_emoji_2714">剔號</string>
+	<string name="spoken_emoji_2716">打交叉</string>
+	<string name="spoken_emoji_274c">交叉</string>
+	<string name="spoken_emoji_274e">交叉符號</string>
+	<string name="spoken_emoji_2795">加號標誌</string>
+	<string name="spoken_emoji_27b0">彎曲線</string>
+	<string name="spoken_emoji_27bf">雙彎曲線</string>
+	<string name="spoken_emoji_303d">歌謠開始記號</string>
+	<string name="spoken_emoji_203c">雙感嘆號</string>
+	<string name="spoken_emoji_2049">感嘆號加問號</string>
+	<string name="spoken_emoji_2755">白色感嘆號</string>
+	<string name="spoken_emoji_2757">感嘆號</string>
+	<string name="spoken_emoji_3030">波浪破折號</string>
+	<string name="spoken_emoji_1f4af">100 分</string>
+	<string name="spoken_emoji_1f520">大階英文輸入</string>
+	<string name="spoken_emoji_1f521">細階英文輸入</string>
+	<string name="spoken_emoji_1f522">數字輸入</string>
+	<string name="spoken_emoji_1f523">符號輸入</string>
+	<string name="spoken_emoji_1f524">輸入拉丁字母</string>
+	<string name="spoken_emoji_1f170">A 型血</string>
+	<string name="spoken_emoji_1f18e">AB 型血</string>
+	<string name="spoken_emoji_1f171">B型血</string>
+	<string name="spoken_emoji_1f191">CL 按鈕</string>
+	<string name="spoken_emoji_1f192">Cool 按鈕</string>
+	<string name="spoken_emoji_1f193">免費按鈕</string>
+	<string name="spoken_emoji_2139">資料</string>
+	<string name="spoken_emoji_1f194">身份</string>
+	<string name="spoken_emoji_24c2">圓圈中嘅 M</string>
+	<string name="spoken_emoji_1f195">NEW 按鈕</string>
+	<string name="spoken_emoji_1f196">NG 按鈕</string>
+	<string name="spoken_emoji_1f17e">O型血</string>
+	<string name="spoken_emoji_1f197">OK 按鈕</string>
+	<string name="spoken_emoji_1f17f">P 按鈕</string>
+	<string name="spoken_emoji_1f198">求救按鈕</string>
+	<string name="spoken_emoji_1f199">UP 按鈕</string>
+	<string name="spoken_emoji_1f19a">VS 按鈕</string>
+	<string name="spoken_emoji_1f201">日文嘅「呢度」按鈕</string>
+	<string name="spoken_emoji_1f202">日文嘅「服務費」按鈕</string>
+	<string name="spoken_emoji_1f237">日文嘅「月費」按鈕</string>
+	<string name="spoken_emoji_1f236">日文嘅「非免費」按鈕</string>
+	<string name="spoken_emoji_1f22f">日文嘅「已預留」按鈕</string>
+	<string name="spoken_emoji_1f250">日文嘅「優惠」按鈕</string>
+	<string name="spoken_emoji_1f239">日文嘅「折扣」按鈕</string>
+	<string name="spoken_emoji_1f21a">日文嘅「免費」按鈕</string>
+	<string name="spoken_emoji_1f232">日文嘅「禁止」按鈕</string>
+	<string name="spoken_emoji_1f251">日文嘅「許可」按鈕</string>
+	<string name="spoken_emoji_1f238">日文嘅「申請」按鈕</string>
+	<string name="spoken_emoji_1f234">日文嘅「合格」按鈕</string>
+	<string name="spoken_emoji_1f233">日文嘅「空缺」按鈕</string>
+	<string name="spoken_emoji_3297">日文嘅「恭喜」按鈕</string>
+	<string name="spoken_emoji_3299">日文嘅「秘密」按鈕</string>
+	<string name="spoken_emoji_1f23a">日文嘅「營業中」按鈕</string>
+	<string name="spoken_emoji_1f235">日文嘅「冇空位」按鈕</string>
+	<string name="spoken_emoji_1f534">紅色大圓圈</string>
+	<string name="spoken_emoji_1f535">藍色大圓圈</string>
+	<string name="spoken_emoji_26aa">白色大圓圈</string>
+	<string name="spoken_emoji_26ab">黑色大圓圈</string>
+	<string name="spoken_emoji_2b1c">白色大正方形</string>
+	<string name="spoken_emoji_2b1b">黑色大正方形</string>
+	<string name="spoken_emoji_25fc">黑色中正方形</string>
+	<string name="spoken_emoji_25fb">白色中正方形</string>
+	<string name="spoken_emoji_25fd">白色中細正方形</string>
+	<string name="spoken_emoji_25fe">黑色中小正方形</string>
+	<string name="spoken_emoji_25ab">白色細正方形</string>
+	<string name="spoken_emoji_25aa">黑色小正方形</string>
+	<string name="spoken_emoji_1f536">橙色大菱形</string>
+	<string name="spoken_emoji_1f537">藍色大菱形</string>
+	<string name="spoken_emoji_1f538">橙色小菱形</string>
+	<string name="spoken_emoji_1f539">藍色小菱形</string>
+	<string name="spoken_emoji_1f53a">指向上嘅紅三角</string>
+	<string name="spoken_emoji_1f53b">指向下嘅紅三角</string>
+	<string name="spoken_emoji_1f4a0">中間有一點嘅菱形</string>
+	<string name="spoken_emoji_1f518">圓形按鈕</string>
+	<string name="spoken_emoji_1f532">黑色正方形按鈕</string>
+	<string name="spoken_emoji_1f533">白色正方形按鈕</string>
+	<string name="spoken_emoji_1f38c">交叉嘅旗</string>
+	<string name="spoken_emoji_1f9b5_1f3fd">腿: 中等皮膚</string>
+	<string name="spoken_emoji_1f9b5_1f3fe">腿: 中深皮膚</string>
+	<string name="spoken_emoji_1f9b6_1f3fd">腳: 中等皮膚</string>
+	<string name="spoken_emoji_1f9b6_1f3fe">腳: 中深皮膚</string>
+	<string name="spoken_emoji_1f9b8_1f3fb">超人: 白皮膚</string>
+	<string name="spoken_emoji_1f9b8_1f3fc">超人: 黃皮膚</string>
+	<string name="spoken_emoji_1f9b8_1f3fd">超人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9b8_1f3fe">超人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9b8_1f3ff">超人: 黑皮膚</string>
+	<string name="spoken_emoji_1f9b8_1f3fd_2640">女超人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9b8_1f3fe_2640">女超人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9b8_1f3fb_2642">男超人: 白皮膚</string>
+	<string name="spoken_emoji_1f9b8_1f3fc_2642">男超人: 黃皮膚</string>
+	<string name="spoken_emoji_1f9b8_1f3fd_2642">男超人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9b8_1f3fe_2642">男超人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9b8_1f3ff_2642">男超人: 黑皮膚</string>
+	<string name="spoken_emoji_1f9b9_1f3fd">超級反派: 中等皮膚</string>
+	<string name="spoken_emoji_1f9b9_1f3fe">超級反派: 中深皮膚</string>
+	<string name="spoken_emoji_1f9b9_1f3fd_2640">女超級反派: 中等皮膚</string>
+	<string name="spoken_emoji_1f9b9_1f3fe_2640">女超級反派: 中深皮膚</string>
+	<string name="spoken_emoji_1f9b9_1f3fd_2642">男超級反派: 中等皮膚</string>
+	<string name="spoken_emoji_1f9b9_1f3fe_2642">男超級反派: 中深皮膚</string>
+	<string name="spoken_emoji_1f476_1f3fb">嬰兒: 白皮膚</string>
+	<string name="spoken_emoji_1f476_1f3fc">嬰兒: 黃皮膚</string>
+	<string name="spoken_emoji_1f476_1f3fd">嬰兒: 中等皮膚</string>
+	<string name="spoken_emoji_1f476_1f3fe">嬰兒: 中深皮膚</string>
+	<string name="spoken_emoji_1f476_1f3ff">嬰兒: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d2_1f3fd">小孩: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d2_1f3fe">小孩: 中深皮膚</string>
+	<string name="spoken_emoji_1f466_1f3fd">男孩: 中等皮膚</string>
+	<string name="spoken_emoji_1f466_1f3fe">男孩: 中深皮膚</string>
+	<string name="spoken_emoji_1f467_1f3fd">女孩: 中等皮膚</string>
+	<string name="spoken_emoji_1f467_1f3fe">女孩: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d1_1f3fd">大人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d1_1f3fe">大人: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd">男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe">男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f9b0">男人: 中等皮膚 紅髮</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f9b0">男人: 中深皮膚 紅髮</string>
+	<string name="spoken_emoji_1f468_1f9b1">男人: 曲髮</string>
+	<string name="spoken_emoji_1f468_1f3fb_1f9b1">男人: 白皮膚 曲髮</string>
+	<string name="spoken_emoji_1f468_1f3fc_1f9b1">男人: 黃皮膚 曲髮</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f9b1">男人: 中等皮膚 曲髮</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f9b1">男人: 中深皮膚 曲髮</string>
+	<string name="spoken_emoji_1f468_1f3ff_1f9b1">男人: 黑皮膚 曲髮</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f9b2">男人: 中等皮膚 禿頭</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f9b2">男人: 中深皮膚 禿頭</string>
+	<string name="spoken_emoji_1f468_1f9b3">男人: 白頭髮</string>
+	<string name="spoken_emoji_1f468_1f3fb_1f9b3">男人: 白皮膚 白頭髮</string>
+	<string name="spoken_emoji_1f468_1f3fc_1f9b3">男人: 黃皮膚 白頭髮</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f9b3">男人: 中等皮膚 白頭髮</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f9b3">男人: 中深皮膚 白頭髮</string>
+	<string name="spoken_emoji_1f468_1f3ff_1f9b3">男人: 黑皮膚 白頭髮</string>
+	<string name="spoken_emoji_1f469_1f3fd">女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe">女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f9b0">女人: 中等皮膚 紅髮</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f9b0">女人: 中深皮膚 紅髮</string>
+	<string name="spoken_emoji_1f469_1f9b1">女人: 曲髮</string>
+	<string name="spoken_emoji_1f469_1f3fb_1f9b1">女人: 白皮膚 曲髮</string>
+	<string name="spoken_emoji_1f469_1f3fc_1f9b1">女人: 黃皮膚 曲髮</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f9b1">女人: 中等皮膚 曲髮</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f9b1">女人: 中深皮膚 曲髮</string>
+	<string name="spoken_emoji_1f469_1f3ff_1f9b1">女人: 黑皮膚 曲髮</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f9b2">女人: 中等皮膚 禿頭</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f9b2">女人: 中深皮膚 禿頭</string>
+	<string name="spoken_emoji_1f469_1f9b3">女人: 白頭髮</string>
+	<string name="spoken_emoji_1f469_1f3fb_1f9b3">女人: 白皮膚 白頭髮</string>
+	<string name="spoken_emoji_1f469_1f3fc_1f9b3">女人: 黃皮膚 白頭髮</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f9b3">女人: 中等皮膚 白頭髮</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f9b3">女人: 中深皮膚 白頭髮</string>
+	<string name="spoken_emoji_1f469_1f3ff_1f9b3">女人: 黑皮膚 白頭髮</string>
+	<string name="spoken_emoji_1f9d3_1f3fd">長者: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d3_1f3fe">長者: 中深皮膚</string>
+	<string name="spoken_emoji_1f474_1f3fb">老人: 白皮膚</string>
+	<string name="spoken_emoji_1f474_1f3fc">老人: 黃皮膚</string>
+	<string name="spoken_emoji_1f474_1f3fd">老人: 中等皮膚</string>
+	<string name="spoken_emoji_1f474_1f3fe">老人: 中深皮膚</string>
+	<string name="spoken_emoji_1f474_1f3ff">老人: 黑皮膚</string>
+	<string name="spoken_emoji_1f475_1f3fb">老婦: 白皮膚</string>
+	<string name="spoken_emoji_1f475_1f3fc">老婦: 黃皮膚</string>
+	<string name="spoken_emoji_1f475_1f3fd">老婦: 中等皮膚</string>
+	<string name="spoken_emoji_1f475_1f3fe">老婦: 中深皮膚</string>
+	<string name="spoken_emoji_1f475_1f3ff">老婦: 黑皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fb_2695">男醫護人員: 白皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fc_2695">男醫護人員: 黃皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_2695">男醫護人員: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_2695">男醫護人員: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3ff_2695">男醫護人員: 黑皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fb_2695">女醫護人員: 白皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fc_2695">女醫護人員: 黃皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_2695">女醫護人員: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_2695">女醫護人員: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3ff_2695">女醫護人員: 黑皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fb_1f393">男學生: 白皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fc_1f393">男學生: 黃皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f393">男學生: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f393">男學生: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3ff_1f393">男學生: 黑皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fb_1f393">女學生: 白皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fc_1f393">女學生: 黃皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f393">女學生: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f393">女學生: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3ff_1f393">女學生: 黑皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f3eb">男老師: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f3eb">男老師: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f3eb">女老師: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f3eb">女老師: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_2696">男法官: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_2696">男法官: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_2696">女法官: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_2696">女法官: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fb_1f33e">男農夫: 白皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fc_1f33e">男農夫: 黃皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f33e">男農夫: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f33e">男農夫: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3ff_1f33e">男農夫: 黑皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fb_1f33e">女農夫: 白皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fc_1f33e">女農夫: 黃皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f33e">女農夫: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f33e">女農夫: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3ff_1f33e">女農夫: 黑皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f373">男廚師: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f373">男廚師: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f373">女廚師: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f373">女廚師: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f527">男技工: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f527">男技工: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f527">女技工: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f527">女技工: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fb_1f3ed">男工廠工人: 白皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fc_1f3ed">男工廠工人: 黃皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f3ed">男工廠工人: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f3ed">男工廠工人: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3ff_1f3ed">男工廠工人: 黑皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fb_1f3ed">女工廠工人: 白皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fc_1f3ed">女工廠工人: 黃皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f3ed">女工廠工人: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f3ed">女工廠工人: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3ff_1f3ed">女工廠工人: 黑皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fb_1f4bc">男職員: 白皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fc_1f4bc">男職員: 黃皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f4bc">男職員: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f4bc">男職員: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3ff_1f4bc">男職員: 黑皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fb_1f4bc">女職員: 白皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fc_1f4bc">女職員: 黃皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f4bc">女職員: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f4bc">女職員: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3ff_1f4bc">女職員: 黑皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f52c">男科學家: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f52c">男科學家: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f52c">女科學家: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f52c">女科學家: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fb_1f4bb">男技術人員: 白皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fc_1f4bb">男技術人員: 黃皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f4bb">男技術人員: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f4bb">男技術人員: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3ff_1f4bb">男技術人員: 黑皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fb_1f4bb">女技術人員: 白皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fc_1f4bb">女技術人員: 黃皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f4bb">女技術人員: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f4bb">女技術人員: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3ff_1f4bb">女技術人員: 黑皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f3a4">男歌手: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f3a4">男歌手: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f3a4">女歌手: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f3a4">女歌手: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fb_1f3a8">男畫家: 白皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fc_1f3a8">男畫家: 黃皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f3a8">男畫家: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f3a8">男畫家: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3ff_1f3a8">男畫家: 黑皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fb_1f3a8">女畫家: 白皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fc_1f3a8">女畫家: 黃皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f3a8">女畫家: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f3a8">女畫家: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3ff_1f3a8">女畫家: 黑皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fb_2708">男機師: 白皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fc_2708">男機師: 黃皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_2708">男機師: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_2708">男機師: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3ff_2708">男機師: 黑皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fb_2708">女機師: 白皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fc_2708">女機師: 黃皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_2708">女機師: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_2708">女機師: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3ff_2708">女機師: 黑皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f680">男太空人: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f680">男太空人: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f680">女太空人: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f680">女太空人: 中深皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fd_1f692">男消防員: 中等皮膚</string>
+	<string name="spoken_emoji_1f468_1f3fe_1f692">男消防員: 中深皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fd_1f692">女消防員: 中等皮膚</string>
+	<string name="spoken_emoji_1f469_1f3fe_1f692">女消防員: 中深皮膚</string>
+	<string name="spoken_emoji_1f46e_1f3fd">警察: 中等皮膚</string>
+	<string name="spoken_emoji_1f46e_1f3fe">警察: 中深皮膚</string>
+	<string name="spoken_emoji_1f46e_1f3fd_2642">男警: 中等皮膚</string>
+	<string name="spoken_emoji_1f46e_1f3fe_2642">男警: 中深皮膚</string>
+	<string name="spoken_emoji_1f46e_1f3fd_2640">女警: 中等皮膚</string>
+	<string name="spoken_emoji_1f46e_1f3fe_2640">女警: 中深皮膚</string>
+	<string name="spoken_emoji_1f575_1f3fd">偵探: 中等皮膚</string>
+	<string name="spoken_emoji_1f575_1f3fe">偵探: 中深皮膚</string>
+	<string name="spoken_emoji_1f575_1f3fd_2642">男偵探: 中等皮膚</string>
+	<string name="spoken_emoji_1f575_1f3fe_2642">男偵探: 中深皮膚</string>
+	<string name="spoken_emoji_1f575_1f3fd_2640">女偵探: 中等皮膚</string>
+	<string name="spoken_emoji_1f575_1f3fe_2640">女偵探: 中深皮膚</string>
+	<string name="spoken_emoji_1f482_1f3fb">守衛: 白皮膚</string>
+	<string name="spoken_emoji_1f482_1f3fc">守衛: 黃皮膚</string>
+	<string name="spoken_emoji_1f482_1f3fd">守衛: 中等皮膚</string>
+	<string name="spoken_emoji_1f482_1f3fe">守衛: 中深皮膚</string>
+	<string name="spoken_emoji_1f482_1f3ff">守衛: 黑皮膚</string>
+	<string name="spoken_emoji_1f482_1f3fb_2642">男守衛: 白皮膚</string>
+	<string name="spoken_emoji_1f482_1f3fc_2642">男守衛: 黃皮膚</string>
+	<string name="spoken_emoji_1f482_1f3fd_2642">男守衛: 中等皮膚</string>
+	<string name="spoken_emoji_1f482_1f3fe_2642">男守衛: 中深皮膚</string>
+	<string name="spoken_emoji_1f482_1f3ff_2642">男守衛: 黑皮膚</string>
+	<string name="spoken_emoji_1f482_1f3fb_2640">女守衛: 白皮膚</string>
+	<string name="spoken_emoji_1f482_1f3fc_2640">女守衛: 黃皮膚</string>
+	<string name="spoken_emoji_1f482_1f3fd_2640">女守衛: 中等皮膚</string>
+	<string name="spoken_emoji_1f482_1f3fe_2640">女守衛: 中深皮膚</string>
+	<string name="spoken_emoji_1f482_1f3ff_2640">女守衛: 黑皮膚</string>
+	<string name="spoken_emoji_1f477_1f3fd">建築工人: 中等皮膚</string>
+	<string name="spoken_emoji_1f477_1f3fe">建築工人: 中深皮膚</string>
+	<string name="spoken_emoji_1f477_1f3fd_2642">男建築工人: 中等皮膚</string>
+	<string name="spoken_emoji_1f477_1f3fe_2642">男建築工人: 中深皮膚</string>
+	<string name="spoken_emoji_1f477_1f3fd_2640">女建築工人: 中等皮膚</string>
+	<string name="spoken_emoji_1f477_1f3fe_2640">女建築工人: 中深皮膚</string>
+	<string name="spoken_emoji_1f934_1f3fd">王子: 中等皮膚</string>
+	<string name="spoken_emoji_1f934_1f3fe">王子: 中深皮膚</string>
+	<string name="spoken_emoji_1f478_1f3fd">公主: 中等皮膚</string>
+	<string name="spoken_emoji_1f478_1f3fe">公主: 中深皮膚</string>
+	<string name="spoken_emoji_1f473_1f3fb">戴頭巾嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f473_1f3fc">戴頭巾嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f473_1f3fd">戴頭巾嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f473_1f3fe">戴頭巾嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f473_1f3ff">戴頭巾嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f473_1f3fb_2642">戴頭巾嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f473_1f3fc_2642">戴頭巾嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f473_1f3fd_2642">戴頭巾嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f473_1f3fe_2642">戴頭巾嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f473_1f3ff_2642">戴頭巾嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f473_1f3fb_2640">戴頭巾嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f473_1f3fc_2640">戴頭巾嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f473_1f3fd_2640">戴頭巾嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f473_1f3fe_2640">戴頭巾嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f473_1f3ff_2640">戴頭巾嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f472_1f3fb">戴中式帽嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f472_1f3fc">戴中式帽嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f472_1f3fd">戴中式帽嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f472_1f3fe">戴中式帽嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f472_1f3ff">戴中式帽嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d5_1f3fb">包頭巾嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f9d5_1f3fc">包頭巾嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d5_1f3fd">包頭巾嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d5_1f3fe">包頭巾嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d5_1f3ff">包頭巾嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d4_1f3fb">留鬚嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f9d4_1f3fc">留鬚嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d4_1f3fd">留鬚嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d4_1f3fe">留鬚嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d4_1f3ff">留鬚嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f471_1f3fb">金髮嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f471_1f3fc">金髮嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f471_1f3fd">金髮嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f471_1f3fe">金髮嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f471_1f3ff">金髮嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f471_1f3fb_2642">金髮男人: 白皮膚</string>
+	<string name="spoken_emoji_1f471_1f3fc_2642">金髮男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f471_1f3fd_2642">金髮男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f471_1f3fe_2642">金髮男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f471_1f3ff_2642">金髮男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f471_1f3fb_2640">金髮女人: 白皮膚</string>
+	<string name="spoken_emoji_1f471_1f3fc_2640">金髮女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f471_1f3fd_2640">金髮女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f471_1f3fe_2640">金髮女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f471_1f3ff_2640">金髮女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f935_1f3fb">着禮服嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f935_1f3fc">着禮服嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f935_1f3fd">着禮服嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f935_1f3fe">着禮服嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f935_1f3ff">着禮服嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f470_1f3fd">新娘: 中等皮膚</string>
+	<string name="spoken_emoji_1f470_1f3fe">新娘: 中深皮膚</string>
+	<string name="spoken_emoji_1f930_1f3fd">孕婦: 中等皮膚</string>
+	<string name="spoken_emoji_1f930_1f3fe">孕婦: 中深皮膚</string>
+	<string name="spoken_emoji_1f931_1f3fd">哺乳: 中等皮膚</string>
+	<string name="spoken_emoji_1f931_1f3fe">哺乳: 中深皮膚</string>
+	<string name="spoken_emoji_1f47c_1f3fb">天使嬰兒: 白皮膚</string>
+	<string name="spoken_emoji_1f47c_1f3fc">天使嬰兒: 黃皮膚</string>
+	<string name="spoken_emoji_1f47c_1f3fd">天使嬰兒: 中等皮膚</string>
+	<string name="spoken_emoji_1f47c_1f3fe">天使嬰兒: 中深皮膚</string>
+	<string name="spoken_emoji_1f47c_1f3ff">天使嬰兒: 黑皮膚</string>
+	<string name="spoken_emoji_1f385_1f3fd">聖誕老人: 中等皮膚</string>
+	<string name="spoken_emoji_1f385_1f3fe">聖誕老人: 中深皮膚</string>
+	<string name="spoken_emoji_1f936_1f3fb">聖誕婆婆: 白皮膚</string>
+	<string name="spoken_emoji_1f936_1f3fc">聖誕婆婆: 黃皮膚</string>
+	<string name="spoken_emoji_1f936_1f3fd">聖誕婆婆: 中等皮膚</string>
+	<string name="spoken_emoji_1f936_1f3fe">聖誕婆婆: 中深皮膚</string>
+	<string name="spoken_emoji_1f936_1f3ff">聖誕婆婆: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d9_1f3fb">巫師: 白皮膚</string>
+	<string name="spoken_emoji_1f9d9_1f3fc">巫師: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d9_1f3fd">巫師: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d9_1f3fe">巫師: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d9_1f3ff">巫師: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d9_1f3fd_2640">女巫師: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d9_1f3fe_2640">女巫師: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d9_1f3fb_2642">男巫師: 白皮膚</string>
+	<string name="spoken_emoji_1f9d9_1f3fc_2642">男巫師: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d9_1f3fd_2642">男巫師: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d9_1f3fe_2642">男巫師: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d9_1f3ff_2642">男巫師: 黑皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3fb">仙子: 白皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3fc">仙子: 黃皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3fd">仙子: 中等皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3fe">仙子: 中深皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3ff">仙子: 黑皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3fb_2640">女仙子: 白皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3fc_2640">女仙子: 黃皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3fd_2640">女仙子: 中等皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3fe_2640">女仙子: 中深皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3ff_2640">女仙子: 黑皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3fb_2642">男仙子: 白皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3fc_2642">男仙子: 黃皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3fd_2642">男仙子: 中等皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3fe_2642">男仙子: 中深皮膚</string>
+	<string name="spoken_emoji_1f9da_1f3ff_2642">男仙子: 黑皮膚</string>
+	<string name="spoken_emoji_1f9db_1f3fd">吸血鬼: 中等皮膚</string>
+	<string name="spoken_emoji_1f9db_1f3fe">吸血鬼: 中深皮膚</string>
+	<string name="spoken_emoji_1f9db_1f3fd_2640">女吸血鬼: 中等皮膚</string>
+	<string name="spoken_emoji_1f9db_1f3fe_2640">女吸血鬼: 中深皮膚</string>
+	<string name="spoken_emoji_1f9db_1f3fd_2642">男吸血鬼: 中等皮膚</string>
+	<string name="spoken_emoji_1f9db_1f3fe_2642">男吸血鬼: 中深皮膚</string>
+	<string name="spoken_emoji_1f9dc_1f3fd">人魚: 中等皮膚</string>
+	<string name="spoken_emoji_1f9dc_1f3fe">人魚: 中深皮膚</string>
+	<string name="spoken_emoji_1f9dc_1f3fd_2640">美人魚: 中等皮膚</string>
+	<string name="spoken_emoji_1f9dc_1f3fe_2640">美人魚: 中深皮膚</string>
+	<string name="spoken_emoji_1f9dc_1f3fd_2642">男人魚: 中等皮膚</string>
+	<string name="spoken_emoji_1f9dc_1f3fe_2642">男人魚: 中深皮膚</string>
+	<string name="spoken_emoji_1f9dd_1f3fb">精靈: 白皮膚</string>
+	<string name="spoken_emoji_1f9dd_1f3fc">精靈: 黃皮膚</string>
+	<string name="spoken_emoji_1f9dd_1f3fd">精靈: 中等皮膚</string>
+	<string name="spoken_emoji_1f9dd_1f3fe">精靈: 中深皮膚</string>
+	<string name="spoken_emoji_1f9dd_1f3ff">精靈: 黑皮膚</string>
+	<string name="spoken_emoji_1f9dd_1f3fd_2640">女精靈: 中等皮膚</string>
+	<string name="spoken_emoji_1f9dd_1f3fe_2640">女精靈: 中深皮膚</string>
+	<string name="spoken_emoji_1f9dd_1f3fd_2642">男精靈: 中等皮膚</string>
+	<string name="spoken_emoji_1f9dd_1f3fe_2642">男精靈: 中深皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3fb">皺眉嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3fc">皺眉嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3fd">皺眉嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3fe">皺眉嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3ff">皺眉嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3fb_2642">男子皺眉: 白皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3fc_2642">男子皺眉: 黃皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3fd_2642">男子皺眉: 中等皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3fe_2642">男子皺眉: 中深皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3ff_2642">男子皺眉: 黑皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3fb_2640">女子皺眉: 白皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3fc_2640">女子皺眉: 黃皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3fd_2640">女子皺眉: 中等皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3fe_2640">女子皺眉: 中深皮膚</string>
+	<string name="spoken_emoji_1f64d_1f3ff_2640">女子皺眉: 黑皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3fb">撅嘴嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3fc">撅嘴嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3fd">撅嘴嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3fe">撅嘴嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3ff">撅嘴嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3fb_2642">男子噘嘴: 白皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3fc_2642">男子噘嘴: 黃皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3fd_2642">男子噘嘴: 中等皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3fe_2642">男子噘嘴: 中深皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3ff_2642">男子噘嘴: 黑皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3fb_2640">女子噘嘴: 白皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3fc_2640">女子噘嘴: 黃皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3fd_2640">女子噘嘴: 中等皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3fe_2640">女子噘嘴: 中深皮膚</string>
+	<string name="spoken_emoji_1f64e_1f3ff_2640">女子噘嘴: 黑皮膚</string>
+	<string name="spoken_emoji_1f645_1f3fb">用手臂做出交叉手勢嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f645_1f3fc">用手臂做出交叉手勢嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f645_1f3fd">用手臂做出交叉手勢嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f645_1f3fe">用手臂做出交叉手勢嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f645_1f3ff">用手臂做出交叉手勢嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f645_1f3fb_2642">男子表示不行: 白皮膚</string>
+	<string name="spoken_emoji_1f645_1f3fc_2642">男子表示不行: 黃皮膚</string>
+	<string name="spoken_emoji_1f645_1f3fd_2642">男子表示不行: 中等皮膚</string>
+	<string name="spoken_emoji_1f645_1f3fe_2642">男子表示不行: 中深皮膚</string>
+	<string name="spoken_emoji_1f645_1f3ff_2642">男子表示不行: 黑皮膚</string>
+	<string name="spoken_emoji_1f645_1f3fb_2640">女子表示不行: 白皮膚</string>
+	<string name="spoken_emoji_1f645_1f3fc_2640">女子表示不行: 黃皮膚</string>
+	<string name="spoken_emoji_1f645_1f3fd_2640">女子表示不行: 中等皮膚</string>
+	<string name="spoken_emoji_1f645_1f3fe_2640">女子表示不行: 中深皮膚</string>
+	<string name="spoken_emoji_1f645_1f3ff_2640">女子表示不行: 黑皮膚</string>
+	<string name="spoken_emoji_1f646_1f3fb">用手勢表示 OK 嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f646_1f3fc">用手勢表示 OK 嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f646_1f3fd">用手勢表示 OK 嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f646_1f3fe">用手勢表示 OK 嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f646_1f3ff">用手勢表示 OK 嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f646_1f3fb_2642">男子表示可以: 白皮膚</string>
+	<string name="spoken_emoji_1f646_1f3fc_2642">男子表示可以: 黃皮膚</string>
+	<string name="spoken_emoji_1f646_1f3fd_2642">男子表示可以: 中等皮膚</string>
+	<string name="spoken_emoji_1f646_1f3fe_2642">男子表示可以: 中深皮膚</string>
+	<string name="spoken_emoji_1f646_1f3ff_2642">男子表示可以: 黑皮膚</string>
+	<string name="spoken_emoji_1f646_1f3fb_2640">女子表示可以: 白皮膚</string>
+	<string name="spoken_emoji_1f646_1f3fc_2640">女子表示可以: 黃皮膚</string>
+	<string name="spoken_emoji_1f646_1f3fd_2640">女子表示可以: 中等皮膚</string>
+	<string name="spoken_emoji_1f646_1f3fe_2640">女子表示可以: 中深皮膚</string>
+	<string name="spoken_emoji_1f646_1f3ff_2640">女子表示可以: 黑皮膚</string>
+	<string name="spoken_emoji_1f481_1f3fb">攤開手嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f481_1f3fc">攤開手嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f481_1f3fd">攤開手嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f481_1f3fe">攤開手嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f481_1f3ff">攤開手嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f481_1f3fb_2642">男子抬手: 白皮膚</string>
+	<string name="spoken_emoji_1f481_1f3fc_2642">男子抬手: 黃皮膚</string>
+	<string name="spoken_emoji_1f481_1f3fd_2642">男子抬手: 中等皮膚</string>
+	<string name="spoken_emoji_1f481_1f3fe_2642">男子抬手: 中深皮膚</string>
+	<string name="spoken_emoji_1f481_1f3ff_2642">男子抬手: 黑皮膚</string>
+	<string name="spoken_emoji_1f481_1f3fb_2640">女子抬手: 白皮膚</string>
+	<string name="spoken_emoji_1f481_1f3fc_2640">女子抬手: 黃皮膚</string>
+	<string name="spoken_emoji_1f481_1f3fd_2640">女子抬手: 中等皮膚</string>
+	<string name="spoken_emoji_1f481_1f3fe_2640">女子抬手: 中深皮膚</string>
+	<string name="spoken_emoji_1f481_1f3ff_2640">女子抬手: 黑皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3fb">舉起一隻手: 白皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3fc">舉起一隻手: 黃皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3fd">舉起一隻手: 中等皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3fe">舉起一隻手: 中深皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3ff">舉起一隻手: 黑皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3fb_2642">男子舉手: 白皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3fc_2642">男子舉手: 黃皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3fd_2642">男子舉手: 中等皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3fe_2642">男子舉手: 中深皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3ff_2642">男子舉手: 黑皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3fb_2640">女子舉手: 白皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3fc_2640">女子舉手: 黃皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3fd_2640">女子舉手: 中等皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3fe_2640">女子舉手: 中深皮膚</string>
+	<string name="spoken_emoji_1f64b_1f3ff_2640">女子舉手: 黑皮膚</string>
+	<string name="spoken_emoji_1f647_1f3fd">鞠躬: 中等皮膚</string>
+	<string name="spoken_emoji_1f647_1f3fe">鞠躬: 中深皮膚</string>
+	<string name="spoken_emoji_1f647_1f3fb_2642">男子鞠躬: 白皮膚</string>
+	<string name="spoken_emoji_1f647_1f3fc_2642">男子鞠躬: 黃皮膚</string>
+	<string name="spoken_emoji_1f647_1f3fd_2642">男子鞠躬: 中等皮膚</string>
+	<string name="spoken_emoji_1f647_1f3fe_2642">男子鞠躬: 中深皮膚</string>
+	<string name="spoken_emoji_1f647_1f3ff_2642">男子鞠躬: 黑皮膚</string>
+	<string name="spoken_emoji_1f647_1f3fb_2640">女子鞠躬: 白皮膚</string>
+	<string name="spoken_emoji_1f647_1f3fc_2640">女子鞠躬: 黃皮膚</string>
+	<string name="spoken_emoji_1f647_1f3fd_2640">女子鞠躬: 中等皮膚</string>
+	<string name="spoken_emoji_1f647_1f3fe_2640">女子鞠躬: 中深皮膚</string>
+	<string name="spoken_emoji_1f647_1f3ff_2640">女子鞠躬: 黑皮膚</string>
+	<string name="spoken_emoji_1f926_1f3fb">遮住塊面: 白皮膚</string>
+	<string name="spoken_emoji_1f926_1f3fc">遮住塊面: 黃皮膚</string>
+	<string name="spoken_emoji_1f926_1f3fd">遮住塊面: 中等皮膚</string>
+	<string name="spoken_emoji_1f926_1f3fe">遮住塊面: 中深皮膚</string>
+	<string name="spoken_emoji_1f926_1f3ff">遮住塊面: 黑皮膚</string>
+	<string name="spoken_emoji_1f926_1f3fb_2642">男子遮臉: 白皮膚</string>
+	<string name="spoken_emoji_1f926_1f3fc_2642">男子遮臉: 黃皮膚</string>
+	<string name="spoken_emoji_1f926_1f3fd_2642">男子遮臉: 中等皮膚</string>
+	<string name="spoken_emoji_1f926_1f3fe_2642">男子遮臉: 中深皮膚</string>
+	<string name="spoken_emoji_1f926_1f3ff_2642">男子遮臉: 黑皮膚</string>
+	<string name="spoken_emoji_1f926_1f3fb_2640">女子遮臉: 白皮膚</string>
+	<string name="spoken_emoji_1f926_1f3fc_2640">女子遮臉: 黃皮膚</string>
+	<string name="spoken_emoji_1f926_1f3fd_2640">女子遮臉: 中等皮膚</string>
+	<string name="spoken_emoji_1f926_1f3fe_2640">女子遮臉: 中深皮膚</string>
+	<string name="spoken_emoji_1f926_1f3ff_2640">女子遮臉: 黑皮膚</string>
+	<string name="spoken_emoji_1f937_1f3fb">聳肩嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f937_1f3fc">聳肩嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f937_1f3fd">聳肩嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f937_1f3fe">聳肩嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f937_1f3ff">聳肩嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f937_1f3fb_2642">男子聳肩: 白皮膚</string>
+	<string name="spoken_emoji_1f937_1f3fc_2642">男子聳肩: 黃皮膚</string>
+	<string name="spoken_emoji_1f937_1f3fd_2642">男子聳肩: 中等皮膚</string>
+	<string name="spoken_emoji_1f937_1f3fe_2642">男子聳肩: 中深皮膚</string>
+	<string name="spoken_emoji_1f937_1f3ff_2642">男子聳肩: 黑皮膚</string>
+	<string name="spoken_emoji_1f937_1f3fb_2640">女子聳肩: 白皮膚</string>
+	<string name="spoken_emoji_1f937_1f3fc_2640">女子聳肩: 黃皮膚</string>
+	<string name="spoken_emoji_1f937_1f3fd_2640">女子聳肩: 中等皮膚</string>
+	<string name="spoken_emoji_1f937_1f3fe_2640">女子聳肩: 中深皮膚</string>
+	<string name="spoken_emoji_1f937_1f3ff_2640">女子聳肩: 黑皮膚</string>
+	<string name="spoken_emoji_1f486_1f3fb">接受頭部按摩嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f486_1f3fc">接受頭部按摩嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f486_1f3fd">接受頭部按摩嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f486_1f3fe">接受頭部按摩嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f486_1f3ff">接受頭部按摩嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f486_1f3fb_2642">接受頭部按摩嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f486_1f3fc_2642">接受頭部按摩嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f486_1f3fd_2642">接受頭部按摩嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f486_1f3fe_2642">接受頭部按摩嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f486_1f3ff_2642">接受頭部按摩嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f486_1f3fb_2640">接受頭部按摩嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f486_1f3fc_2640">接受頭部按摩嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f486_1f3fd_2640">接受頭部按摩嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f486_1f3fe_2640">接受頭部按摩嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f486_1f3ff_2640">接受頭部按摩嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f487_1f3fb">剪頭髮: 白皮膚</string>
+	<string name="spoken_emoji_1f487_1f3fc">剪頭髮: 黃皮膚</string>
+	<string name="spoken_emoji_1f487_1f3fd">剪頭髮: 中等皮膚</string>
+	<string name="spoken_emoji_1f487_1f3fe">剪頭髮: 中深皮膚</string>
+	<string name="spoken_emoji_1f487_1f3ff">剪頭髮: 黑皮膚</string>
+	<string name="spoken_emoji_1f487_1f3fb_2642">剪緊頭髮嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f487_1f3fc_2642">剪緊頭髮嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f487_1f3fd_2642">剪緊頭髮嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f487_1f3fe_2642">剪緊頭髮嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f487_1f3ff_2642">剪緊頭髮嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f487_1f3fb_2640">剪緊頭髮嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f487_1f3fc_2640">剪緊頭髮嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f487_1f3fd_2640">剪緊頭髮嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f487_1f3fe_2640">剪緊頭髮嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f487_1f3ff_2640">剪緊頭髮嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f6b6_1f3fd">行人: 中等皮膚</string>
+	<string name="spoken_emoji_1f6b6_1f3fe">行人: 中深皮膚</string>
+	<string name="spoken_emoji_1f6b6_1f3fb_2642">行路嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f6b6_1f3fc_2642">行路嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f6b6_1f3fd_2642">行路嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f6b6_1f3fe_2642">行路嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f6b6_1f3ff_2642">行路嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f6b6_1f3fb_2640">行路嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f6b6_1f3fc_2640">行路嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f6b6_1f3fd_2640">行路嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f6b6_1f3fe_2640">行路嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f6b6_1f3ff_2640">行路嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3fb">跑步嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3fc">跑步嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3fd">跑步嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3fe">跑步嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3ff">跑步嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3fb_2642">男跑手: 白皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3fc_2642">男跑手: 黃皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3fd_2642">男跑手: 中等皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3fe_2642">男跑手: 中深皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3ff_2642">男跑手: 黑皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3fb_2640">女跑手: 白皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3fc_2640">女跑手: 黃皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3fd_2640">女跑手: 中等皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3fe_2640">女跑手: 中深皮膚</string>
+	<string name="spoken_emoji_1f3c3_1f3ff_2640">女跑手: 黑皮膚</string>
+	<string name="spoken_emoji_1f483_1f3fb">跳舞嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f483_1f3fc">跳舞嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f483_1f3fd">跳舞嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f483_1f3fe">跳舞嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f483_1f3ff">跳舞嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f57a_1f3fb">跳舞嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f57a_1f3fc">跳舞嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f57a_1f3fd">跳舞嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f57a_1f3fe">跳舞嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f57a_1f3ff">跳舞嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3fb">焗桑拿嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3fc">焗桑拿嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3fd">焗桑拿嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3fe">焗桑拿嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3ff">焗桑拿嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3fb_2640">焗桑拿嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3fc_2640">焗桑拿嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3fd_2640">焗桑拿嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3fe_2640">焗桑拿嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3ff_2640">焗桑拿嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3fb_2642">焗桑拿嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3fc_2642">焗桑拿嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3fd_2642">焗桑拿嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3fe_2642">焗桑拿嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d6_1f3ff_2642">焗桑拿嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3fb">攀岩者: 白皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3fc">攀岩者: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3fd">攀岩者: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3fe">攀岩者: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3ff">攀岩者: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3fb_2640">攀岩嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3fc_2640">攀岩嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3fd_2640">攀岩嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3fe_2640">攀岩嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3ff_2640">攀岩嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3fb_2642">攀岩嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3fc_2642">攀岩嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3fd_2642">攀岩嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3fe_2642">攀岩嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d7_1f3ff_2642">攀岩嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3fb">盤腿坐嘅人: 白皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3fc">盤腿坐嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3fd">盤腿坐嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3fe">盤腿坐嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3ff">盤腿坐嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3fb_2640">盤腿坐嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3fc_2640">盤腿坐嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3fd_2640">盤腿坐嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3fe_2640">盤腿坐嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3ff_2640">盤腿坐嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3fb_2642">盤腿坐嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3fc_2642">盤腿坐嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3fd_2642">盤腿坐嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3fe_2642">盤腿坐嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f9d8_1f3ff_2642">盤腿坐嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f6c0_1f3fb">浸浴: 白皮膚</string>
+	<string name="spoken_emoji_1f6c0_1f3fc">浸浴: 黃皮膚</string>
+	<string name="spoken_emoji_1f6c0_1f3fd">浸浴: 中等皮膚</string>
+	<string name="spoken_emoji_1f6c0_1f3fe">浸浴: 中深皮膚</string>
+	<string name="spoken_emoji_1f6c0_1f3ff">浸浴: 黑皮膚</string>
+	<string name="spoken_emoji_1f6cc_1f3fd">睡覺: 中等皮膚</string>
+	<string name="spoken_emoji_1f6cc_1f3fe">睡覺: 中深皮膚</string>
+	<string name="spoken_emoji_1f574_1f3fb">着住西裝飄浮嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f574_1f3fc">着住西裝飄浮嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f574_1f3fd">着住西裝飄浮嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f574_1f3fe">着住西裝飄浮嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f574_1f3ff">着住西裝飄浮嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f3c7_1f3fb">騎馬: 白皮膚</string>
+	<string name="spoken_emoji_1f3c7_1f3fc">騎馬: 黃皮膚</string>
+	<string name="spoken_emoji_1f3c7_1f3fd">騎馬: 中等皮膚</string>
+	<string name="spoken_emoji_1f3c7_1f3fe">騎馬: 中深皮膚</string>
+	<string name="spoken_emoji_1f3c7_1f3ff">騎馬: 黑皮膚</string>
+	<string name="spoken_emoji_1f3c2_1f3fb">玩滑雪板: 白皮膚</string>
+	<string name="spoken_emoji_1f3c2_1f3fc">玩滑雪板: 黃皮膚</string>
+	<string name="spoken_emoji_1f3c2_1f3fd">玩滑雪板: 中等皮膚</string>
+	<string name="spoken_emoji_1f3c2_1f3fe">玩滑雪板: 中深皮膚</string>
+	<string name="spoken_emoji_1f3c2_1f3ff">玩滑雪板: 黑皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3fb">打高爾夫球: 白皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3fc">打高爾夫球: 黃皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3fd">打高爾夫球: 中等皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3fe">打高爾夫球: 中深皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3ff">打高爾夫球: 黑皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3fb_2642">打高爾夫球嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3fc_2642">打高爾夫球嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3fd_2642">打高爾夫球嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3fe_2642">打高爾夫球嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3ff_2642">打高爾夫球嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3fb_2640">打高爾夫球嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3fc_2640">打高爾夫球嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3fd_2640">打高爾夫球嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3fe_2640">打高爾夫球嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f3cc_1f3ff_2640">打高爾夫球嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3fb">滑浪: 白皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3fc">滑浪: 黃皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3fd">滑浪: 中等皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3fe">滑浪: 中深皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3ff">滑浪: 黑皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3fb_2642">滑浪嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3fc_2642">滑浪嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3fd_2642">滑浪嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3fe_2642">滑浪嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3ff_2642">滑浪嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3fb_2640">滑浪嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3fc_2640">滑浪嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3fd_2640">滑浪嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3fe_2640">滑浪嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f3c4_1f3ff_2640">滑浪嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3fb">撐艇: 白皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3fc">撐艇: 黃皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3fd">撐艇: 中等皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3fe">撐艇: 中深皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3ff">撐艇: 黑皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3fb_2642">撐艇嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3fc_2642">撐艇嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3fd_2642">撐艇嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3fe_2642">撐艇嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3ff_2642">撐艇嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3fb_2640">撐艇嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3fc_2640">撐艇嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3fd_2640">撐艇嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3fe_2640">撐艇嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f6a3_1f3ff_2640">撐艇嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3fb">游水: 白皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3fc">游水: 黃皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3fd">游水: 中等皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3fe">游水: 中深皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3ff">游水: 黑皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3fb_2642">男泳手: 白皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3fc_2642">男泳手: 黃皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3fd_2642">男泳手: 中等皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3fe_2642">男泳手: 中深皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3ff_2642">男泳手: 黑皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3fb_2640">女泳手: 白皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3fc_2640">女泳手: 黃皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3fd_2640">女泳手: 中等皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3fe_2640">女泳手: 中深皮膚</string>
+	<string name="spoken_emoji_1f3ca_1f3ff_2640">女泳手: 黑皮膚</string>
+	<string name="spoken_emoji_26f9_1f3fb">打緊波嘅人: 白皮膚</string>
+	<string name="spoken_emoji_26f9_1f3fc">打緊波嘅人: 黃皮膚</string>
+	<string name="spoken_emoji_26f9_1f3fd">打緊波嘅人: 中等皮膚</string>
+	<string name="spoken_emoji_26f9_1f3fe">打緊波嘅人: 中深皮膚</string>
+	<string name="spoken_emoji_26f9_1f3ff">打緊波嘅人: 黑皮膚</string>
+	<string name="spoken_emoji_26f9_1f3fb_2642">打緊波嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_26f9_1f3fc_2642">打緊波嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_26f9_1f3fd_2642">打緊波嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_26f9_1f3fe_2642">打緊波嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_26f9_1f3ff_2642">打緊波嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_26f9_1f3fb_2640">打緊波嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_26f9_1f3fc_2640">打緊波嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_26f9_1f3fd_2640">打緊波嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_26f9_1f3fe_2640">打緊波嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_26f9_1f3ff_2640">打緊波嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f3cb_1f3fd">舉重: 中等皮膚</string>
+	<string name="spoken_emoji_1f3cb_1f3fe">舉重: 中深皮膚</string>
+	<string name="spoken_emoji_1f3cb_1f3fb_2642">男舉重員: 白皮膚</string>
+	<string name="spoken_emoji_1f3cb_1f3fc_2642">男舉重員: 黃皮膚</string>
+	<string name="spoken_emoji_1f3cb_1f3fd_2642">男舉重員: 中等皮膚</string>
+	<string name="spoken_emoji_1f3cb_1f3fe_2642">男舉重員: 中深皮膚</string>
+	<string name="spoken_emoji_1f3cb_1f3ff_2642">男舉重員: 黑皮膚</string>
+	<string name="spoken_emoji_1f3cb_1f3fb_2640">女舉重員: 白皮膚</string>
+	<string name="spoken_emoji_1f3cb_1f3fc_2640">女舉重員: 黃皮膚</string>
+	<string name="spoken_emoji_1f3cb_1f3fd_2640">女舉重員: 中等皮膚</string>
+	<string name="spoken_emoji_1f3cb_1f3fe_2640">女舉重員: 中深皮膚</string>
+	<string name="spoken_emoji_1f3cb_1f3ff_2640">女舉重員: 黑皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3fb">踩單車: 白皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3fc">踩單車: 黃皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3fd">踩單車: 中等皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3fe">踩單車: 中深皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3ff">踩單車: 黑皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3fb_2642">男單車手: 白皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3fc_2642">男單車手: 黃皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3fd_2642">男單車手: 中等皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3fe_2642">男單車手: 中深皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3ff_2642">男單車手: 黑皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3fb_2640">女單車手: 白皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3fc_2640">女單車手: 黃皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3fd_2640">女單車手: 中等皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3fe_2640">女單車手: 中深皮膚</string>
+	<string name="spoken_emoji_1f6b4_1f3ff_2640">女單車手: 黑皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3fb">踩爬山單車: 白皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3fc">踩爬山單車: 黃皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3fd">踩爬山單車: 中等皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3fe">踩爬山單車: 中深皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3ff">踩爬山單車: 黑皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3fb_2642">踩爬山單車嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3fc_2642">踩爬山單車嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3fd_2642">踩爬山單車嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3fe_2642">踩爬山單車嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3ff_2642">踩爬山單車嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3fb_2640">踩爬山單車嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3fc_2640">踩爬山單車嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3fd_2640">踩爬山單車嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3fe_2640">踩爬山單車嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f6b5_1f3ff_2640">踩爬山單車嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f938_1f3fb">側手翻: 白皮膚</string>
+	<string name="spoken_emoji_1f938_1f3fc">側手翻: 黃皮膚</string>
+	<string name="spoken_emoji_1f938_1f3fd">側手翻: 中等皮膚</string>
+	<string name="spoken_emoji_1f938_1f3fe">側手翻: 中深皮膚</string>
+	<string name="spoken_emoji_1f938_1f3ff">側手翻: 黑皮膚</string>
+	<string name="spoken_emoji_1f938_1f3fb_2642">打側手翻嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f938_1f3fc_2642">打側手翻嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f938_1f3fd_2642">打側手翻嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f938_1f3fe_2642">打側手翻嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f938_1f3ff_2642">打側手翻嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f938_1f3fb_2640">打側手翻嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f938_1f3fc_2640">打側手翻嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f938_1f3fd_2640">打側手翻嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f938_1f3fe_2640">打側手翻嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f938_1f3ff_2640">打側手翻嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3fb">水球: 白皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3fc">水球: 黃皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3fd">水球: 中等皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3fe">水球: 中深皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3ff">水球: 黑皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3fb_2642">打水球嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3fc_2642">打水球嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3fd_2642">打水球嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3fe_2642">打水球嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3ff_2642">打水球嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3fb_2640">打水球嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3fc_2640">打水球嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3fd_2640">打水球嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3fe_2640">打水球嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f93d_1f3ff_2640">打水球嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f93e_1f3fd">手球: 中等皮膚</string>
+	<string name="spoken_emoji_1f93e_1f3fe">手球: 中深皮膚</string>
+	<string name="spoken_emoji_1f93e_1f3fb_2642">打手球嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f93e_1f3fc_2642">打手球嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f93e_1f3fd_2642">打手球嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f93e_1f3fe_2642">打手球嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f93e_1f3ff_2642">打手球嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f93e_1f3fb_2640">打手球嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f93e_1f3fc_2640">打手球嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f93e_1f3fd_2640">打手球嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f93e_1f3fe_2640">打手球嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f93e_1f3ff_2640">打手球嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f939_1f3fb">耍雜技: 白皮膚</string>
+	<string name="spoken_emoji_1f939_1f3fc">耍雜技: 黃皮膚</string>
+	<string name="spoken_emoji_1f939_1f3fd">耍雜技: 中等皮膚</string>
+	<string name="spoken_emoji_1f939_1f3fe">耍雜技: 中深皮膚</string>
+	<string name="spoken_emoji_1f939_1f3ff">耍雜技: 黑皮膚</string>
+	<string name="spoken_emoji_1f939_1f3fb_2642">耍雜技嘅男人: 白皮膚</string>
+	<string name="spoken_emoji_1f939_1f3fc_2642">耍雜技嘅男人: 黃皮膚</string>
+	<string name="spoken_emoji_1f939_1f3fd_2642">耍雜技嘅男人: 中等皮膚</string>
+	<string name="spoken_emoji_1f939_1f3fe_2642">耍雜技嘅男人: 中深皮膚</string>
+	<string name="spoken_emoji_1f939_1f3ff_2642">耍雜技嘅男人: 黑皮膚</string>
+	<string name="spoken_emoji_1f939_1f3fb_2640">耍雜技嘅女人: 白皮膚</string>
+	<string name="spoken_emoji_1f939_1f3fc_2640">耍雜技嘅女人: 黃皮膚</string>
+	<string name="spoken_emoji_1f939_1f3fd_2640">耍雜技嘅女人: 中等皮膚</string>
+	<string name="spoken_emoji_1f939_1f3fe_2640">耍雜技嘅女人: 中深皮膚</string>
+	<string name="spoken_emoji_1f939_1f3ff_2640">耍雜技嘅女人: 黑皮膚</string>
+	<string name="spoken_emoji_1f469_2764_1f48b_1f468">親嘴: 女人 男人</string>
+	<string name="spoken_emoji_1f468_2764_1f48b_1f468">親嘴: 男人 男人</string>
+	<string name="spoken_emoji_1f469_2764_1f48b_1f469">親嘴: 女人 女人</string>
+	<string name="spoken_emoji_1f469_2764_1f468">戀愛中: 女人 男人</string>
+	<string name="spoken_emoji_1f468_2764_1f468">戀愛中: 男人 男人</string>
+	<string name="spoken_emoji_1f469_2764_1f469">戀愛中: 女人 女人</string>
+	<string name="spoken_emoji_1f933_1f3fd">自拍: 中等皮膚</string>
+	<string name="spoken_emoji_1f933_1f3fe">自拍: 中深皮膚</string>
+	<string name="spoken_emoji_1f4aa_1f3fd">肌肉: 中等皮膚</string>
+	<string name="spoken_emoji_1f4aa_1f3fe">肌肉: 中深皮膚</string>
+	<string name="spoken_emoji_1f448_1f3fd">左: 中等皮膚</string>
+	<string name="spoken_emoji_1f448_1f3fe">左: 中深皮膚</string>
+	<string name="spoken_emoji_1f449_1f3fd">右: 中等皮膚</string>
+	<string name="spoken_emoji_1f449_1f3fe">右: 中深皮膚</string>
+	<string name="spoken_emoji_261d_1f3fd">注意: 中等皮膚</string>
+	<string name="spoken_emoji_261d_1f3fe">注意: 中深皮膚</string>
+	<string name="spoken_emoji_1f446_1f3fd">上: 中等皮膚</string>
+	<string name="spoken_emoji_1f446_1f3fe">上: 中深皮膚</string>
+	<string name="spoken_emoji_1f595_1f3fd">中指: 中等皮膚</string>
+	<string name="spoken_emoji_1f595_1f3fe">中指: 中深皮膚</string>
+	<string name="spoken_emoji_1f447_1f3fd">下: 中等皮膚</string>
+	<string name="spoken_emoji_1f447_1f3fe">下: 中深皮膚</string>
+	<string name="spoken_emoji_270c_1f3fb">V字手勢: 白皮膚</string>
+	<string name="spoken_emoji_270c_1f3fc">V字手勢: 黃皮膚</string>
+	<string name="spoken_emoji_270c_1f3fd">V字手勢: 中等皮膚</string>
+	<string name="spoken_emoji_270c_1f3fe">V字手勢: 中深皮膚</string>
+	<string name="spoken_emoji_270c_1f3ff">V字手勢: 黑皮膚</string>
+	<string name="spoken_emoji_1f91e_1f3fd">祝好運: 中等皮膚</string>
+	<string name="spoken_emoji_1f91e_1f3fe">祝好運: 中深皮膚</string>
+	<string name="spoken_emoji_1f596_1f3fd">你好: 中等皮膚</string>
+	<string name="spoken_emoji_1f596_1f3fe">你好: 中深皮膚</string>
+	<string name="spoken_emoji_1f918_1f3fd">ROCK: 中等皮膚</string>
+	<string name="spoken_emoji_1f918_1f3fe">ROCK: 中深皮膚</string>
+	<string name="spoken_emoji_1f919_1f3fb">call 我: 白皮膚</string>
+	<string name="spoken_emoji_1f919_1f3fc">call 我: 黃皮膚</string>
+	<string name="spoken_emoji_1f919_1f3fd">call 我: 中等皮膚</string>
+	<string name="spoken_emoji_1f919_1f3fe">call 我: 中深皮膚</string>
+	<string name="spoken_emoji_1f919_1f3ff">call 我: 黑皮膚</string>
+	<string name="spoken_emoji_1f590_1f3fd">停止: 中等皮膚</string>
+	<string name="spoken_emoji_1f590_1f3fe">停止: 中深皮膚</string>
+	<string name="spoken_emoji_270b_1f3fd">舉手: 中等皮膚</string>
+	<string name="spoken_emoji_270b_1f3fe">舉手: 中深皮膚</string>
+	<string name="spoken_emoji_1f44c_1f3fd">OK 手勢: 中等皮膚</string>
+	<string name="spoken_emoji_1f44c_1f3fe">OK 手勢: 中深皮膚</string>
+	<string name="spoken_emoji_1f44d_1f3fd">讚: 中等皮膚</string>
+	<string name="spoken_emoji_1f44d_1f3fe">讚: 中深皮膚</string>
+	<string name="spoken_emoji_1f44e_1f3fb">渣: 白皮膚</string>
+	<string name="spoken_emoji_1f44e_1f3fc">渣: 黃皮膚</string>
+	<string name="spoken_emoji_1f44e_1f3fd">渣: 中等皮膚</string>
+	<string name="spoken_emoji_1f44e_1f3fe">渣: 中深皮膚</string>
+	<string name="spoken_emoji_1f44e_1f3ff">渣: 黑皮膚</string>
+	<string name="spoken_emoji_270a_1f3fd">拳頭: 中等皮膚</string>
+	<string name="spoken_emoji_270a_1f3fe">拳頭: 中深皮膚</string>
+	<string name="spoken_emoji_1f44a_1f3fd">出拳: 中等皮膚</string>
+	<string name="spoken_emoji_1f44a_1f3fe">出拳: 中深皮膚</string>
+	<string name="spoken_emoji_1f91b_1f3fb">拳頭向左: 白皮膚</string>
+	<string name="spoken_emoji_1f91b_1f3fc">拳頭向左: 黃皮膚</string>
+	<string name="spoken_emoji_1f91b_1f3fd">拳頭向左: 中等皮膚</string>
+	<string name="spoken_emoji_1f91b_1f3fe">拳頭向左: 中深皮膚</string>
+	<string name="spoken_emoji_1f91b_1f3ff">拳頭向左: 黑皮膚</string>
+	<string name="spoken_emoji_1f91c_1f3fb">拳頭向右: 白皮膚</string>
+	<string name="spoken_emoji_1f91c_1f3fc">拳頭向右: 黃皮膚</string>
+	<string name="spoken_emoji_1f91c_1f3fd">拳頭向右: 中等皮膚</string>
+	<string name="spoken_emoji_1f91c_1f3fe">拳頭向右: 中深皮膚</string>
+	<string name="spoken_emoji_1f91c_1f3ff">拳頭向右: 黑皮膚</string>
+	<string name="spoken_emoji_1f91a_1f3fd">豎起手掌: 中等皮膚</string>
+	<string name="spoken_emoji_1f91a_1f3fe">豎起手掌: 中深皮膚</string>
+	<string name="spoken_emoji_1f44b_1f3fd">揮手: 中等皮膚</string>
+	<string name="spoken_emoji_1f44b_1f3fe">揮手: 中深皮膚</string>
+	<string name="spoken_emoji_1f91f_1f3fd">愛你手勢: 中等皮膚</string>
+	<string name="spoken_emoji_1f91f_1f3fe">愛你手勢: 中深皮膚</string>
+	<string name="spoken_emoji_270d_1f3fd">寫: 中等皮膚</string>
+	<string name="spoken_emoji_270d_1f3fe">寫: 中深皮膚</string>
+	<string name="spoken_emoji_1f44f_1f3fb">拍手: 白皮膚</string>
+	<string name="spoken_emoji_1f44f_1f3fc">拍手: 黃皮膚</string>
+	<string name="spoken_emoji_1f44f_1f3fd">拍手: 中等皮膚</string>
+	<string name="spoken_emoji_1f44f_1f3fe">拍手: 中深皮膚</string>
+	<string name="spoken_emoji_1f44f_1f3ff">拍手: 黑皮膚</string>
+	<string name="spoken_emoji_1f450_1f3fd">攤開手: 中等皮膚</string>
+	<string name="spoken_emoji_1f450_1f3fe">攤開手: 中深皮膚</string>
+	<string name="spoken_emoji_1f64c_1f3fd">歡呼: 中等皮膚</string>
+	<string name="spoken_emoji_1f64c_1f3fe">歡呼: 中深皮膚</string>
+	<string name="spoken_emoji_1f932_1f3fb">雙手掌心向上: 白皮膚</string>
+	<string name="spoken_emoji_1f932_1f3fc">雙手掌心向上: 黃皮膚</string>
+	<string name="spoken_emoji_1f932_1f3fd">雙手掌心向上: 中等皮膚</string>
+	<string name="spoken_emoji_1f932_1f3fe">雙手掌心向上: 中深皮膚</string>
+	<string name="spoken_emoji_1f932_1f3ff">雙手掌心向上: 黑皮膚</string>
+	<string name="spoken_emoji_1f64f_1f3fd">感恩: 中等皮膚</string>
+	<string name="spoken_emoji_1f64f_1f3fe">感恩: 中深皮膚</string>
+	<string name="spoken_emoji_1f485_1f3fd">指甲油: 中等皮膚</string>
+	<string name="spoken_emoji_1f485_1f3fe">指甲油: 中深皮膚</string>
+	<string name="spoken_emoji_1f442_1f3fd">耳朵: 中等皮膚</string>
+	<string name="spoken_emoji_1f442_1f3fe">耳朵: 中深皮膚</string>
+	<string name="spoken_emoji_1f443_1f3fb">鼻: 白皮膚</string>
+	<string name="spoken_emoji_1f443_1f3fc">鼻: 黃皮膚</string>
+	<string name="spoken_emoji_1f443_1f3fd">鼻: 中等皮膚</string>
+	<string name="spoken_emoji_1f443_1f3fe">鼻: 中深皮膚</string>
+	<string name="spoken_emoji_1f443_1f3ff">鼻: 黑皮膚</string>
+	<string name="spoken_emoji_1f1e6_1f1ea">旗子: 阿拉伯聯合酋長國</string>
+	<string name="spoken_emoji_1f1e6_1f1ec">旗子: 安提瓜和巴布達</string>
+	<string name="spoken_emoji_1f1e6_1f1fc">旗子: 阿魯巴</string>
+	<string name="spoken_emoji_1f1e6_1f1ff">旗子: 阿塞拜疆</string>
+	<string name="spoken_emoji_1f1e7_1f1e6">旗子: 波斯尼亞和黑塞哥維那</string>
+	<string name="spoken_emoji_1f1e7_1f1e7">旗子: 巴巴多斯</string>
+	<string name="spoken_emoji_1f1e7_1f1eb">旗子: 布基納法索</string>
+	<string name="spoken_emoji_1f1e7_1f1ee">旗子: 布隆迪</string>
+	<string name="spoken_emoji_1f1e7_1f1ef">旗子: 貝寧</string>
+	<string name="spoken_emoji_1f1e7_1f1f1">旗子: 聖巴泰勒米</string>
+	<string name="spoken_emoji_1f1e7_1f1fb">旗子: 鮑威特島</string>
+	<string name="spoken_emoji_1f1e7_1f1fc">旗子: 博茨瓦納</string>
+	<string name="spoken_emoji_1f1e7_1f1ff">旗子: 伯利茲</string>
+	<string name="spoken_emoji_1f1e8_1f1e8">旗子: 可可斯群島</string>
+	<string name="spoken_emoji_1f1e8_1f1ee">旗子: 科特迪瓦</string>
+	<string name="spoken_emoji_1f1e8_1f1f5">旗子: 克里珀頓島</string>
+	<string name="spoken_emoji_1f1e8_1f1f7">旗子: 哥斯達黎加</string>
+	<string name="spoken_emoji_1f1e8_1f1fb">旗子: 佛得角</string>
+	<string name="spoken_emoji_1f1e8_1f1fe">旗子: 塞浦路斯</string>
+	<string name="spoken_emoji_1f1e9_1f1ef">旗子: 吉布提</string>
+	<string name="spoken_emoji_1f1ea_1f1e8">旗子: 厄瓜多爾</string>
+	<string name="spoken_emoji_1f1ea_1f1f7">旗子: 厄立特里亞</string>
+	<string name="spoken_emoji_1f1ea_1f1f9">旗子: 埃塞俄比亞</string>
+	<string name="spoken_emoji_1f1ec_1f1e6">旗子: 加蓬</string>
+	<string name="spoken_emoji_1f1ec_1f1e9">旗子: 格林納達</string>
+	<string name="spoken_emoji_1f1ec_1f1ea">旗子: 格魯吉亞</string>
+	<string name="spoken_emoji_1f1ec_1f1ed">旗子: 加納</string>
+	<string name="spoken_emoji_1f1ec_1f1f2">旗子: 岡比亞</string>
+	<string name="spoken_emoji_1f1ec_1f1f8">旗子: 南佐治亞島與南桑威奇群島</string>
+	<string name="spoken_emoji_1f1ec_1f1f9">旗子: 危地馬拉</string>
+	<string name="spoken_emoji_1f1ec_1f1fc">旗子: 幾內亞比紹</string>
+	<string name="spoken_emoji_1f1ec_1f1fe">旗子: 圭亞那</string>
+	<string name="spoken_emoji_1f1ed_1f1f3">旗子: 洪都拉斯</string>
+	<string name="spoken_emoji_1f1ed_1f1f7">旗子: 克羅地亞</string>
+	<string name="spoken_emoji_1f1ee_1f1f2">旗子: 馬恩島</string>
+	<string name="spoken_emoji_1f1ee_1f1f9">旗子: 意大利</string>
+	<string name="spoken_emoji_1f1f0_1f1ea">旗子: 肯雅</string>
+	<string name="spoken_emoji_1f1f0_1f1f2">旗子: 科摩羅</string>
+	<string name="spoken_emoji_1f1f0_1f1f3">旗子: 聖基茨和尼維斯</string>
+	<string name="spoken_emoji_1f1f1_1f1e6">旗子: 老撾</string>
+	<string name="spoken_emoji_1f1f1_1f1e8">旗子: 聖盧西亞</string>
+	<string name="spoken_emoji_1f1f1_1f1ee">旗子: 列支敦士登</string>
+	<string name="spoken_emoji_1f1f1_1f1f7">旗子: 利比里亞</string>
+	<string name="spoken_emoji_1f1f1_1f1fb">旗子: 拉脱維亞</string>
+	<string name="spoken_emoji_1f1f2_1f1ea">旗子: 黑山</string>
+	<string name="spoken_emoji_1f1f2_1f1f1">旗子: 馬里</string>
+	<string name="spoken_emoji_1f1f2_1f1f7">旗子: 毛里塔尼亞</string>
+	<string name="spoken_emoji_1f1f2_1f1f8">旗子: 蒙特塞拉特</string>
+	<string name="spoken_emoji_1f1f2_1f1f9">旗子: 馬耳他</string>
+	<string name="spoken_emoji_1f1f2_1f1fa">旗子: 毛里裘斯</string>
+	<string name="spoken_emoji_1f1f2_1f1fb">旗子: 馬爾代夫</string>
+	<string name="spoken_emoji_1f1f2_1f1fc">旗子: 馬拉維</string>
+	<string name="spoken_emoji_1f1f2_1f1ff">旗子: 莫桑比克</string>
+	<string name="spoken_emoji_1f1f3_1f1ea">旗子: 尼日爾</string>
+	<string name="spoken_emoji_1f1f3_1f1ec">旗子: 尼日利亞</string>
+	<string name="spoken_emoji_1f1f3_1f1f7">旗子: 瑙魯</string>
+	<string name="spoken_emoji_1f1f5_1f1eb">旗子: 法屬波利尼西亞</string>
+	<string name="spoken_emoji_1f1f5_1f1ec">旗子: 巴布亞新幾內亞</string>
+	<string name="spoken_emoji_1f1f5_1f1f3">旗子: 皮特凱恩島</string>
+	<string name="spoken_emoji_1f1f5_1f1f8">旗子: 巴勒斯坦領土</string>
+	<string name="spoken_emoji_1f1f6_1f1e6">旗子: 卡塔爾</string>
+	<string name="spoken_emoji_1f1f7_1f1fc">旗子: 盧旺達</string>
+	<string name="spoken_emoji_1f1f8_1f1e6">旗子: 沙地阿拉伯</string>
+	<string name="spoken_emoji_1f1f8_1f1e7">旗子: 所羅門群島</string>
+	<string name="spoken_emoji_1f1f8_1f1e8">旗子: 塞舌爾</string>
+	<string name="spoken_emoji_1f1f8_1f1ee">旗子: 斯洛文尼亞</string>
+	<string name="spoken_emoji_1f1f8_1f1ef">旗子: 斯瓦爾巴特群島及揚馬延島</string>
+	<string name="spoken_emoji_1f1f8_1f1f1">旗子: 塞拉利昂</string>
+	<string name="spoken_emoji_1f1f8_1f1f4">旗子: 索馬里</string>
+	<string name="spoken_emoji_1f1f8_1f1f7">旗子: 蘇里南</string>
+	<string name="spoken_emoji_1f1f8_1f1f9">旗子: 聖多美和普林西比</string>
+	<string name="spoken_emoji_1f1f8_1f1ff">旗子: 斯威士蘭</string>
+	<string name="spoken_emoji_1f1f9_1f1e8">旗子: 特克斯和凱科斯群島</string>
+	<string name="spoken_emoji_1f1f9_1f1e9">旗子: 乍得</string>
+	<string name="spoken_emoji_1f1f9_1f1eb">旗子: 法屬南部領地</string>
+	<string name="spoken_emoji_1f1f9_1f1ec">旗子: 多哥共和國</string>
+	<string name="spoken_emoji_1f1f9_1f1f4">旗子: 湯加</string>
+	<string name="spoken_emoji_1f1f9_1f1f9">旗子: 千里達和多巴哥</string>
+	<string name="spoken_emoji_1f1f9_1f1fb">旗子: 圖瓦盧</string>
+	<string name="spoken_emoji_1f1f9_1f1ff">旗子: 坦桑尼亞</string>
+	<string name="spoken_emoji_1f1fb_1f1e8">旗子: 聖文森特和格林納丁斯</string>
+	<string name="spoken_emoji_1f1fb_1f1ec">旗子: 英屬維爾京群島</string>
+	<string name="spoken_emoji_1f1fb_1f1ee">旗子: 美屬維爾京群島</string>
+	<string name="spoken_emoji_1f1fb_1f1fa">旗子: 瓦努阿圖</string>
+	<string name="spoken_emoji_1f1fe_1f1ea">旗子: 也門</string>
+	<string name="spoken_emoji_1f1fe_1f1f9">旗子: 馬約特</string>
+	<string name="spoken_emoji_1f1ff_1f1f2">旗子: 贊比亞</string>
+	<string name="spoken_emoji_1f1ff_1f1fc">旗子: 津巴布韋</string>
+</resources> 
