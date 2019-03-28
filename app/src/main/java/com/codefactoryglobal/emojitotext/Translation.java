@@ -19,7 +19,9 @@ public class Translation {
             // Skip extra char, codepoint takes 2
             int charsToSkip = Character.charCount(current) - 1;
             // Ignore Zero Width Joiner (ZWJ) Hex:200d
-            // TODO decide if joiner should be included in name, and process it
+            // TODO decide if joiner should be included in name,
+            // TODO U+FEOF chars are removed from anotations (will not appear in name),
+            // TODO Check this when processing chars in EmojiToText, to ignore them
             if (current != 8205) {
                 mCodepoints.add(current);
                 name.append("_");
