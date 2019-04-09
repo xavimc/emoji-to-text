@@ -2798,9 +2798,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	<string name="spoken_emoji_39_20e3">keycap: 9</string>
 
 	<!-- UNOFFICIAL : UNICODE 10 EMOJI -->
+
     <string name="spoken_emoji_20bf" translatable="false">Bitcoin</string>
 
     <!-- UNOFFICIAL : UNICODE 12.0 EMOJI -->
+
 	<string name="spoken_emoji_1f971">Yawning Face</string>
 	<string name="spoken_emoji_1f90e">Brown Heart</string>
 	<string name="spoken_emoji_1f90d">White Heart</string>

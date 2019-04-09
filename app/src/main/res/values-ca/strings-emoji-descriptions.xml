@@ -2798,6 +2798,7 @@ CLDR data files are interpreted according to the LDML specification (http://unic
 	<string name="spoken_emoji_39_20e3">tecla: 9</string>
 
 	<!-- UNOFFICIAL : UNICODE 12.0 EMOJI -->
+
 	<string name="spoken_emoji_1f971">Cara badallant</string>
 	<string name="spoken_emoji_1f90e">Cora marró</string>
 	<string name="spoken_emoji_1f90d">Cor blanc</string>
