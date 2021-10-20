@@ -7,28 +7,11 @@ CLDR data files are interpreted according to the LDML specification (http://unic
  Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/ for derived annotations.  
 -->
 <resources> 
-	<string name="spoken_emoji_1f931_1f3fb">breast-feeding: light skin tone</string>
-	<string name="spoken_emoji_1f931_1f3fc">breast-feeding: medium-light skin tone</string>
-	<string name="spoken_emoji_1f931_1f3fd">breast-feeding: medium skin tone</string>
-	<string name="spoken_emoji_1f931_1f3fe">breast-feeding: medium-dark skin tone</string>
-	<string name="spoken_emoji_1f931_1f3ff">breast-feeding: dark skin tone</string>
-	<string name="spoken_emoji_1f936_1f3fb">Mrs. Claus: light skin tone</string>
-	<string name="spoken_emoji_1f936_1f3fc">Mrs. Claus: medium-light skin tone</string>
-	<string name="spoken_emoji_1f936_1f3fd">Mrs. Claus: medium skin tone</string>
-	<string name="spoken_emoji_1f936_1f3fe">Mrs. Claus: medium-dark skin tone</string>
-	<string name="spoken_emoji_1f936_1f3ff">Mrs. Claus: dark skin tone</string>
-	<string name="spoken_emoji_1f919_1f3fb">call me hand: light skin tone</string>
-	<string name="spoken_emoji_1f919_1f3fc">call me hand: medium-light skin tone</string>
-	<string name="spoken_emoji_1f919_1f3fd">call me hand: medium skin tone</string>
-	<string name="spoken_emoji_1f919_1f3fe">call me hand: medium-dark skin tone</string>
-	<string name="spoken_emoji_1f919_1f3ff">call me hand: dark skin tone</string>
 	<string name="spoken_emoji_1f1e7_1f1f1">flag: St Barthélemy</string>
 	<string name="spoken_emoji_1f1f0_1f1f3">flag: St Kitts &amp; Nevis</string>
 	<string name="spoken_emoji_1f1f1_1f1e8">flag: St Lucia</string>
 	<string name="spoken_emoji_1f1f2_1f1eb">flag: St Martin</string>
 	<string name="spoken_emoji_1f1f5_1f1f2">flag: St Pierre &amp; Miquelon</string>
 	<string name="spoken_emoji_1f1f8_1f1ed">flag: St Helena</string>
-	<string name="spoken_emoji_1f1fa_1f1f2">flag: US Outlying Islands</string>
-	<string name="spoken_emoji_1f1fb_1f1e8">flag: St Vincent &amp; Grenadines</string>
-	<string name="spoken_emoji_1f1fb_1f1ee">flag: US Virgin Islands</string>
+	<string name="spoken_emoji_1f1fb_1f1e8">flag: St Vincent &amp; the Grenadines</string>
 </resources> 
