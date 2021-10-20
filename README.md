@@ -5,7 +5,7 @@ This basic app includes the EmojiToText class that you can call as simple as:
 
   String translated_text = EmojiToText.translateEmoji(context, input_text);
 
-Our main goal is having as many languages as possible for all the emoji descriptions. That's why we are now using the descriptions translated from Unicode CLDR project v34 (see assets directory). Copyright © 1991-2019 Unicode, Inc. All rights reserved. You can see full license here: http://unicode.org/copyright.html#Exhibit1
+Our main goal is having as many languages as possible for all the emoji descriptions. That's why we are now using the descriptions translated from Unicode CLDR project v39 (see assets directory). Copyright © 1991-2021 Unicode, Inc. All rights reserved. You can see full license here: http://unicode.org/copyright.html#Exhibit1
 We added some classes and methods in EmojiActivity to import this descriptions to an Android XML strings file format. 
 
 For any doubt write us translations@codefactoryglobal.com
